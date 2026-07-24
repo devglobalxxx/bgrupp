@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umbrohi tänavakivi vuukides — kuidas püsivalt eemaldada...</title>
+  <meta name="description" content="Põhjused (vale vuugiliiv, drenaaž), lahendused: polümeerliiv, kuumaveeseade, herbitsiidid, profilaktika paigalduse käigus.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bgrupp.ee/blog/tanavakivi-umbrohi-vugades-ja-eemaldamine/">
+
+  <meta property="og:title" content="Umbrohi tänavakivi vuukides — kuidas püsivalt eemaldada 2026">
+  <meta property="og:description" content="Põhjused (vale vuugiliiv, drenaaž), lahendused: polümeerliiv, kuumaveeseade, herbitsiidid, profilaktika paigalduse käigus.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bgrupp.ee/blog/tanavakivi-umbrohi-vugades-ja-eemaldamine/">
+  <meta property="og:image" content="https://bgrupp.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f7fdf9;--surface:#fff;--ink:#052e1a;--ink-2:#15543a;--muted:#5b8071;
+      --accent:#16a34a;--accent-dark:#15803d;--accent-soft:#dcfce7;
+      --line:#d1fae5;--success:#15803d;--warn:#b45309;--radius:12px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(5,46,26,.08);
+      --shadow-lg:0 10px 30px rgba(5,46,26,.12);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:88px 0}}
+
+    h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+    h1{font-size:clamp(2.1rem,5vw,3.4rem)}
+    h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:.5em}
+    h3{font-size:1.2rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1140px;margin:0 auto;gap:14px}
+    .brand{font-weight:900;font-size:1.2rem;letter-spacing:-.02em;display:inline-flex;align-items:baseline;gap:2px}
+    .brand b{color:var(--accent)}
+    .brand small{font-size:.7rem;color:var(--muted);font-weight:700;margin-left:6px;text-transform:uppercase;letter-spacing:.05em}
+    .top-cta{display:flex;align-items:center;gap:10px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem;white-space:nowrap}
+    @media(max-width:560px){.top-phone{display:none}}
+
+    /* Speed strip */
+    .speed-strip{background:var(--ink);color:#bbf7d0;font-size:.85rem;padding:8px 20px;text-align:center;font-weight:600}
+    .speed-strip strong{color:#fff}
+
+    /* Hero */
+    .hero{padding-top:48px;padding-bottom:32px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+    .hero-grid{display:grid;gap:32px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;gap:48px}.hero{padding-top:72px;padding-bottom:56px}}
+    .hero h1{margin-bottom:.4em}
+    .hero h1 mark{background:var(--accent-soft);color:var(--accent-dark);padding:0 .15em;border-radius:6px}
+    .hero .lead{margin-bottom:24px}
+
+    /* Big price tile */
+    .price-tile{display:inline-flex;align-items:baseline;gap:10px;background:var(--accent-soft);padding:14px 18px;border-radius:12px;margin-bottom:20px;border:1px solid var(--line)}
+    .price-tile .num{font-size:2rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.03em;line-height:1}
+    .price-tile .lbl{font-size:.95rem;color:var(--ink-2);font-weight:600}
+
+    /* Bullet list (USPs) */
+    .checks{list-style:none;margin:18px 0 24px;display:grid;gap:8px}
+    .checks li{font-size:1rem;color:var(--ink);padding-left:30px;position:relative}
+    .checks li::before{content:"✓";position:absolute;left:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;font-size:.8rem;font-weight:900;display:grid;place-items:center;top:1px}
+
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:800;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:50px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+
+    /* Quick form */
+    .quick{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-lg);border:2px solid var(--accent)}
+    .quick .label-stripe{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;font-weight:800;padding:4px 10px;border-radius:6px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+    .quick h2{font-size:1.4rem;margin-bottom:.3em}
+    .quick .sub{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+    .field{margin-bottom:12px}
+    .field label{display:block;font-weight:700;font-size:.85rem;color:var(--ink);margin-bottom:5px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    .quick .btn{width:100%;margin-top:6px}
+    .form-foot{margin-top:10px;font-size:.78rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:#fff;border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:24px}}
+    .trust-item .num{font-size:1.7rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.82rem;color:var(--muted);margin-top:2px;font-weight:600}
+
+    /* Pricing cards */
+    .pricing{background:#fff}
+    .pricing-grid{display:grid;gap:18px;margin-top:40px}
+    @media(min-width:760px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
+    .price-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:28px;position:relative;transition:transform .15s,border-color .15s,box-shadow .15s}
+    .price-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .price-card.featured{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft) 0%,#fff 30%)}
+    .price-card .ribbon{position:absolute;top:-12px;left:24px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.05em}
+    .price-card h3{font-size:1.15rem}
+    .price-card .from{font-size:.9rem;color:var(--muted);font-weight:600;margin-top:6px}
+    .price-card .big{font-size:2.2rem;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1;margin-top:4px}
+    .price-card .big small{font-size:1rem;color:var(--muted);font-weight:600}
+    .price-card ul{list-style:none;margin-top:18px}
+    .price-card ul li{font-size:.93rem;color:var(--ink-2);padding:6px 0 6px 22px;position:relative}
+    .price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+    .price-card .btn{width:100%;margin-top:18px}
+
+    /* Process strip */
+    .process{background:var(--ink);color:#fff;padding:48px 0;text-align:center}
+    .process h2{color:#fff}
+    .process .lead{color:#bbf7d0;margin-left:auto;margin-right:auto}
+    .process-grid{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(2,1fr)}
+    @media(min-width:760px){.process-grid{grid-template-columns:repeat(4,1fr)}}
+    .pstep{padding:18px}
+    .pstep .num{font-size:2.5rem;font-weight:900;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .pstep h3{color:#fff;margin-top:8px;font-size:1.05rem}
+    .pstep p{color:#bbf7d0;font-size:.92rem;margin-top:4px}
+
+    /* Gallery */
+    .gallery{background:var(--bg)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:36px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:10px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:780px;margin:40px auto 0}
+    .faq details{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:0;margin-bottom:8px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.4rem;color:var(--accent);transition:transform .15s;flex:none;font-weight:800}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 20px 18px;color:var(--ink-2);font-size:.95rem}
+
+    /* Final CTA */
+    .cta-final{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;text-align:center}
+    .cta-final h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem)}
+    .cta-final p{color:#dcfce7;font-size:1.1rem;max-width:540px;margin:12px auto 24px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:#fff;color:var(--accent-dark)}
+    .cta-final .btn-secondary:hover{background:var(--ink);color:#fff}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--accent-dark)}
+
+    footer{background:#022c1a;color:#86efac;padding:48px 0 28px;font-size:.92rem}
+    .foot-grid{display:grid;gap:28px;margin-bottom:32px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:12px;font-size:1rem}
+    .foot-grid a{color:#bbf7d0;display:block;padding:3px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #064e3b;padding-top:20px;text-align:center;font-size:.85rem}
+
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:46px;padding:11px;font-size:.93rem}
+    @media(max-width:760px){.sticky-bar{display:flex;gap:8px}body{padding-bottom:74px}}
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #16a34a;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">B<b>Grupp</b><small>Soodne sillutus</small></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">📞 +372 58374422</a>
+      <a href="#kontakt-top" class="btn btn-primary" style="padding:9px 14px;min-height:auto;font-size:.9rem">Saa hind</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Umbrohi tänavakivi vuukides — kuidas püsivalt eemaldada 2026</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-03.jpg" alt="Umbrohi tänavakivi vuukides — kuidas püsivalt eemaldada 2026" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Umbrohi tänavakivi vuukides — kuidas püsivalt eemaldada 2026</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span class="meta-date">Avaldatud: 16. juuni 2026</span>
+  <span class="meta-sep">·</span>
+  <span class="meta-author">Autor: Keio Soo, B Grupp</span>
+  <span class="meta-sep">·</span>
+  <span class="meta-read">Lugemisaeg: 8 min</span>
+</div>
+
+<h1>Umbrohi tänavakivi vuukides — kuidas püsivalt eemaldada 2026</h1>
+
+<p class="lead">Umbrohi tänavakivi vuukides ei ole esteetiline pisiprobleem — see lõhub vuugiliiva, lubab vee kivi alla ja kiirendab vajumist. Püsiv lahendus 2026. aastal koosneb kolmest sammust: olemasoleva umbrohu eemaldamine (kuumaveeseade või sihtotstarbeline herbitsiid), vuukide täielik tühjendamine ja täitmine polümeerliivaga (kestab 8–10 aastat) ning drenaaži ja killustikaluse kontroll, et niiskus ei jääks pinnasesse seisma.</p>
+
+<div class="answer-card">
+  <strong>Lühivastus:</strong> Polümeerliiv (nt Romex, GftK või Pavix) maksab paigaldatuna umbes <strong>8–14 €/m²</strong> ja blokeerib umbrohu kasvu 8–10 aastaks. Tavaline kvartsliiv lubab umbrohul 1–2 aastaga tagasi tulla. Kuumaveeseadme (Heatweed/Foamstream) töö maksab <strong>1,20–2,50 €/m²</strong> ja on keemiavaba alternatiiv glüfosaadile. Kõige odavam lahendus on aga ennetus paigalduse käigus — geotekstiil aluse all + polümeerliiv vuukidesse korraga.
+</div>
+
+<h2>Miks umbrohi tänavakivi vuukidesse üldse kasvab?</h2>
+
+<p>Umbrohi ei kasva läbi kivi — see kasvab vuukides olevast tolmust, lehemädast ja õietolmust, mis aja jooksul moodustab vuugi pinnale õhukese mullakihi. Kui vuugiliiv on tavakvarts (0/2 mm), siis tuule ja vee toimel langeb liiv 1–2 cm sügavusele ning ülemine 5–10 mm täitub orgaanikaga. Just sinna idanevad võilill, naat, raudrohi ja samblad.</p>
+
+<p>Eesti kliimas on probleem terav kahel põhjusel: pikk niiske sügis (september–november) ja suvine kuuma–vihma vaheldus, mis tekitab vuuki ideaalse kasvulava. Lisaks aitavad umbrohu levikut kaasa kolm paigaldusviga:</p>
+
+<ul>
+  <li><strong>Vuugiliiv liiga jäme või vale fraktsioon</strong> — kasutati 0/4 mm killustikku 0/2 mm asemel, vuuk ei tihene.</li>
+  <li><strong>Killustikalus liiga peeneteraline</strong> — vesi ei juhtu alla, jääb vuugi alla seisma.</li>
+  <li><strong>Geotekstiili puudumine</strong> aluse ja killustiku vahel — pinnasest tõuseb savi vuuki kapillaarselt.</li>
+</ul>
+
+<p>Kui vuugiliiv on korralikult valitud (graneeritud kvarts 0/2 mm + polümeer), kuluvuse hooldust läheb vaja kord 2–3 aasta tagant, mitte kord kuus.</p>
+
+<h2>Kolm peamist eemaldusmeetodit — võrdlustabel</h2>
+
+<p>Olemasoleva umbrohu eemaldamiseks Eesti turul kasutatakse põhiliselt kolme meetodit. Kõigil on oma kasutusala: väikese hoovi (kuni 100 m²) jaoks sobib käsitsi + keevvesi, suurema parkla või sissesõidu (üle 200 m²) jaoks tasub kutsuda professionaalne kuumaveeseade.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Meetod</th>
+      <th>Hind (€/m²)</th>
+      <th>Mõju kestus</th>
+      <th>Keskkonnasõbralik</th>
+      <th>Sobib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kuumaveeseade (Heatweed, Foamstream)</td>
+      <td>1,20–2,50</td>
+      <td>3–4 kuud / kasvuhooaeg</td>
+      <td>Jah — vesi + biolagunev vaht</td>
+      <td>Suured pinnad, KÜ-d, avalik ruum</td>
+    </tr>
+    <tr>
+      <td>Herbitsiid (glüfosaat / äädikhape 20%)</td>
+      <td>0,40–1,00</td>
+      <td>4–6 kuud</td>
+      <td>Ei (glüfosaat); osaliselt (äädikhape)</td>
+      <td>Eraõu, väike pind, kuiv ilm</td>
+    </tr>
+    <tr>
+      <td>Käsitsi + traatharja masin</td>
+      <td>2,50–5,00 (tööjõud)</td>
+      <td>2–3 kuud</td>
+      <td>Jah</td>
+      <td>Väike pind, valikuline puhastus</td>
+    </tr>
+    <tr>
+      <td>Gaasileek (termiline põletus)</td>
+      <td>1,80–3,00</td>
+      <td>2–3 kuud</td>
+      <td>Jah (CO₂ kerge)</td>
+      <td>Vuukidevahelisem täppistöö</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tähelepanu: glüfosaadi (Roundup-tüüpi preparaadid) müük eraisikule on Eestis piiratud ja avalikes piirkondades (KÜ-d, koolid, lasteaiad) on selle kasutamine keelatud. Profesionaalsetel firmadel on litsentsiga kasutus lubatud, kuid suundumus on selgelt keemiavabade meetodite (kuumaveeseade) poole.</p>
+
+<h3>Kuumaveeseade — kuidas see töötab?</h3>
+
+<p>Heatweed ja Foamstream tüüpi seadmed pihustavad vuugile 98 °C vett (Heatweed) või vett + biolagunevat taimset vahtu (Foamstream). Kuumus lõhustab taime rakuseinad ja juurestiku ülemise osa kuni 5 cm sügavuselt. Üks läbimine kustutab 80–90% taimedest, teine läbimine 3 nädalat hiljem viib umbrohu täielikult välja. Soovituslik tsükkel Eestis: aprilli lõpp + juuni keskpaik + augusti lõpp = 3 töökorda hooajas. Hind 1500 m² parklale tuleb seega umbes 4500–11 000 € aastas, mis on suure pinna juures odavam kui pidev käsitsi puhastus.</p>
+
+<h2>Polümeerliiv — püsiv lahendus vuukidele</h2>
+
+<p>Polümeerliiv on parim ühekordne investeering, kui umbrohu probleem on kroonline. See on graneeritud kvartsliiv (fraktsioon 0,2–1,4 mm), millele on segatud polüuretaani- või akrülaadipõhine sideaine. Pärast paigaldust ja niisutamist kõvastub vuuk poolelastseks massiks, mis:</p>
+
+<ul>
+  <li>blokeerib idanemise (õhk + valgus ei pääse vuuki)</li>
+  <li>kannatab veesurvepesurit (kuni 100 bar nurgalt)</li>
+  <li>jääb veidi elastseks — talub kivi liikumist temperatuurikõikumistes</li>
+  <li>kestab Eesti kliimas 8–10 aastat ilma uuendamiseta</li>
+</ul>
+
+<div class="warning">
+  <strong>Ettevaatust:</strong> Polümeerliiva paigaldus nõuab täiesti kuiva kivipinda + 12–24 tundi kuiva ilma pärast paigaldust. Kui paigaldate vihmaga, jääb sideaine kivi pinnale ja moodustab valkjas-helbelise kihi, mida on tagantjärele väga raske eemaldada. Hooaeg Eestis: juuni keskpaik — augusti lõpp.
+</div>
+
+<h3>Paigalduse 5 sammu</h3>
+
+<ol>
+  <li><strong>Vuugi tühjendamine</strong> — vana liiv pestakse välja survepesuri või vaakumiga 25–30 mm sügavuselt. Kivi peab olema täiesti kuiv (12–24 h pärast pesemist).</li>
+  <li><strong>Liiva sissepühkimine</strong> — polümeerliiv valatakse pinnale ja pühitakse kummiharjaga vuukidesse, kuni need on täis.</li>
+  <li><strong>Liigse liiva eemaldamine</strong> — kivi pind tuleb puhastada lehepuhuriga, et sideaine ei jääks kivi pinnale.</li>
+  <li><strong>Niisutamine</strong> — kerge veevihm dushiotsikuga, ilma surveta. Vesi aktiveerib polümeeri.</li>
+  <li><strong>Kõvastumine</strong> — 24 tundi ei tohi pinnal käia, 48 tundi sõita autoga.</li>
+</ol>
+
+<p>Töö produktiivsus: kogenud paigaldusmehekond paigaldab polümeerliiva tempos 80–120 m²/päevas. 150 m² hoovi puhul on töö valmis ühe päevaga.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Saa hind 1 minutiga.</strong> B Grupp paigaldab polümeerliiva ja uuendab vuugid kogu Põhja-Eestis. Tagame EVS-EN 1338 standardile vastava tulemuse.
+  </div>
+  <div class="cta-actions">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Drenaaž ja killustikalus — vaikiv süüdlane</h2>
+
+<p>Isegi parim polümeerliiv lakkab töötamast, kui vesi jääb kivi alla seisma. Märg killustik tõstab kapillaarselt niiskust vuuki, polümeer pehmeneb ja umbrohi tuleb 2–3 aastaga tagasi. Õige aluse koostis 2026. aasta standardiga (EVS 901-3) on:</p>
+
+<ul>
+  <li><strong>Põhi:</strong> tihendatud loodusliik pinnas + geotekstiil 150 g/m²</li>
+  <li><strong>Killustik 0/32:</strong> 15–25 cm (jalakäijatele 15, autotee 25–30 cm)</li>
+  <li><strong>Killustik 4/8 või 2/5:</strong> 3–4 cm — paigaldusalus</li>
+  <li><strong>Tänavakivi:</strong> 60–80 mm</li>
+  <li><strong>Vuugiliiv:</strong> polümeerliiv 0,2/1,4</li>
+</ul>
+
+<p>Põhiline viga, mida näeme remondiobjektidel: alla on lastud 0/16 või isegi liiv-segu killustikku, mis ei juhi vett. Tänapäeval ehitatakse korralik sissesõidutee minimaalselt 25 cm 0/32 killustikualusega + 1,5–2% kallakuga ärasvoolu suunas. Kui niiskuse seismist on probleem, lisame ka drenaažitoru 100 mm geotekstiilis aluse põhja.</p>
+
+<h3>Kuidas aru saada, kas probleem on aluses?</h3>
+
+<p>Kolm selget märki:</p>
+
+<ol>
+  <li>Vuukidesse koguneb pärast vihma seisev vesi ja kuivab üle 4 tunni.</li>
+  <li>Kivid on hakanud vajuma ebaühtlaselt, eriti rattaroopa kohtades.</li>
+  <li>Vuukides kasvavad samblad (mitte ainult umbrohi) — see näitab pidevat niiskust.</li>
+</ol>
+
+<p>Sellisel juhul ei aita polümeerliiv üksi — vajalik on osaline ümberlaotus 50–150 m² piirkonnas, hind tüüpiliselt 25–40 €/m² (ilma uue kivita; kui kivi on terve, kasutame sama). Loe lähemalt: <a href="/blog/tanavakivi-pesemine-ja-impregneerimine/">tänavakivi pesemine ja impregneerimine</a>.</p>
+
+<h2>Profilaktika paigalduse käigus — odavaim võimalus</h2>
+
+<p>Kui plaanid uut hoovi või sissesõitu, on umbrohuvabaks aastateks tegemine ühekordse paigalduse käigus 2–4 € lisa ruutmeetri kohta. See tähendab korralikku 100 m² hoovi puhul 200–400 € lisaks, mis säästab järgmise 8 aasta jooksul kergesti 1500–3000 € hoolduskuludelt.</p>
+
+<p>Profilaktika koosneb kolmest punktist:</p>
+
+<ul>
+  <li><strong>Geotekstiil aluse all (200 g/m²)</strong> — tõkestab savi tõusu vuukidesse, hind 1,20–1,80 €/m²</li>
+  <li><strong>Polümeerliiv vuukidesse kohe paigalduse käigus</strong> — 8–14 €/m² (sisaldub paigalduse hinnas)</li>
+  <li><strong>Impregneerimine 30 päeva pärast</strong> — silaanipõhine veetõrjevahend, hind 4–7 €/m², kaitseb ka soola ja õli eest</li>
+</ul>
+
+<p>Üheskoos teevad need profilaktilised meetmed hoovi praktiliselt hooldusvabaks 8–10 aastaks. Suuremate projektide (sissesõidud, parklad) puhul vt ka: <a href="/sissesoidu-sillutus-koos-drenaaziga-harjumaa/">sissesõidu sillutus koos drenaažiga Harjumaa</a> ja <a href="/parkla-sillutus-arikinnistu-harjumaa-hind/">parkla sillutus ärikinnistule</a>.</p>
+
+<h2>Kõige levinumad vead — ja kuidas vältida</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Viga</th>
+      <th>Tagajärg</th>
+      <th>Õige lahendus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Surveveepesuri kasutamine üle 120 bar</td>
+      <td>Vuugiliiv pestakse välja, umbrohi naaseb 6 kuuga</td>
+      <td>Maksimaalselt 100 bar, 30° nurk, distants 25–30 cm</td>
+    </tr>
+    <tr>
+      <td>Soola puistamine umbrohule</td>
+      <td>Lõhub vuugiliiva ja korrodeerib kivi pinda</td>
+      <td>Kuumavesi või sihtotstarbeline herbitsiid</td>
+    </tr>
+    <tr>
+      <td>Polümeerliiva paigaldus märja kiviga</td>
+      <td>Sideaine jääb kivi pinnale, jätab valgeid jäägid</td>
+      <td>Kivi peab olema 12–24 h kuivanud</td>
+    </tr>
+    <tr>
+      <td>Tavakvartsi täiendamine vana vuugi peale</td>
+      <td>Pinnasekiht jääb alla, umbrohi kasvab edasi</td>
+      <td>Vana liiv tuleb täielikult eemaldada 25 mm sügavuselt</td>
+    </tr>
+    <tr>
+      <td>Hoolduse vahelejätmine 3+ aastaks</td>
+      <td>Vuukidesse koguneb 5–8 mm orgaanikat</td>
+      <td>Kord aastas lehepuhur + 1× hooajal vuukide kontroll</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Mida tasub teha juba sel suvel?</h2>
+
+<p>Soovituslik tegevuskava praeguseks hetkeks (juuni keskpaik) ja edasiseks:</p>
+
+<ul>
+  <li><strong>Juuni:</strong> Eemalda olemasolev umbrohi (kuumaveeseade või herbitsiid). Lase kivil 7 päeva taastuda.</li>
+  <li><strong>Juuli:</strong> Pese vuugid puhtaks 100 bar pesuriga, lase kuivada 24 h.</li>
+  <li><strong>Juuli–august:</strong> Paigalda polümeerliiv (väldi vihmaga päevi).</li>
+  <li><strong>September:</strong> Tee kerge survepesu lehtedest puhtaks, kontrolli vuukide tugevust.</li>
+  <li><strong>Sügis:</strong> Lehepuhuriga puhasta, ära jäta lehti vuukidesse talvituma.</li>
+</ul>
+
+<p>Kui plaanid sellel hooajal ka uusi tänavakivi alasid, tutvu meie hooajatöödega: <a href="/sillutuskivi-paigaldus-tallinn-kevadhooaeg/">kevadhooaeg Tallinnas</a>, <a href="/sillutuskivi-paigaldus-parnumaa-suvehooaeg/">suvehooaeg Pärnumaal</a> ja <a href="/sillutuskivi-paigaldus-sugisel-2026/">sügishooaeg 2026</a>.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Saa hind 1 minutiga.</strong> Olgu tegemist polümeerliiva uuendamise, vuukide pesu või kogu hoovi ümberlaotamisega — B Grupp annab vastuse ühe tööpäeva jooksul. Garantii 2 aastat.
+  </div>
+  <div class="cta-actions">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>KKK — umbrohi tänavakivi vuukides</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kui kaua polümeerliiv tegelikult vastu peab?</summary>
+    <p>Eesti kliimas (külmavihma vaheldus, soolatamine talvel) kestab kvaliteetne polümeerliiv 8–10 aastat. Põhja-Saksamaa testide järgi (sarnane kliima) on Romexi ja GftK toodete eluiga 12+ aastat, kuid Eesti soolatamine ja külmasiklus vähendavad seda 2 aasta võrra. 10 aasta järel tekib vajadus täiendava liiva sissepühkimiseks vuukide pealmisesse 5 mm, mitte täieliku väljavahetuse.</p>
+  </details>
+  <details>
+    <summary>Kas keev vesi kannist sobib ka umbrohu vastu?</summary>
+    <p>Jah, väikese pinna (kuni 20 m²) puhul on kannist valatud keev vesi tõhus — kuumus 90+ °C lõhub taime rakud. Puudus: see ei jõua juurestikku, mistõttu umbrohi tuleb tagasi 4–6 nädala pärast. Professionaalne kuumaveeseade hoiab 98 °C ja imbub vuuki 3–5 cm sügavusele, kuid suure pinna jaoks on majanduslikult mõttekas tellida professionaalne teenus (1,20–2,50 €/m²).</p>
+  </details>
+  <details>
+    <summary>Kas glüfosaati (Roundup) tohib eraisik kasutada?</summary>
+    <p>Eestis on glüfosaadi tarbijapakendite müük eraisikule piiratud — alates 2024. aastast lubatud ainult kuni 6 g/L lahjendusena, mis ei ole eriti tõhus. Avalikes ruumides (mänguväljakud, koolid, KÜ-de ühisalad) on kasutamine keelatud. Sellepärast pakume oma KÜ-klientidele ainult keemiavabu lahendusi (kuumaveeseade) — see vastab ka ESG-nõuetele.</p>
+  </details>
+  <details>
+    <summary>Miks vuukides kasvab sammal, mitte ainult umbrohi?</summary>
+    <p>Sammal näitab pidevat niiskust ja varju. Kui hoovis on samblavuugid, on probleem 80% juhtudel drenaažis — vesi ei valgu välja, vaid jääb killustikus seisma. Sel juhul polümeerliiv üksi ei aita, vajalik on aluse kontroll. Lihtne test: kalla 10 liitrit vett kividele ja vaata, kas vesi imbub 60 sekundi jooksul. Kui ei, on drenaažiprobleem.</p>
+  </details>
+  <details>
+    <summary>Kui suur on polümeerliiva paigalduse hind 100 m² hoovile?</summary>
+    <p>100 m² standardse hoovi puhul (sirged vuugid, kivid heas korras) on töö hind koos materjaliga umbes 900–1400 € (8–14 €/m²). Hind sisaldab vuukide pesu, polümeerliiva tarne ja paigalduse, viimistluse. Töö valmib ühe päevaga. Garantii 2 aastat, eeldatav kestus 8–10 aastat.</p>
+  </details>
+</div>
+
+<h2>Seotud artiklid ja teenused</h2>
+
+<div class="related-grid">
+  <a href="/blog/tanavakivi-pesemine-ja-impregneerimine/">Tänavakivi pesemine ja impregneerimine →</a>
+  <a href="/blog/tanavakivi-talvine-hooldus-ja-libedusetorje/">Talvine hooldus ja libeduse tõrje →</a>
+  <a href="/blog/looduskivi-paigaldus-eramaja-oue/">Looduskivi paigaldus eramaja õue →</a>
+  <a href="/blog/graniidist-tanavakivi-eelised-ja-hind/">Graniidist tänavakivi eelised ja hind →</a>
+  <a href="/sissesoidu-sillutus-koos-drenaaziga-harjumaa/">Sissesõidu sillutus koos drenaažiga →</a>
+  <a href="/tanavakivi-paigaldus-hind/">Tänavakivi paigalduse hinnakiri →</a>
+  <a href="/kalkulaator/">Hinnakalkulaator →</a>
+  <a href="/blog/">Kõik blogiartiklid →</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Umbrohi tänavakivi vuukides — kuidas püsivalt eemaldada 2026",
+      "description": "Kuidas eemaldada umbrohi tänavakivi vuukidest püsivalt: polümeerliiv (8–14 €/m², kestab 8–10 a), kuumaveeseade (1,20–2,50 €/m²) ja drenaažiparandus. Hinnad, meetodite võrdlus ja paigalduse 5 sammu.",
+      "datePublished": "2026-06-16",
+      "dateModified": "2026-06-16",
+      "inLanguage": "et-EE",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bgrupp.ee/blog/tanavakivi-umbrohi-vugades-ja-eemaldamine/"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "Tegevjuht",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Balcon Grupp OÜ"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "url": "https://bgrupp.ee/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bgrupp.ee/logo.png"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kui kaua polümeerliiv tegelikult vastu peab?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eesti kliimas kestab kvaliteetne polümeerliiv 8–10 aastat. 10 aasta järel tekib vajadus täiendava liiva sissepühkimiseks vuukide pealmisesse 5 mm, mitte täieliku väljavahetuse."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas keev vesi kannist sobib ka umbrohu vastu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Väikese pinna (kuni 20 m²) puhul on kannist valatud keev vesi tõhus, kuid ei jõua juurestikku — umbrohi tuleb tagasi 4–6 nädala pärast. Professionaalne kuumaveeseade hoiab 98 °C ja imbub vuuki 3–5 cm sügavusele."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas glüfosaati (Roundup) tohib eraisik kasutada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eestis on glüfosaadi tarbijapakendite müük piiratud — kuni 6 g/L lahjendusena. Avalikes ruumides (mänguväljakud, koolid, KÜ ühisalad) on kasutamine keelatud. Soovitame keemiavabu lahendusi (kuumaveeseade)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Miks vuukides kasvab sammal, mitte ainult umbrohi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sammal näitab pidevat niiskust ja varju. 80% juhtudel on probleem drenaažis — vesi ei valgu välja, jääb killustikus seisma. Polümeerliiv üksi ei aita, vajalik on aluse kontroll."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kui suur on polümeerliiva paigalduse hind 100 m² hoovile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "100 m² standardse hoovi puhul on töö hind koos materjaliga umbes 900–1400 € (8–14 €/m²). Töö valmib ühe päevaga. Garantii 2 aastat, eeldatav kestus 8–10 aastat."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://bgrupp.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://bgrupp.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Umbrohi tänavakivi vuukides — kuidas püsivalt eemaldada 2026",
+          "item": "https://bgrupp.ee/blog/tanavakivi-umbrohi-vugades-ja-eemaldamine/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>B Grupp</h4>
+        <p style="color:#86efac">B Grupp — soodsa hinnaga tänavakivi paigaldus eramajadele üle Eesti. Fikseeritud hind, kiire algus.</p>
+        <p style="margin-top:12px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com</p>
+      </div>
+      <div>
+        <h4>Hinnad</h4>
+        <a href="#hinnad">Eramaja õu — 16 €/m²</a>
+        <a href="#hinnad">Tänavakivi tervik — 28 €/m²</a>
+        <a href="#hinnad">Graniit premium — 35 €/m²</a>
+        <a href="#hinnad">Äärekivi — 24 €/jm</a>
+      </div>
+      <div>
+        <h4>Piirkond</h4>
+        <a href="#">Tallinn ja Harjumaa</a>
+        <a href="#">Tartu ja Tartumaa</a>
+        <a href="#">Pärnu ja Pärnumaa</a>
+        <a href="#">Üle Eesti</a>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <a href="#kkk">Korduma kippuvad küsimused</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#">Privaatsuspoliitika</a>
+        <a href="#">Tingimused</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 B Grupp · Reg nr 16294742 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">⚡ Saa hind</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin saada kiiret hinnapakkumist sillutuse paigalduseks." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

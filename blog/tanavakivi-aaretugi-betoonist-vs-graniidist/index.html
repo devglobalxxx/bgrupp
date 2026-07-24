@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi äär — betoonääriskivi vs graniidist | B Grupp</title>
+  <meta name="description" content="Ääriskivide võrdlus eluea, hinna ja paigalduse osas, milline äär sobib eramutele ja milline avalikele aladele. Saa hind 1 minutiga. Fikseeritud lepingus, k">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bgrupp.ee/blog/tanavakivi-aaretugi-betoonist-vs-graniidist/">
+
+  <meta property="og:title" content="Tänavakivi äär — betoonääriskivi vs graniidist">
+  <meta property="og:description" content="Ääriskivide võrdlus eluea, hinna ja paigalduse osas, milline äär sobib eramutele ja milline avalikele aladele. Saa hind 1 minutiga. Fikseeritud lepingus, k">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bgrupp.ee/blog/tanavakivi-aaretugi-betoonist-vs-graniidist/">
+  <meta property="og:image" content="https://bgrupp.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f7fdf9;--surface:#fff;--ink:#052e1a;--ink-2:#15543a;--muted:#5b8071;
+      --accent:#16a34a;--accent-dark:#15803d;--accent-soft:#dcfce7;
+      --line:#d1fae5;--success:#15803d;--warn:#b45309;--radius:12px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(5,46,26,.08);
+      --shadow-lg:0 10px 30px rgba(5,46,26,.12);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:88px 0}}
+
+    h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+    h1{font-size:clamp(2.1rem,5vw,3.4rem)}
+    h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:.5em}
+    h3{font-size:1.2rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1140px;margin:0 auto;gap:14px}
+    .brand{font-weight:900;font-size:1.2rem;letter-spacing:-.02em;display:inline-flex;align-items:baseline;gap:2px}
+    .brand b{color:var(--accent)}
+    .brand small{font-size:.7rem;color:var(--muted);font-weight:700;margin-left:6px;text-transform:uppercase;letter-spacing:.05em}
+    .top-cta{display:flex;align-items:center;gap:10px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem;white-space:nowrap}
+    @media(max-width:560px){.top-phone{display:none}}
+
+    /* Speed strip */
+    .speed-strip{background:var(--ink);color:#bbf7d0;font-size:.85rem;padding:8px 20px;text-align:center;font-weight:600}
+    .speed-strip strong{color:#fff}
+
+    /* Hero */
+    .hero{padding-top:48px;padding-bottom:32px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+    .hero-grid{display:grid;gap:32px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;gap:48px}.hero{padding-top:72px;padding-bottom:56px}}
+    .hero h1{margin-bottom:.4em}
+    .hero h1 mark{background:var(--accent-soft);color:var(--accent-dark);padding:0 .15em;border-radius:6px}
+    .hero .lead{margin-bottom:24px}
+
+    /* Big price tile */
+    .price-tile{display:inline-flex;align-items:baseline;gap:10px;background:var(--accent-soft);padding:14px 18px;border-radius:12px;margin-bottom:20px;border:1px solid var(--line)}
+    .price-tile .num{font-size:2rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.03em;line-height:1}
+    .price-tile .lbl{font-size:.95rem;color:var(--ink-2);font-weight:600}
+
+    /* Bullet list (USPs) */
+    .checks{list-style:none;margin:18px 0 24px;display:grid;gap:8px}
+    .checks li{font-size:1rem;color:var(--ink);padding-left:30px;position:relative}
+    .checks li::before{content:"✓";position:absolute;left:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;font-size:.8rem;font-weight:900;display:grid;place-items:center;top:1px}
+
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:800;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:50px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+
+    /* Quick form */
+    .quick{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-lg);border:2px solid var(--accent)}
+    .quick .label-stripe{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;font-weight:800;padding:4px 10px;border-radius:6px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+    .quick h2{font-size:1.4rem;margin-bottom:.3em}
+    .quick .sub{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+    .field{margin-bottom:12px}
+    .field label{display:block;font-weight:700;font-size:.85rem;color:var(--ink);margin-bottom:5px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    .quick .btn{width:100%;margin-top:6px}
+    .form-foot{margin-top:10px;font-size:.78rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:#fff;border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:24px}}
+    .trust-item .num{font-size:1.7rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.82rem;color:var(--muted);margin-top:2px;font-weight:600}
+
+    /* Pricing cards */
+    .pricing{background:#fff}
+    .pricing-grid{display:grid;gap:18px;margin-top:40px}
+    @media(min-width:760px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
+    .price-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:28px;position:relative;transition:transform .15s,border-color .15s,box-shadow .15s}
+    .price-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .price-card.featured{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft) 0%,#fff 30%)}
+    .price-card .ribbon{position:absolute;top:-12px;left:24px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.05em}
+    .price-card h3{font-size:1.15rem}
+    .price-card .from{font-size:.9rem;color:var(--muted);font-weight:600;margin-top:6px}
+    .price-card .big{font-size:2.2rem;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1;margin-top:4px}
+    .price-card .big small{font-size:1rem;color:var(--muted);font-weight:600}
+    .price-card ul{list-style:none;margin-top:18px}
+    .price-card ul li{font-size:.93rem;color:var(--ink-2);padding:6px 0 6px 22px;position:relative}
+    .price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+    .price-card .btn{width:100%;margin-top:18px}
+
+    /* Process strip */
+    .process{background:var(--ink);color:#fff;padding:48px 0;text-align:center}
+    .process h2{color:#fff}
+    .process .lead{color:#bbf7d0;margin-left:auto;margin-right:auto}
+    .process-grid{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(2,1fr)}
+    @media(min-width:760px){.process-grid{grid-template-columns:repeat(4,1fr)}}
+    .pstep{padding:18px}
+    .pstep .num{font-size:2.5rem;font-weight:900;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .pstep h3{color:#fff;margin-top:8px;font-size:1.05rem}
+    .pstep p{color:#bbf7d0;font-size:.92rem;margin-top:4px}
+
+    /* Gallery */
+    .gallery{background:var(--bg)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:36px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:10px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:780px;margin:40px auto 0}
+    .faq details{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:0;margin-bottom:8px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.4rem;color:var(--accent);transition:transform .15s;flex:none;font-weight:800}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 20px 18px;color:var(--ink-2);font-size:.95rem}
+
+    /* Final CTA */
+    .cta-final{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;text-align:center}
+    .cta-final h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem)}
+    .cta-final p{color:#dcfce7;font-size:1.1rem;max-width:540px;margin:12px auto 24px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:#fff;color:var(--accent-dark)}
+    .cta-final .btn-secondary:hover{background:var(--ink);color:#fff}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--accent-dark)}
+
+    footer{background:#022c1a;color:#86efac;padding:48px 0 28px;font-size:.92rem}
+    .foot-grid{display:grid;gap:28px;margin-bottom:32px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:12px;font-size:1rem}
+    .foot-grid a{color:#bbf7d0;display:block;padding:3px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #064e3b;padding-top:20px;text-align:center;font-size:.85rem}
+
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:46px;padding:11px;font-size:.93rem}
+    @media(max-width:760px){.sticky-bar{display:flex;gap:8px}body{padding-bottom:74px}}
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #16a34a;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">B<b>Grupp</b><small>Soodne sillutus</small></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">📞 +372 58374422</a>
+      <a href="#kontakt-top" class="btn btn-primary" style="padding:9px 14px;min-height:auto;font-size:.9rem">Saa hind</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi äär — betoonääriskivi vs graniidist äär 2026</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-01.jpg" alt="Tänavakivi äär — betoonääriskivi vs graniidist äär 2026" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi äär — betoonääriskivi vs graniidist äär 2026</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span class="meta-date">1. juuni 2026</span>
+  <span class="meta-sep">·</span>
+  <span class="meta-author">Keio Soo, B Grupp</span>
+  <span class="meta-sep">·</span>
+  <span class="meta-read">10 min lugemist</span>
+</div>
+
+<h1>Tänavakivi äär — betoonääriskivi vs graniidist äär 2026</h1>
+
+<p class="lead">Ääriskivi on tänavakivi paigalduse kõige alahinnatum element — kui äär annab järele, lähevad mõne aastaga laiali ka sillutuskivid. 2026. aastal on Eestis kaks valdavat valikut: <strong>betoonääriskivi</strong> (8–18 €/jm paigaldatuna) ja <strong>graniidist äär</strong> (35–75 €/jm paigaldatuna). Betoon võidab hinnaga, graniit eluiga ja välimusega. Allpool on konkreetne võrdlus, millal kumb õigustab end ning miks eramul ja avalikul alal on vastus erinev.</p>
+
+<div class="answer-card">
+  <strong>Lühivastus:</strong> Eramu sissesõit ja õuesillutis — <strong>betoonääriskivi 100×200×500 mm</strong> on tavaliselt mõistlikum valik (8–14 €/jm, eluiga 20–30 a). Avalik ala, intensiivse liiklusega tänav, esinduslik objekt või kui äärt näeb pidevalt — <strong>graniidist äär 100×200×1000 mm</strong> tasub end ära (45–75 €/jm, eluiga 80–100+ aastat). Mõlemad järgivad <strong>EVS-EN 1340</strong> ja <strong>EVS-EN 1342</strong> standardeid. Hinnapäring 1 minutiga — <a href="/kalkulaator/">kalkulaator</a>.
+</div>
+
+<h2>Miks äär on tänavakivi paigaldusel kriitiline element?</h2>
+
+<p>Äär hoiab kogu sillutuse kokku. Tänavakivi pakib end <em>külgsuunalisest survest</em> — kui auto pöörab või lumesahk libistab, lükkavad kivid üksteist 1–3 mm aastas väljapoole. Ilma korraliku ääreta levib see liikumine 5–8 aastaga 2–4 cm kaugusele ja servakivid hakkavad vajuma. Korralikult betoonile (C20/25, vähemalt 100 mm paksune sängitusbetoon) paigaldatud äär hoiab tänavakivi paigal 25+ aastat.</p>
+
+<p>EVS 901-3 standard nõuab kõikidelt sillutiseäärtelt vähemalt 100 mm sügavust betooni alusele ja 50 mm külgmist betoonkanti (nn <em>külgtugi</em>). Seda nõuet rikub Eestis ligi 40% odavpaigaldusi — visuaalselt pole vahet näha, kuid 4–5 aasta pärast hakkab äär kanduma. Kui tellid <a href="/tanavakivi-paigaldus-hind/">tänavakivi paigaldust</a>, küsi alati eraldi ka ääre paigaldustehnoloogiat.</p>
+
+<h3>Mida äär tegelikult tegema peab?</h3>
+
+<ul>
+  <li><strong>Külgsurve neelamine</strong> — auto pööramisel, parkimisel, lumetõrjel</li>
+  <li><strong>Veejuhtimine</strong> — kalle 1–2% ääreni viib pinnavee rentslisse</li>
+  <li><strong>Visuaalne piir</strong> — eraldab sillutise muru, kruusa või asfaldi pinnast</li>
+  <li><strong>Mehaaniline kaitse</strong> — tagab, et muruniiduki tera ei lähe sillutuse alla</li>
+  <li><strong>Talvine vastupidavus</strong> — sahatera löök peab äär üle elama vähemalt 100 talve</li>
+</ul>
+
+<h2>Betoonääriskivi — odav, kiire, 90% objektidest piisav</h2>
+
+<p>Betoonääriskivi (EVS-EN 1340) on Eestis kõige levinum lahendus. Standardmõõdud on <strong>100×200×500 mm</strong> (eramutele) ja <strong>150×300×1000 mm</strong> (avalikele aladele, parklatele, tänavatele). Tehased Brikers, Aroc ja Premia toodavad neid hallis, antratsiidis, pruunis ja punases — saadavalt on ka faasitud servaga (esteetilisem) ja sirge servaga (odavam) variandid.</p>
+
+<h3>Betoonääriskivi hind 2026</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mõõt (mm)</th>
+      <th>Kasutus</th>
+      <th>Materjal (€/jm)</th>
+      <th>Paigaldus (€/jm)</th>
+      <th>Kokku paigaldatuna (€/jm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>80×200×500 (õhuke)</td>
+      <td>Murupiire, kõnniteed</td>
+      <td>3,50–5,50</td>
+      <td>4,50–7,00</td>
+      <td><strong>8–12,50</strong></td>
+    </tr>
+    <tr>
+      <td>100×200×500</td>
+      <td>Eramu sissesõit, õu</td>
+      <td>4,80–7,50</td>
+      <td>6,00–9,00</td>
+      <td><strong>11–16,50</strong></td>
+    </tr>
+    <tr>
+      <td>150×300×1000</td>
+      <td>Tänav, parkla, avalik ala</td>
+      <td>9,00–14,00</td>
+      <td>8,00–12,00</td>
+      <td><strong>17–26</strong></td>
+    </tr>
+    <tr>
+      <td>Faasitud serv + värv</td>
+      <td>Esteetilise nõudega objektid</td>
+      <td>+1,50–3,00</td>
+      <td>sama</td>
+      <td>+1,50–3,00 lisaks</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Konkreetsemad piirkondlikud hinnad: <a href="/aarekivi-paigaldus-tallinn-hind/">aarekivi paigaldus Tallinn hind</a>, <a href="/aarekivi-paigaldus-tartu-hind/">aarekivi paigaldus Tartu hind</a>. Jooksva meetri arvestusega tehtud kalkulatsioonid leiad lehtedelt <a href="/aarekivi-paigaldus-tallinn-hind-jooksev-meeter/">jooksev meeter Tallinn</a> ja <a href="/aaerekivi-paigaldus-tartu-hind-jooksva-meetri-kohta/">jooksva meetri kohta Tartu</a>.</p>
+
+<h3>Betoonääriskivi plussid ja miinused</h3>
+
+<p><strong>Plussid:</strong></p>
+<ul>
+  <li>Hind 4–8x odavam kui graniit</li>
+  <li>Eluiga eramul realistlikult 25–30 aastat</li>
+  <li>Lai värvivalik (hall, antratsiit, pruun, punane, kollane)</li>
+  <li>Saadavus — Brikers, Aroc, Premia hoiavad laos kõiki standardmõõte</li>
+  <li>Paigaldus kiirem (25–40 jm/päevas vs graniidil 12–20 jm/päevas)</li>
+  <li>Defekti korral saab ühe kivi vahetada ilma terve rea lahti võtmata</li>
+</ul>
+
+<p><strong>Miinused:</strong></p>
+<ul>
+  <li>Soolakahjustused 8–12 aasta järel hakkavad pinda purustama (eriti tänavatel)</li>
+  <li>Värv pleegib 5–10 aastaga 1–2 tooni heledamaks</li>
+  <li>Sahatera löök võib serva killustada (eriti faasitud variandid)</li>
+  <li>Esindusobjektidel võib tunduda "odav" lahendus</li>
+</ul>
+
+<div class="warning">
+  <strong>NB!</strong> Odavam betoonääriskivi (alla 4 €/jm materjalina, sageli "kaubahalliboksist") on tihti madalama betooniklassiga (C25/30 asemel C20/25) ja külmakindluse tunnusnumber on F100 asemel F50. Eesti talve jaoks on F100 miinimum. Küsi tarnijalt alati EVS-EN 1340 sertifikaat ja külmakindluse näit.
+</div>
+
+<h2>Graniidist äär — 80+ aastat, esteetiline, kallis</h2>
+
+<p>Graniidist äär (EVS-EN 1342) on Eestis kasutusel peamiselt vanalinnades, esinduslike äripindade ees, parkide alleedel ja kõrgekvaliteedilistel eramutel. Põhilised tarnimisriigid on <strong>Soome</strong> (parim kvaliteet, ka kallim, 60–75 €/jm paigaldatuna), <strong>Hiina</strong> (kõige levinum hinna-kvaliteedi suhe, 35–55 €/jm), <strong>India</strong> (sageli punakam toon, 40–60 €/jm) ja <strong>Skandinaavia</strong> (hall, väga ühtlane, 55–70 €/jm).</p>
+
+<h3>Graniidist ääre hind ja töötlused</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Töötlus</th>
+      <th>Välimus</th>
+      <th>Päritolu</th>
+      <th>Hind paigaldatuna (€/jm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lõhutud (looduslik)</td>
+      <td>Rustikaalne, ebatasane pind</td>
+      <td>Hiina, India</td>
+      <td><strong>35–48</strong></td>
+    </tr>
+    <tr>
+      <td>Pommitud (flame)</td>
+      <td>Karestatud, libisemiskindel</td>
+      <td>Hiina, Soome</td>
+      <td><strong>42–58</strong></td>
+    </tr>
+    <tr>
+      <td>Saetud + pommitud</td>
+      <td>Korrektne serv, karestatud pind</td>
+      <td>Soome, Skandinaavia</td>
+      <td><strong>50–68</strong></td>
+    </tr>
+    <tr>
+      <td>Lihvitud / poleeritud</td>
+      <td>Esindusobjektid, sisehoovid</td>
+      <td>Soome, Skandinaavia</td>
+      <td><strong>60–80</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Graniidi sissesõidu paigalduse näide on koondatud lehel <a href="/graniitkivi-sissesoidu-paigaldus-tallinn/">graniitkivi sissesõidu paigaldus Tallinn</a>. Kui kaalud graniiti kogu sillutise piires, vt ka <a href="/blog/tanavakivi-paigalduse-hind-m2-2026/">tänavakivi paigalduse hind m² 2026</a>.</p>
+
+<h3>Graniidist ääre plussid ja miinused</h3>
+
+<p><strong>Plussid:</strong></p>
+<ul>
+  <li>Eluiga realistlikult 80–100+ aastat (vanalinna äärekivid on sageli 150+ aastat vanad ja töötavad)</li>
+  <li>Soolakindel — talvise teehoolduse soolad ei mõjuta</li>
+  <li>Värv ei pleegi — looduslik kivi säilitab tooni</li>
+  <li>Esteetiline väärtus — tõstab kinnisvara väärtust 2–4% (eramutel)</li>
+  <li>Sahatera taluvus — kümme korda kõvem kui betoon</li>
+  <li>Tükikaal 80–150 kg/jm — ei nihku külgsurve all</li>
+</ul>
+
+<p><strong>Miinused:</strong></p>
+<ul>
+  <li>Hind 4–8x kõrgem kui betoonil</li>
+  <li>Paigaldus aeglasem ja füüsiliselt nõudlikum (vähemalt 2-mehe meeskond)</li>
+  <li>Üksiku kivi vahetus keerukas — tihti tuleb tellida eritarne</li>
+  <li>Hiina graniidi kvaliteedi kõikumine (külmakindluse näit varieerub partiitilt)</li>
+  <li>Tarnimisaeg Soomest või Skandinaaviast 4–8 nädalat</li>
+</ul>
+
+<div class="cta-strip">
+  <div>
+    <strong>Saa hind 1 minutiga.</strong> Kalkulaator või otse projekt — vastame samal päeval.
+  </div>
+  <div>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Otsene võrdlus — betoonääriskivi vs graniidist äär</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kriteerium</th>
+      <th>Betoonääriskivi</th>
+      <th>Graniidist äär</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hind paigaldatuna (€/jm)</td>
+      <td>8–18</td>
+      <td>35–75</td>
+    </tr>
+    <tr>
+      <td>Eluiga eramul</td>
+      <td>25–30 aastat</td>
+      <td>80–100+ aastat</td>
+    </tr>
+    <tr>
+      <td>Eluiga tänavatingimustes</td>
+      <td>15–20 aastat</td>
+      <td>60–80 aastat</td>
+    </tr>
+    <tr>
+      <td>Soolakindlus</td>
+      <td>Keskmine (F100)</td>
+      <td>Väga hea (looduslik)</td>
+    </tr>
+    <tr>
+      <td>Värvi püsivus</td>
+      <td>Pleegib 1–2 tooni</td>
+      <td>Püsib muutumatuna</td>
+    </tr>
+    <tr>
+      <td>Standardpikkus (mm)</td>
+      <td>500 või 1000</td>
+      <td>500, 800 või 1000</td>
+    </tr>
+    <tr>
+      <td>Kaal (kg/jm)</td>
+      <td>20–35</td>
+      <td>80–150</td>
+    </tr>
+    <tr>
+      <td>Paigaldus kiirus (jm/päevas)</td>
+      <td>25–40</td>
+      <td>12–20</td>
+    </tr>
+    <tr>
+      <td>Üksiku kivi vahetus</td>
+      <td>Lihtne</td>
+      <td>Keerukas (eritellimus)</td>
+    </tr>
+    <tr>
+      <td>Värvivalik</td>
+      <td>Lai (5–8 standardvärvi)</td>
+      <td>Piiratud (hall, must, punakas)</td>
+    </tr>
+    <tr>
+      <td>Visuaalne ootus</td>
+      <td>Modernne, korrektne</td>
+      <td>Klassikaline, esinduslik</td>
+    </tr>
+    <tr>
+      <td>Standard</td>
+      <td>EVS-EN 1340</td>
+      <td>EVS-EN 1342</td>
+    </tr>
+    <tr>
+      <td>Garantii materjalile</td>
+      <td>2 aastat (B Grupp)</td>
+      <td>2 aastat (B Grupp)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Millal kumb äär? — konkreetsed soovitused objektitüübi järgi</h2>
+
+<h3>Eramu sissesõit (3,5–6 m laia, 50–120 m²)</h3>
+
+<p><strong>Soovitus: betoonääriskivi 100×200×500 mm</strong>, faasitud serv, antratsiidhall. Hind 11–16 €/jm, kogumaksumus tüüpsel 35 jm pikkusel ääril 380–560 €. Eluiga 25–30 aastat, mis tähendab, et kui ehitad kodu 35-aastaselt, jõuab äär peaaegu pensionini. Graniit oleks ülevarudega lahendus (2500–3000 € sama ääre eest), mis annab kosmeetilist eelist, mitte funktsionaalset.</p>
+
+<p>Erand: kui kogu sillutis on graniit (vt <a href="/graniitkivi-sissesoidu-paigaldus-tallinn/">graniitkivi sissesõit</a>) või klassikalise arhitektuuriga maja, siis graniidist äär peab silmas, et tervik mõjuks ühtsena. Konkreetsete piirkondade hinnad on lehel <a href="/sissesoidu-sillutus-tallinn-hind-2026/">Tallinn 2026</a>, <a href="/sissesoidu-sillutus-parnu-eramaja-hind/">Pärnu</a> ja <a href="/sissesoidutee-sillutus-saue-hind-m2/">Saue</a>.</p>
+
+<h3>Eramu õu ja kõnnitee (50–250 m²)</h3>
+
+<p><strong>Soovitus: betoonääriskivi 80×200×500 mm</strong> (õhuke variant). Murupiirina piisab täiesti — koormus väike, kosmeetiline väärtus oluline. Hind 8–12 €/jm. Vt projektitüüpe lehtedel <a href="/oue-sillutus-100m2-pakett-hind/">100 m² pakett</a>, <a href="/oue-sillutus-harjumaa-50m2-hind/">50 m² Harjumaa</a> ja <a href="/oue-sillutus-100-200m2-pakettpakkumine/">100–200 m² pakettpakkumine</a>.</p>
+
+<h3>Korteriühistu kõnnitee ja parkla (200–800 m²)</h3>
+
+<p><strong>Soovitus: betoonääriskivi 150×300×1000 mm</strong> (parkla servad), 100×200×500 mm (kõnniteed). Suurem äär parkla servas seetõttu, et autode külgsurve on intensiivne ja sahaliikumine talvel sage. Vt <a href="/konnitee-sillutus-korteriuhistule-hind/">korteriühistu kõnnitee hind</a> ja <a href="/konnitee-paigaldus-parnu-korteriuhistule/">Pärnu korteriühistule</a>.</p>
+
+<h3>Äripinna parkla ja sissesõit (300+ m²)</h3>
+
+<p><strong>Soovitus: betoonääriskivi 150×300×1000 mm</strong> põhilahendusena, peasissesõitudel võib kaaluda <strong>graniidist pommitud äärt</strong> esinduse mõttes. Hind betoonile 17–26 €/jm, graniidile 45–58 €/jm. Vt <a href="/parkla-sillutus-arikinnistu-harjumaa-hind/">äripinna parkla Harjumaa</a>.</p>
+
+<h3>Vanalinn, ajalooline keskkond, esinduslik äripind</h3>
+
+<p><strong>Soovitus: graniidist äär saetud + pommitud või lõhutud</strong>. Siin ei ole valikuline — muinsuskaitse ja arhitektuurne kontekst nõuavad ajaloolist materjali. Vt <a href="/tanavakivi-paigaldus-keskaegne-muster-vanalinn/">keskaegne muster vanalinnas</a>.</p>
+
+<h3>Avalik tänav ja munitsipaaltöö</h3>
+
+<p><strong>Soovitus: graniidist äär</strong>, eelistatult Soome või Skandinaavia päritolu. Põhjus: 60–80-aastane eluiga vs 15–20 aastat betoonil; soolakindlus; vandalismi- ja õnnetusekindlus.</p>
+
+<h2>Ääre paigaldustehnoloogia — mis tegelikult eluiga määrab</h2>
+
+<p>Sõltumata sellest, kas valid betooni või graniidi, määrab tegeliku eluea <strong>aluse ettevalmistus</strong>. Sama betoonääriskivi võib korraliku alusega kesta 30 aastat ja kehva alusega 5 aastat. Detailne juhend on lehel <a href="/blog/sillutuskivi-aluse-ettevalmistus/">sillutuskivi aluse ettevalmistus</a>.</p>
+
+<h3>Õige paigalduse tehnilised nõuded</h3>
+
+<ol>
+  <li><strong>Kaevikusügavus:</strong> äär + 100 mm betoonkihti + 150 mm killustikku = vähemalt 350 mm kogu sügavust</li>
+  <li><strong>Killustik:</strong> fraktsioon 4–32 mm, tihendatud kihthaaval (igaüks 80–100 mm) tihedusele 95% Proctorist</li>
+  <li><strong>Sängitusbetoon:</strong> C20/25 (eramu) või C25/30 (parkla, tänav), paksus vähemalt 100 mm</li>
+  <li><strong>Külgtugi:</strong> betoonist 50–80 mm külgkaldjoonega 30°–45° (nn "kanti")</li>
+  <li><strong>Kõrguskalle:</strong> ülemine serv asfaldist 8–12 cm kõrgemal (autosillutuse poolt 10–15 cm), murust 3–5 cm</li>
+  <li><strong>Pikisuunaline vuuk:</strong> 3–5 mm laia, täidetud kvarts-tsementseguga (1:3)</li>
+  <li><strong>Tihendamine:</strong> ääri ei tihendata raputiga — tihendus toimub aluse käigus</li>
+</ol>
+
+<p>Kui mõni etapp on ära jäetud (eriti külgtugi või sängitusbetooni paksus), näeb äär esimese aasta korralik välja, kuid 3.–5. talvel hakkab vajuma või kalduma. Selle ennetamine on odavam kui parandus — vt ka <a href="/blog/tanavakivi-hooldus-kevadel/">tänavakivi hooldus kevadel</a>.</p>
+
+<h2>Kui palju ääriskivisid sa tegelikult vajad? — arvutus</h2>
+
+<p>Tüüpsel eramu objektil arvuta jooksvad meetrid lihtsalt:</p>
+
+<ul>
+  <li><strong>Sissesõit (4 m lai, 12 m pikk = 48 m²):</strong> 12 jm × 2 külge + 4 jm tagaserv = <strong>28 jm</strong></li>
+  <li><strong>Õuesillutis (8×10 m = 80 m²):</strong> ümbermõõt 36 jm − asukohad muru ääres ja maja ääres − uksed = <strong>~28 jm</strong></li>
+  <li><strong>Kõnnitee maja ümber (1,2 m lai, 25 m pikk):</strong> 2 × 25 + 2 × 1,2 = <strong>52,4 jm</strong></li>
+  <li><strong>Tüüpne 100 m² eramuprojekt kokku:</strong> <strong>50–80 jm äärt</strong></li>
+</ul>
+
+<p>Betoonääriskivina (100×200×500) kaal on tüüpsel eramuobjektil 1500–2400 kg, graniidina 4000–10 000 kg — see mõjutab transpordikulu (€100–250 tihti eraldi). Eesti üks suuremaid sillutiseobjekte, mille B Grupp on teostanud, on kuni <strong>2 500 m²</strong> ja kogumaksumusega kuni <strong>200 000 €</strong>; sellise mõõtmega projektidel arvutatakse ääre hind sageli eraldi positsioonina pakkumises.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Soodne ja kiire — saa hind kohe.</strong> 1 minutiga, ilma kohapealse külastuseta.
+  </div>
+  <div>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/kalkulaator/">kalkulaator</a>
+  </div>
+</div>
+
+<h2>Levinud vead ääre valimisel ja paigaldusel</h2>
+
+<ol>
+  <li><strong>"Säästan ääre pealt"</strong> — ehk paigaldatakse 50 mm sängitusbetooniga (norm 100 mm). Tulemus: 4–6 aasta järel hakkab äär kalduma. Säästsid 3 €/jm, kaotad 18 €/jm parandustööna.</li>
+  <li><strong>Õhuke äär autoteele</strong> — 80 mm äär eramu sissesõidul kannab külgsurvet, kuid talub vaid kerget liiklust. Sissesõidule peab olema vähemalt 100 mm laiune äär.</li>
+  <li><strong>Vale värv</strong> — pruun betoonääriskivi pleegib 5 aastaga halliks. Kui tahad pruuni tooni pikemaks ajaks, vali graniidist roosa või punakas (India).</li>
+  <li><strong>Liiga madal ülemine serv</strong> — kui äär on murust ainult 1 cm kõrgem, kasvab muru üle ja sahatera saab ääre serva pihta. Norm: 3–5 cm kõrgemal murupinnast.</li>
+  <li><strong>Vuukimata äär</strong> — kui pikisuunaline vuuk jääb täitmata, tungib vesi alla ja talvel külmub. Kahjustub esimese 2–3 talvega.</li>
+  <li><strong>"Ühte tüüpi äär kogu objektile"</strong> — kõnniteele võib panna õhukese (80 mm), parkla serva paksu (150 mm). Sama paksuse kasutamine on raha raiskamine.</li>
+</ol>
+
+<h2>Hinnaindikatsioonid piirkondade kaupa</h2>
+
+<p>Hinnad varieeruvad logistika ja kohaliku konkurentsi tõttu. Suunavad numbrid 2026. aastaks:</p>
+
+<ul>
+  <li><strong>Tallinn ja Harjumaa:</strong> betoon 11–16 €/jm, graniit 42–68 €/jm. Vt <a href="/aarekivi-paigaldus-tallinn-hind/">Tallinn</a>, <a href="/aarekivi-paigaldus-tallinn-hind-jooksev-meeter/">jooksev meeter Tallinn</a>, <a href="/tanavakivi-paigaldus-keila-hind/">Keila</a>, <a href="/tanavakivi-paigaldus-harku-vald/">Harku</a>, <a href="/tanavakivi-paigaldus-rae-vald/">Rae vald</a>, <a href="/tanavakivi-paigaldus-maardu-hind-m2/">Maardu</a>, <a href="/tanavakivi-paigaldus-lasnamae-hind/">Lasnamäe</a>, <a href="/tanavakivi-paigaldus-paldiski-mnt-piirkond/">Paldiski mnt</a></li>
+  <li><strong>Tartu ja Tartumaa:</strong> betoon 10–14 €/jm, graniit 38–60 €/jm. Vt <a href="/aarekivi-paigaldus-tartu-hind/">Tartu</a>, <a href="/aarekivi-paigaldus-tartu-hind-jm/">jm Tartu</a>, <a href="/aarekivi-paigaldus-tartu-hind-jooksva-meetri/">jooksva meetri Tartu</a></li>
+  <li><strong>Pärnu ja Pärnumaa:</strong> betoon 10–15 €/jm, graniit 40–62 €/jm. Vt <a href="/tanavakivi-paigaldus-parnu-hind/">Pärnu</a>, <a href="/sissesoidutee-sillutus-parnu/">sissesõidutee Pärnu</a>, <a href="/sissesoidu-sillutus-parnumaa-hind/">Pärnumaa</a>, <a href="/oue-sillutus-parnumaa-eramule/">Pärnumaa eramule</a>, <a href="/betoonkivi-paigaldus-parnumaa-hind-m2/">betoonkivi Pärnumaa</a>, <a href="/sillutuskivi-paigaldus-parnumaa-suvehooaeg/">suvehooaeg Pärnumaa</a>, <a href="/tanavakivi-paigaldus-parnu-suvilale/">Pärnu suvilale</a></li>
+  <li><strong>Narva ja Ida-Virumaa:</strong> betoon 9–13 €/jm, graniit 36–55 €/jm. Vt <a href="/tanavakivi-paigaldus-narva-hind/">Narva</a>, <a href="/tanavakivi-paigaldus-rakvere-hind/">Rakvere</a></li>
+</ul>
+
+<p>Kalkulatsiooniks on kõige kiirem viis <a href="/kalkulaator/">kalkulaator</a> — saad hinna 1 minutiga.</p>
+
+<h2>KKK — ääre valik 2026</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kas betoonääriskivi kestab eramu sissesõidul tõesti 25–30 aastat?</summary>
+    <p>Jah, kui paigaldus on EVS-EN 1340 ja EVS 901-3 nõuetega kooskõlas: vähemalt 100 mm C20/25 sängitusbetooni, 50–80 mm külgtugi, 150 mm killustikualus 95% tihendusega. Tehase sertifitseeritud kivi (F100 külmakindlus) talub Eesti talve. B Grupp annab oma tööle 2-aastase paigaldusgarantii — pikem garantii ei oleks ausalt antud, sest tegelik talitlus sõltub liikluskoormusest, hooldusest ja talvistest tingimustest.</p>
+  </details>
+  <details>
+    <summary>Kas tasub maksta graniidi eest 4x rohkem, kui see kestab 4x kauem?</summary>
+    <p>Eramul mitte alati. Aritmeetiliselt ei: 35 jm graniiti maksab 1800 €, betoon 500 € — vahe 1300 €. Selle eest saad 60–70 aastat lisaeluiga, mille jooksul vahetad betooni 2 korda (igakordne 500 €). Säästad arvuliselt 300 €. Aga: betooni vahetus on lammutustöö, tolm, paari nädala olemine, tõenäoliselt ka sillutise serv tuleb lahti võtta. Esindusobjektil, korteriühistul või ärihoonel, kus äri häirimine on kallis, õigustab graniit end peaaegu alati.</p>
+  </details>
+  <details>
+    <summary>Mis on Hiina graniidi ja Soome graniidi sisuline vahe?</summary>
+    <p>Soome graniit (peamiselt Kuru hall või Balmoral red) on 320–360 MPa survetugevusega, külmakindlus F300+, tooni ühtlus partii ulatuses 95%+. Hiina graniidi survetugevus on 180–280 MPa, külmakindlus F100–F200, tooni varieeruvus partii lõikes 5–15%. Hiina graniit on eramu jaoks täiesti piisav, Soome graniit on tellitud avalikele aladele või kui ootus ühtlasele toonile on kriitiline. Hinnavahe paigaldatuna on tüüpiliselt 12–20 €/jm.</p>
+  </details>
+  <details>
+    <summary>Kas saab kasutada graniidist äärt koos betoonist sillutuskividega (või vastupidi)?</summary>
+    <p>Jah, see on tegelikult väga levinud kombinatsioon. Graniidist äär + betoonsillutus annab esindusliku piiri suhteliselt mõistliku hinnaga (sillutuse pind moodustab 80%+ kogumaksumusest). Vastupidine kombinatsioon — betoonääriskivi + graniidist sillutus — on harvem, kuid funktsionaalselt töötab. Visuaalne soovitus: kui sillutus on graniit, eelista ka graniidist äärt, sest betoonääriskivi mõjub kontrastselt "odavana".</p>
+  </details>
+  <details>
+    <summary>Kas saan vana betoonääriskivi taaskasutada uue paigaldusena?</summary>
+    <p>Üksikud terved kivid saab taaskasutada, kuid mitte kogu rida. Kui äär on olnud paigas üle 10 aasta, on betooni külmakindlus juba kulunud ja uus tsükkel hakkab kahjustust kiirendama. Lisaks on vanade kivide mõõdud sageli 2–4 mm väiksemad (kulumine), mis põhjustab uutel paigalduseks ebaühtlased vuugid. Tavaliselt soovitame taaskasutada 10–20% kividest dekoratiivse elemendina (näiteks lillepeenra ääres), ülejäänud läheb prügilasse.</p>
+  </details>
+</div>
+
+<h2>Kokkuvõte</h2>
+
+<p>Betoonääriskivi on 90% Eesti eramutest ja korteriühistute objektidest mõistlik valik — 8–18 €/jm paigaldatuna, eluiga 25–30 aastat, kõigist standardsetest värvitoonidest. Graniidist äär (35–75 €/jm) õigustab end vanalinnas, esinduslikel äripindadel, avalikel tänavatel ja juhul, kui kogu sillutis on graniidist. Kummalgi materjalil on oma roll — vale on valida graniiti odava eramu sissesõidule või betooni vanalinna kõrvale.</p>
+
+<p>Olulisem kui materjal on <strong>paigalduse kvaliteet</strong>: 100 mm C20/25 sängitusbetoon, 50–80 mm külgtugi, 150 mm tihendatud killustikualus. Selle kompromissita lahenduse pakume B Grupis igale objektile — väiksematest aiaääredest kuni 2 500 m² parklateni. Asutatud 2021, registreeritud Tallinnas (Balcon Grupp OÜ, 16294742).</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Otsus tehtud? Saa hind 1 minutiga.</strong> CEO Keio Soo vastab personaalselt päringutele.
+  </div>
+  <div>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Seotud lehed</h2>
+
+<div class="related-grid">
+  <a href="/blog/tanavakivi-paigalduse-hind-m2-2026/">Tänavakivi paigalduse hind m² 2026</a>
+  <a href="/blog/sillutuskivi-aluse-ettevalmistus/">Sillutuskivi aluse ettevalmistus</a>
+  <a href="/blog/tanavakivi-hooldus-kevadel/">Tänavakivi hooldus kevadel</a>
+  <a href="/blog/tanavakivi-vuugiliiv-polümeerne-vs-tavaline/">Tänavakivi vuugiliiv polümeerne vs tavaline</a>
+  <a href="/blog/sillutuskivi-paigaldus-load-ja-projekteerimine/">Sillutuskivi paigaldus — load ja projekteerimine</a>
+  <a href="/blog/tanavakivi-parkla-paigaldus-arihoonele/">Tänavakivi parkla paigaldus ärihoonele</a>
+  <a href="/blog/tanavakivi-paigaldus-kuressaare/">Tänavakivi paigaldus Kuressaare</a>
+  <a href="/blog/tanavakivi-paigaldus-pohja-tallinn/">Tänavakivi paigaldus Põhja-Tallinn</a>
+  <a href="/aarekivi-paigaldus-tallinn-hind/">Äärekivi paigaldus Tallinn — hind</a>
+  <a href="/aarekivi-paigaldus-tartu-hind/">Äärekivi paigaldus Tartu — hind</a>
+  <a href="/graniitkivi-sissesoidu-paigaldus-tallinn/">Graniitkivi sissesõidu paigaldus Tallinn</a>
+  <a href="/kalkulaator/">Kalkulaator — saa hind 1 minutiga</a>
+  <a href="/blog/">Kõik artiklid</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://bgrupp.ee/blog/tanavakivi-aaretugi-betoonist-vs-graniidist/#article",
+      "headline": "Tänavakivi äär — betoonääriskivi vs graniidist äär 2026",
+      "description": "Betoonääriskivi (8–18 €/jm) ja graniidist ääre (35–75 €/jm) konkreetne võrdlus — eluiga, hind, paigaldus ja millal kumb valida eramul või avalikul alal.",
+      "datePublished": "2026-06-01",
+      "dateModified": "2026-06-01",
+      "inLanguage": "et-EE",
+      "url": "https://bgrupp.ee/blog/tanavakivi-aaretugi-betoonist-vs-graniidist/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bgrupp.ee/blog/tanavakivi-aaretugi-betoonist-vs-graniidist/"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "Tegevjuht",
+        "telephone": "+372 58374422",
+        "email": "Balcongrupp@gmail.com",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Balcon Grupp OÜ"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "alternateName": "B Grupp",
+        "url": "https://bgrupp.ee/",
+        "telephone": "+372 58374422",
+        "email": "Balcongrupp@gmail.com",
+        "identifier": "16294742",
+        "foundingDate": "2021-08-18",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "EE"
+        }
+      },
+      "keywords": "tänavakivi ääriskivi võrdlus, betoonääriskivi, graniidist äär, äärekivi hind 2026, EVS-EN 1340, EVS-EN 1342"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bgrupp.ee/blog/tanavakivi-aaretugi-betoonist-vs-graniidist/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kas betoonääriskivi kestab eramu sissesõidul tõesti 25–30 aastat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah, kui paigaldus on EVS-EN 1340 ja EVS 901-3 nõuetega kooskõlas: vähemalt 100 mm C20/25 sängitusbetooni, 50–80 mm külgtugi, 150 mm killustikualus 95% tihendusega. Tehase sertifitseeritud kivi (F100 külmakindlus) talub Eesti talve. B Grupp annab oma tööle 2-aastase paigaldusgarantii."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas tasub maksta graniidi eest 4x rohkem, kui see kestab 4x kauem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eramul mitte alati — aritmeetiliselt säästad ainult ~300 € eluea jooksul. Esindusobjektil, korteriühistul või ärihoonel, kus äri häirimine vahetuse ajal on kallis, õigustab graniit end peaaegu alati."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mis on Hiina graniidi ja Soome graniidi sisuline vahe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Soome graniit on 320–360 MPa survetugevusega, külmakindlus F300+, tooniühtlus partiis 95%+. Hiina graniit on 180–280 MPa, F100–F200 külmakindlus, tooni varieeruvus 5–15%. Hiina graniit on eramu jaoks piisav, Soome on tellitud avalikele aladele või kui tooniühtlus on kriitiline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas saab kasutada graniidist äärt koos betoonist sillutuskividega?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah, see on Eestis väga levinud kombinatsioon. Graniidist äär + betoonsillutus annab esindusliku piiri suhteliselt mõistliku hinnaga, sest sillutuse pind moodustab 80%+ kogumaksumusest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas saan vana betoonääriskivi taaskasutada uue paigaldusena?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Üksikud terved kivid saab taaskasutada (näiteks lillepeenra ääres), kuid mitte kogu rida — 10+ aastat vanade kivide külmakindlus on juba kulunud ja mõõtmed 2–4 mm väiksemad, mis põhjustab ebaühtlasi vuuke."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bgrupp.ee/blog/tanavakivi-aaretugi-betoonist-vs-graniidist/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://bgrupp.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://bgrupp.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tänavakivi äär — betoonääriskivi vs graniidist äär 2026",
+          "item": "https://bgrupp.ee/blog/tanavakivi-aaretugi-betoonist-vs-graniidist/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>B Grupp</h4>
+        <p style="color:#86efac">B Grupp — soodsa hinnaga tänavakivi paigaldus eramajadele üle Eesti. Fikseeritud hind, kiire algus.</p>
+        <p style="margin-top:12px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com</p>
+      </div>
+      <div>
+        <h4>Hinnad</h4>
+        <a href="#hinnad">Eramaja õu — 16 €/m²</a>
+        <a href="#hinnad">Tänavakivi tervik — 28 €/m²</a>
+        <a href="#hinnad">Graniit premium — 35 €/m²</a>
+        <a href="#hinnad">Äärekivi — 24 €/jm</a>
+      </div>
+      <div>
+        <h4>Piirkond</h4>
+        <a href="#">Tallinn ja Harjumaa</a>
+        <a href="#">Tartu ja Tartumaa</a>
+        <a href="#">Pärnu ja Pärnumaa</a>
+        <a href="#">Üle Eesti</a>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <a href="#kkk">Korduma kippuvad küsimused</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#">Privaatsuspoliitika</a>
+        <a href="#">Tingimused</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 B Grupp · Reg nr 16294742 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">⚡ Saa hind</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin saada kiiret hinnapakkumist sillutuse paigalduseks." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

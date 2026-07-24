@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi paigaldus ise vs tellida – mis läheb | B Grupp</title>
+  <meta name="description" content="Võrdlus DIY ja professionaalse paigalduse vahel: aeg, tööriistad, vead ja lõpphind ruutmeetri kohta. Saa hind 1 minutiga. Fikseeritud lepingus, kiire algus">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bgrupp.ee/blog/tanavakivi-paigaldus-vs-omal-jou-tee-ise/">
+
+  <meta property="og:title" content="Tänavakivi paigaldus ise vs tellida – mis läheb">
+  <meta property="og:description" content="Võrdlus DIY ja professionaalse paigalduse vahel: aeg, tööriistad, vead ja lõpphind ruutmeetri kohta. Saa hind 1 minutiga. Fikseeritud lepingus, kiire algus">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bgrupp.ee/blog/tanavakivi-paigaldus-vs-omal-jou-tee-ise/">
+  <meta property="og:image" content="https://bgrupp.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f7fdf9;--surface:#fff;--ink:#052e1a;--ink-2:#15543a;--muted:#5b8071;
+      --accent:#16a34a;--accent-dark:#15803d;--accent-soft:#dcfce7;
+      --line:#d1fae5;--success:#15803d;--warn:#b45309;--radius:12px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(5,46,26,.08);
+      --shadow-lg:0 10px 30px rgba(5,46,26,.12);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:88px 0}}
+
+    h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+    h1{font-size:clamp(2.1rem,5vw,3.4rem)}
+    h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:.5em}
+    h3{font-size:1.2rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1140px;margin:0 auto;gap:14px}
+    .brand{font-weight:900;font-size:1.2rem;letter-spacing:-.02em;display:inline-flex;align-items:baseline;gap:2px}
+    .brand b{color:var(--accent)}
+    .brand small{font-size:.7rem;color:var(--muted);font-weight:700;margin-left:6px;text-transform:uppercase;letter-spacing:.05em}
+    .top-cta{display:flex;align-items:center;gap:10px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem;white-space:nowrap}
+    @media(max-width:560px){.top-phone{display:none}}
+
+    /* Speed strip */
+    .speed-strip{background:var(--ink);color:#bbf7d0;font-size:.85rem;padding:8px 20px;text-align:center;font-weight:600}
+    .speed-strip strong{color:#fff}
+
+    /* Hero */
+    .hero{padding-top:48px;padding-bottom:32px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+    .hero-grid{display:grid;gap:32px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;gap:48px}.hero{padding-top:72px;padding-bottom:56px}}
+    .hero h1{margin-bottom:.4em}
+    .hero h1 mark{background:var(--accent-soft);color:var(--accent-dark);padding:0 .15em;border-radius:6px}
+    .hero .lead{margin-bottom:24px}
+
+    /* Big price tile */
+    .price-tile{display:inline-flex;align-items:baseline;gap:10px;background:var(--accent-soft);padding:14px 18px;border-radius:12px;margin-bottom:20px;border:1px solid var(--line)}
+    .price-tile .num{font-size:2rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.03em;line-height:1}
+    .price-tile .lbl{font-size:.95rem;color:var(--ink-2);font-weight:600}
+
+    /* Bullet list (USPs) */
+    .checks{list-style:none;margin:18px 0 24px;display:grid;gap:8px}
+    .checks li{font-size:1rem;color:var(--ink);padding-left:30px;position:relative}
+    .checks li::before{content:"✓";position:absolute;left:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;font-size:.8rem;font-weight:900;display:grid;place-items:center;top:1px}
+
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:800;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:50px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+
+    /* Quick form */
+    .quick{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-lg);border:2px solid var(--accent)}
+    .quick .label-stripe{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;font-weight:800;padding:4px 10px;border-radius:6px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+    .quick h2{font-size:1.4rem;margin-bottom:.3em}
+    .quick .sub{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+    .field{margin-bottom:12px}
+    .field label{display:block;font-weight:700;font-size:.85rem;color:var(--ink);margin-bottom:5px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    .quick .btn{width:100%;margin-top:6px}
+    .form-foot{margin-top:10px;font-size:.78rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:#fff;border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:24px}}
+    .trust-item .num{font-size:1.7rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.82rem;color:var(--muted);margin-top:2px;font-weight:600}
+
+    /* Pricing cards */
+    .pricing{background:#fff}
+    .pricing-grid{display:grid;gap:18px;margin-top:40px}
+    @media(min-width:760px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
+    .price-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:28px;position:relative;transition:transform .15s,border-color .15s,box-shadow .15s}
+    .price-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .price-card.featured{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft) 0%,#fff 30%)}
+    .price-card .ribbon{position:absolute;top:-12px;left:24px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.05em}
+    .price-card h3{font-size:1.15rem}
+    .price-card .from{font-size:.9rem;color:var(--muted);font-weight:600;margin-top:6px}
+    .price-card .big{font-size:2.2rem;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1;margin-top:4px}
+    .price-card .big small{font-size:1rem;color:var(--muted);font-weight:600}
+    .price-card ul{list-style:none;margin-top:18px}
+    .price-card ul li{font-size:.93rem;color:var(--ink-2);padding:6px 0 6px 22px;position:relative}
+    .price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+    .price-card .btn{width:100%;margin-top:18px}
+
+    /* Process strip */
+    .process{background:var(--ink);color:#fff;padding:48px 0;text-align:center}
+    .process h2{color:#fff}
+    .process .lead{color:#bbf7d0;margin-left:auto;margin-right:auto}
+    .process-grid{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(2,1fr)}
+    @media(min-width:760px){.process-grid{grid-template-columns:repeat(4,1fr)}}
+    .pstep{padding:18px}
+    .pstep .num{font-size:2.5rem;font-weight:900;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .pstep h3{color:#fff;margin-top:8px;font-size:1.05rem}
+    .pstep p{color:#bbf7d0;font-size:.92rem;margin-top:4px}
+
+    /* Gallery */
+    .gallery{background:var(--bg)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:36px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:10px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:780px;margin:40px auto 0}
+    .faq details{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:0;margin-bottom:8px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.4rem;color:var(--accent);transition:transform .15s;flex:none;font-weight:800}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 20px 18px;color:var(--ink-2);font-size:.95rem}
+
+    /* Final CTA */
+    .cta-final{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;text-align:center}
+    .cta-final h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem)}
+    .cta-final p{color:#dcfce7;font-size:1.1rem;max-width:540px;margin:12px auto 24px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:#fff;color:var(--accent-dark)}
+    .cta-final .btn-secondary:hover{background:var(--ink);color:#fff}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--accent-dark)}
+
+    footer{background:#022c1a;color:#86efac;padding:48px 0 28px;font-size:.92rem}
+    .foot-grid{display:grid;gap:28px;margin-bottom:32px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:12px;font-size:1rem}
+    .foot-grid a{color:#bbf7d0;display:block;padding:3px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #064e3b;padding-top:20px;text-align:center;font-size:.85rem}
+
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:46px;padding:11px;font-size:.93rem}
+    @media(max-width:760px){.sticky-bar{display:flex;gap:8px}body{padding-bottom:74px}}
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #16a34a;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">B<b>Grupp</b><small>Soodne sillutus</small></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">📞 +372 58374422</a>
+      <a href="#kontakt-top" class="btn btn-primary" style="padding:9px 14px;min-height:auto;font-size:.9rem">Saa hind</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi paigaldus ise vs tellida – mis läheb tegelikult maksma</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-02.jpg" alt="Tänavakivi paigaldus ise vs tellida – mis läheb tegelikult maksma" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi paigaldus ise vs tellida – mis läheb tegelikult maksma</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span class="meta-date">12. juuli 2026</span> · <span class="meta-author">Keio Soo</span> · <span class="meta-read">8 min lugemist</span>
+</div>
+
+<h1>Tänavakivi paigaldus ise vs tellida – mis läheb tegelikult maksma</h1>
+
+<p class="lead">Kui plaanid ise tänavakivi paigaldada, on esmapilgu säästust reaalselt kasu ainult siis, kui su ajakulu on tasuta ja vead ei sunni sind kihte üles võtma. Meie kalkulatsioonide järgi maksab 50 m² sissesõidutee DIY-na 22–34 €/m² (materjal + rent + oma aeg 0 €), professionaalne pakett sama ala peale 32–48 €/m² koos aluse ja garantiiga.</p>
+
+<div class="answer-card">
+  <strong>Kiirvastus:</strong> DIY säästab teoreetiliselt 8–15 €/m², kuid praktikas kaotad selle vahe tagasi 3 tüüpilise vea kaudu (vale alus, ebapiisav kalle, valed vuugid). Kui sa ei ole varem 30+ m² kivipinda paigaldanud, on tasuvuspunkt professionaalse paigalduse kasuks juba 40 m² juures. B Grupp paigaldab alates <strong>16 €/m²</strong> (töö, ilma alusetöödeta) kuni <strong>45 €/m²</strong> (võtmed kätte). Hinnapakkumise saad 1 minutiga.
+</div>
+
+<div class="cta-strip">
+  <div>
+    <strong>Ei viitsi arvutada?</strong> Saada mõõdud ja saad täpse hinna 1 minutiga.
+  </div>
+  <div class="cta-buttons">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Kui palju maksab tänavakivi paigaldus ise – tegelik arvestus 50 m² sissesõidutee kohta</h2>
+
+<p>Kõige populaarsem DIY-projekt on ühe auto sissesõidutee (30–50 m²) või tagahoovi jalutustee (20–40 m²). Toome välja täieliku kuluarvestuse 50 m² sissesõidutee näitel, kus vali on standardne 60 mm Brikersi tänavakivi (halli või antratsiit-tooniline).</p>
+
+<h3>DIY materjalikulu 50 m² kohta (2026 hinnad)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Materjal/rent</th>
+      <th>Kogus</th>
+      <th>Hind kokku</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Betoonkivi 60 mm (Brikers)</td>
+      <td>50 m²</td>
+      <td>550–850 €</td>
+    </tr>
+    <tr>
+      <td>Killustik 4–16 mm (alus)</td>
+      <td>7,5 m³ (15 cm kihina)</td>
+      <td>150–225 €</td>
+    </tr>
+    <tr>
+      <td>Kivipuru 0–4 mm (paigaldusliiv)</td>
+      <td>2,5 m³ (5 cm)</td>
+      <td>75–120 €</td>
+    </tr>
+    <tr>
+      <td>Geotekstiil TS 30</td>
+      <td>55 m²</td>
+      <td>60–90 €</td>
+    </tr>
+    <tr>
+      <td>Äärekivi + betoon</td>
+      <td>~30 jm</td>
+      <td>180–270 €</td>
+    </tr>
+    <tr>
+      <td>Vuugiliiv (kvartsliiv)</td>
+      <td>3 kotti</td>
+      <td>25–45 €</td>
+    </tr>
+    <tr>
+      <td>Vibroplaadi rent (2 päeva)</td>
+      <td>150 kg klass</td>
+      <td>70–110 €</td>
+    </tr>
+    <tr>
+      <td>Kivilõikaja rent (1 päev)</td>
+      <td>elektriline</td>
+      <td>40–60 €</td>
+    </tr>
+    <tr>
+      <td>Väiketööriistad + kütus</td>
+      <td>kelk, labidas, veetase</td>
+      <td>50–80 €</td>
+    </tr>
+    <tr>
+      <td><strong>KOKKU (materjal + rent)</strong></td>
+      <td><strong>50 m²</strong></td>
+      <td><strong>1 200–1 850 €</strong></td>
+    </tr>
+    <tr>
+      <td><strong>€/m² (ilma tööajata)</strong></td>
+      <td></td>
+      <td><strong>24–37 €/m²</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Kui arvad, et sinu aeg on tasuta, oled saanud kokkuhoiu ~8–15 €/m² võrreldes professionaalse paigaldusega hinnaga 32–48 €/m². <strong>Aga see arvestus ei võta arvesse kolme kriitilist muutujat</strong>, mida DIY-tegija tavaliselt ei mõõda.</p>
+
+<h3>Millised kulud DIY-arvestusest välja jäävad?</h3>
+
+<ul>
+  <li><strong>Vana katte lammutus.</strong> Kui asfalt või vana kivi maas — lisandub 8–15 €/m² lammutus- ja äraveokulu. Vt <a href="/blog/tanavakivi-lammutus-ja-vana-katte-eemaldamine-hind/">tänavakivi lammutus ja vana katte eemaldamise hind</a>.</li>
+  <li><strong>Pinnase väljakaeve.</strong> 30 cm sügavusele — 50 m² × 0,3 m = 15 m³. Käsitsi: 3–4 päeva. Miniekskavaatori rent: 200–350 € päev + platvormvedu 80–120 €.</li>
+  <li><strong>Prahi äravedu.</strong> Konteineri rent + tasu 6 m³ konteinerile 250–400 €.</li>
+  <li><strong>Aja väärtus.</strong> Kogenud paigaldaja teeb 50 m² valmis 3–4 päevaga. Algaja teeb 8–14 päevaga, kui ilm laseb.</li>
+  <li><strong>Vigade parandus.</strong> Kui kalle on vale või alus vajub — kihi ülesvõtmine ja uuesti panek läheb sisuliselt topelt maksma.</li>
+</ul>
+
+<h2>Millised on 3 kõige levinumat DIY-viga ja mis need reaalselt maksavad</h2>
+
+<p>Oleme viie aasta jooksul üle võtnud üle 40 projekti, kus omanik alustas ise ja lõpetas meiega. Vead korduvad ja need on ennustatavad.</p>
+
+<h3>Viga #1 — Liiga õhuke või vale killustikuga alus</h3>
+
+<p>Kõige sagedasem viga: alust tehakse 5–8 cm paksusega või kasutatakse fraktsiooni 0–32 mm, mis peaks alusesse minema. Tulemus: aluspind vajub esimese talve järel 2–4 cm sügavusele lohkudesse. Standard EVS 901-3 nõuab autotee alla vähemalt 20 cm tihendatud aluskihti fraktsiooniga 4–32 mm või 4–16 mm sissesõiduteedel. Paranduse hind: kogu katte ülesvõtmine ja uuesti panek — 25–35 €/m². 50 m² alal see teeb <strong>1 250–1 750 € lisakulu</strong>.</p>
+
+<h3>Viga #2 — Ebapiisav või vale kalle</h3>
+
+<p>Sissesõidutee peab olema kaldega vähemalt 2% (2 cm meetri kohta) sadeveest ära. DIY-projektidel on kalle sageli alla 1% või osaliselt vastupidises suunas. Tulemus: vesi seisab, talvel jää tekitab pinnasekerkeid, kevadeks on osa kivisid välja ronunud. Kirjeldame kalde-normatiivi ka artiklis <a href="/blog/tanavakivi-projekteerimine-ja-eelarve-koostamine/">tänavakivi projekteerimine ja eelarve koostamine</a>.</p>
+
+<h3>Viga #3 — Vuukide ebakorrektne täitmine</h3>
+
+<p>Vuukidesse peab minema kuiv kvartsliiv (0–2 mm), mis vibroplaadiga koos katte tihendamisel sisse töötatakse. DIY-projektil kasutatakse sageli tavalist ehitusliiva või jäetakse vuugid ebapiisavalt täidetuks. Tulemus: kivid liiguvad, vuugid täituvad umbrohu ja mullaga, talvel tekitab jää nihkumist. Paranduskulu iseenesest väike (kvartsliiv + vibroplaat = 100 €), aga kui kivid on juba nihkunud, tuleb terve tsoon üles võtta.</p>
+
+<div class="warning">
+  <strong>Kriitiline: aluse kvaliteet määrab eluea.</strong> Halva alusega paigaldatud tänavakivi peab vastu 3–7 aastat. Korralikult tehtud alusega (killustik 20 cm + kivipuru 3–5 cm, tihendatud vibroplaadiga 150 kg klass) peab betoonkivi vastu 25–30 aastat ja graniit 40+ aastat. Standard EVS-EN 1338 sätestab betoonkivi minimaalse survetugevuse, aga see ei aita, kui alus on vale.
+</div>
+
+<h2>Aeg — DIY suurim varjatud kulu</h2>
+
+<p>Ajakulu tuleb hinnata ausalt. Toome välja tüüpilise ajagraafiku 50 m² sissesõidutee jaoks kogenud algajale (ehk kellel on eelnev remondikogemus, aga esimene tänavakivi projekt):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Etapp</th>
+      <th>Algaja aeg</th>
+      <th>Profi aeg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pinnase väljakaeve (30 cm)</td>
+      <td>3–4 päeva käsitsi / 1 päev miniga</td>
+      <td>4–6 h miniekskavaatoriga</td>
+    </tr>
+    <tr>
+      <td>Killustikaluse paigaldus + tihendus</td>
+      <td>2 päeva</td>
+      <td>1 päev</td>
+    </tr>
+    <tr>
+      <td>Geotekstiil + kivipuru + tasandus</td>
+      <td>1–2 päeva</td>
+      <td>0,5 päeva</td>
+    </tr>
+    <tr>
+      <td>Kivi paigaldus + lõikamine</td>
+      <td>3–5 päeva</td>
+      <td>1–1,5 päeva</td>
+    </tr>
+    <tr>
+      <td>Vuukide täitmine + vibroplaat</td>
+      <td>0,5 päeva</td>
+      <td>0,25 päeva</td>
+    </tr>
+    <tr>
+      <td><strong>Kokku (ilm ja vigadeta)</strong></td>
+      <td><strong>10–14 tööpäeva</strong></td>
+      <td><strong>3–4 tööpäeva</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Kui su tunnihind on 25 €/h ja töötad 8 h päevas, teeb DIY-aja väärtus 10 päeval 2 000 €. Sellega ületab su tegelik omahind (materjal 1 500 € + aeg 2 000 €) selgelt professionaalse paigalduse kogumaksumuse (1 800–2 400 € 50 m² kohta hinnavahemikus 36–48 €/m²).</p>
+
+<h2>DIY vs professionaalne — külg-küljelt võrdlus</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kriteerium</th>
+      <th>Ise paigaldamine</th>
+      <th>B Grupi paigaldus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Materjalikulu (50 m²)</td>
+      <td>1 200–1 850 €</td>
+      <td>Sisaldub paketis</td>
+    </tr>
+    <tr>
+      <td>Töö €/m²</td>
+      <td>Oma aeg</td>
+      <td>16–45 €/m²</td>
+    </tr>
+    <tr>
+      <td>Aeg (50 m² sissesõidutee)</td>
+      <td>10–14 tööpäeva</td>
+      <td>3–4 tööpäeva</td>
+    </tr>
+    <tr>
+      <td>Tööriistad</td>
+      <td>Rent 150–250 €</td>
+      <td>Sisaldub hinnas</td>
+    </tr>
+    <tr>
+      <td>Eluiga (õigesti tehes)</td>
+      <td>Sõltub oskusest, 5–25 a</td>
+      <td>25–30 a (betoonkivi), 40+ a (graniit)</td>
+    </tr>
+    <tr>
+      <td>Garantii</td>
+      <td>Puudub</td>
+      <td>Kuni 2 aastat tööle</td>
+    </tr>
+    <tr>
+      <td>Standard EVS-EN 1338 / EVS 901-3</td>
+      <td>Sinu vastutus</td>
+      <td>Tagatud</td>
+    </tr>
+    <tr>
+      <td>Vigade risk</td>
+      <td>Kõrge (esimene projekt)</td>
+      <td>Madal</td>
+    </tr>
+    <tr>
+      <td>Kindlustus / vastutus</td>
+      <td>Puudub</td>
+      <td>Ehitusvastutus</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Millal DIY on siiski mõistlik?</h2>
+
+<p>Ei taha soovitada kõigile ainult tellitud paigaldust — on olukorrad, kus ise tegemine on täiesti realistlik ja tasuv.</p>
+
+<ul>
+  <li><strong>Väike ala kuni 15–20 m²</strong> — nt aiatee või terrassi-eelnev jalutuskivi. Kui ala on väike ja koormus jalgadele (mitte autole), on tolerants suurem. Vt <a href="/sillutuskivi-paigaldus-aiatee-ja-jalutusteed/">sillutuskivi paigaldus aiatee ja jalutusteed</a>.</li>
+  <li><strong>Sul on varasem paigalduskogemus</strong> — vähemalt 30 m² kivipinda tehtud kogemus koos vibroplaadi kasutamise ja aluse ehitamisega.</li>
+  <li><strong>Aeg pole probleem</strong> — sul on 2 vaba nädalat ja plaan B, kui ilm hakkab vihma sadama.</li>
+  <li><strong>Ei ole autokoormust</strong> — jalgtee, terrassiala, grillnurk. Auto raskusel murdub halvasti tehtud alus alati.</li>
+</ul>
+
+<p>Kui ala on 30+ m² sissesõidutee, autokoormus või mõõdud pole regulaarsed (kalded, kaared, mustrid), tellimine tasub end alati ära. Sissesõidutee lahendustest vt <a href="/sissesoidu-sillutus-1-auto-hind-2026/">sissesõidu sillutus 1 auto hind 2026</a> või <a href="/sissesoidu-sillutus-2-auto-parkimiseks/">sissesõidu sillutus 2 auto parkimiseks</a>.</p>
+
+<h2>Kuidas B Grupp hinda kujundab?</h2>
+
+<p>Meie hinnakalkulatsioon põhineb 5 muutujal ja katame kogu Eesti — Tallinn, Tartu, Pärnu, Rakvere, Viljandi, Narva ja väiksemad piirkonnad. Kolm hinnavahemiku näidet:</p>
+
+<ul>
+  <li><strong>16 €/m²</strong> — kui ala on ettevalmistatud (killustikalus juba tehtud), kivi omal käel ja tellija toimetab. Ainult töökulu. Vt <a href="/sillutuskivi-paigaldus-16-45-eur-m2/">sillutuskivi paigaldus 16–45 €/m²</a>.</li>
+  <li><strong>26–34 €/m²</strong> — standardpakett: paigaldus + kivipuru + vuugid, alused omal käel. Sobib väiksematele hooviremontidele.</li>
+  <li><strong>36–45 €/m²</strong> — võtmed kätte: väljakaeve, killustikalus 20 cm, geotekstiil, kivipuru 5 cm, paigaldus, äärekivi, vuugid. Kõik materjalid sisaldub.</li>
+</ul>
+
+<p>Piirkondlikult kehtivad omad hinnakirjad — vaata näiteks <a href="/tanavakivi-paigaldus-tallinn-nomme-hind/">Tallinn Nõmme hind</a>, <a href="/tanavakivi-paigaldus-tartu-hind/">Tartu hind</a>, <a href="/tanavakivi-paigaldus-parnu-hind/">Pärnu hind</a> või <a href="/tanavakivi-paigaldus-rakvere-hind/">Rakvere hind</a>. <a href="/kalkulaator/">Kalkulaator</a> on saidil <a href="/kalkulaator/">/kalkulaator</a>.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Saad hinna 1 minutiga.</strong> Sisesta mõõdud ja ala tüüp — vastame 1 tööpäeva jooksul konkreetse pakkumisega.
+  </div>
+  <div class="cta-buttons">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Materjalide valik — ise vs meie kaudu</h2>
+
+<p>DIY-tegija peab materjalid ise kokku otsima. Meie ostame otse tehastest ja hoolitseme tarnete eest. Peamised tootjad ja materjalid:</p>
+
+<ul>
+  <li><strong>Brikers</strong> — Läti tehas, standard EVS-EN 1338, laias värvivalikus 60 mm ja 80 mm kivid. Kõige sagedasem valik eramaja sissesõiduteel.</li>
+  <li><strong>Aroc</strong> — Eesti tootja, kohalik logistika kiirem. Betoonist tänavakivi ja äärekivi.</li>
+  <li><strong>Premia</strong> — spetsiifiliste mustrite ja tugevusklassidega kivi.</li>
+  <li><strong>Soome / Skandinaavia graniit</strong> — kui pead pika elueaga (40+ a) sissesõiduteed. Vt <a href="/graniitkivi-paigaldus-sissesoidutee-hind/">graniitkivi paigaldus sissesõidutee hind</a> ja <a href="/graniit-sillutuskivi-paigaldus-eesti/">graniit sillutuskivi paigaldus Eesti</a>.</li>
+  <li><strong>India / Hiina graniit</strong> — soodsam alternatiiv Skandinaavia graniidile, sobib esteetiliselt keerulistesse projektidesse.</li>
+</ul>
+
+<h2>Mustrid ja disain — miks profi teeb ka esteetiliselt parema töö</h2>
+
+<p>DIY-projektidel jäetakse mustri valik sageli üldse tegemata — pannakse standardne "loivas rida" ja kõik. Aga õige muster (kalasabakäänd, inglise ring, rombi- või ringmuster) suurendab visuaalset väärtust ja mõjutab ka koormustaluvust. Vt <a href="/blog/tanavakivi-mustri-valik-ja-paigaldusskeem/">tänavakivi mustri valik ja paigaldusskeem</a> või <a href="/sillutuskivi-mustrid-kalasaba-inglise-ring/">sillutuskivi mustrid: kalasaba, inglise ring</a>.</p>
+
+<p>Kalasabakäänd (herringbone) 45° nurga all on sissesõiduteel autokoormuse jaoks parim valik — kivid ei liigu koormuse all. See on nüanss, mida esimest korda paigaldav DIY-tegija ei tea.</p>
+
+<h2>Kokkuvõte — millal DIY tasub end ära</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Olukord</th>
+      <th>Soovitus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aiatee 10–20 m², jalgade koormus</td>
+      <td>DIY tasub</td>
+    </tr>
+    <tr>
+      <td>Terrass 15–30 m², kerge koormus</td>
+      <td>DIY OK kogenud tegijale</td>
+    </tr>
+    <tr>
+      <td>Sissesõidutee 30–100 m²</td>
+      <td>Telli profi</td>
+    </tr>
+    <tr>
+      <td>Kortermaja hoov, ühistute alad</td>
+      <td>Telli profi (garantii + vastutus)</td>
+    </tr>
+    <tr>
+      <td>Ärikinnistu / parkla</td>
+      <td>Telli profi + projekt</td>
+    </tr>
+    <tr>
+      <td>Vana asfalti asendus</td>
+      <td>Telli profi — <a href="/vana-asfalti-asendamine-sillutuskiviga-hind/">vaata hinda</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kui palju maksab tänavakivi paigaldus ise 50 m² sissesõiduteele?</summary>
+    <p>Materjal ja tööriistade rent kokku 1 200–1 850 € (24–37 €/m²), aga see ei sisalda pinnase väljakaeve, prahiäravedu ega omaenda ajakulu 10–14 tööpäeva. Kui arvestada tunnihinda 25 €/h, jõuab tegelik omahind 2 500–3 500 € kanti, mis on sarnane B Grupi paketiga (32–48 €/m²) koos garantiiga.</p>
+  </details>
+  <details>
+    <summary>Milline on kõige levinum DIY viga tänavakivi paigaldamisel?</summary>
+    <p>Kolm kõige sagedasemat viga: (1) liiga õhuke killustikalus — peab olema vähemalt 20 cm sissesõiduteel, (2) ebapiisav kalle — vaja 2% või 2 cm meetri kohta, (3) vale vuugiliiv või ebapiisavalt täidetud vuugid. Nende vigade parandus maksab kokku 25–35 €/m² ehk sisuliselt sama palju, kui uuesti tellida.</p>
+  </details>
+  <details>
+    <summary>Kui kaua peab õigesti paigaldatud tänavakivi vastu?</summary>
+    <p>Betoonkivi Brikers/Aroc/Premia (EVS-EN 1338 järgi) peab õige aluse ja paigaldusega vastu 25–30 aastat. Graniitkivi (EVS-EN 1342 järgi) peab vastu 40+ aastat. DIY halvasti tehtud alusega paigaldatud kivi vajub ja liigub tavaliselt 3–7 aasta järel ja vajab kihi ülesvõtmist.</p>
+  </details>
+  <details>
+    <summary>Mis on B Grupi paigalduse hinnavahemik?</summary>
+    <p>16–45 €/m² sõltuvalt paketi ulatusest. 16 €/m² on ainult töökulu, kui alus ja materjal on tellija poolt. 36–45 €/m² on võtmed kätte pakett: väljakaeve, killustikalus 20 cm, geotekstiil, kivipuru, paigaldus, äärekivi, vuugid ja materjalid — kõik sisaldub. Standardpakett 26–34 €/m² katab töö + kivipuru + vuugid, aluse teed ise.</p>
+  </details>
+  <details>
+    <summary>Kas B Grupp annab paigaldusele garantii?</summary>
+    <p>Jah, tööle kuni 2 aastat vastavalt lepingule. Materjalitootjatel Brikers, Aroc, Premia on omad tehasegarantiid kivile. Paigaldame vastavalt standarditele EVS-EN 1338 (betoonkivi), EVS-EN 1342 (looduskivi) ja EVS 901-3 (paigaldustööd), mis tähendab, et paigaldus vastab EVS-i nõuetele.</p>
+  </details>
+</div>
+
+<div class="cta-strip">
+  <div>
+    <strong>Otsustad ise proovida või lased teha?</strong> Enne otsust — võta 1 minut ja saada mõõdud. Meie kalkuleerime ja saad reaalse võrdlushinna.
+  </div>
+  <div class="cta-buttons">
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Seotud artiklid</h2>
+
+<div class="related-grid">
+  <ul>
+    <li><a href="/blog/tanavakivi-projekteerimine-ja-eelarve-koostamine/">Tänavakivi projekteerimine ja eelarve koostamine</a></li>
+    <li><a href="/blog/tanavakivi-mustri-valik-ja-paigaldusskeem/">Tänavakivi mustri valik ja paigaldusskeem</a></li>
+    <li><a href="/blog/tanavakivi-lammutus-ja-vana-katte-eemaldamine-hind/">Tänavakivi lammutus ja vana katte eemaldamise hind</a></li>
+    <li><a href="/blog/tanavakivi-paigaldus-garantii-ja-vastutus/">Tänavakivi paigaldus – garantii ja vastutus</a></li>
+    <li><a href="/blog/betoontanavakivi-tootjad-eestis-vordlus/">Betoontänavakivi tootjad Eestis – võrdlus</a></li>
+    <li><a href="/blog/tanavakivi-paigaldus-sugisel-ja-vihmaperioodil/">Tänavakivi paigaldus sügisel ja vihmaperioodil</a></li>
+    <li><a href="/blog/tanavakivi-paigaldus-talvel-ja-kulmumis-riskid/">Tänavakivi paigaldus talvel ja külmumisriskid</a></li>
+    <li><a href="/blog/">Kõik blog artiklid →</a></li>
+  </ul>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Tänavakivi paigaldus ise vs tellida – mis läheb tegelikult maksma",
+      "description": "Võrdlus DIY ja professionaalse tänavakivi paigalduse vahel: materjalikulud, aeg, tüüpilised vead ja lõpphind ruutmeetri kohta 50 m² sissesõidutee näitel.",
+      "datePublished": "2026-07-12",
+      "dateModified": "2026-07-12",
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "Tegevjuht",
+        "telephone": "+37258374422",
+        "email": "Balcongrupp@gmail.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "alternateName": "B Grupp",
+        "url": "https://bgrupp.ee/",
+        "telephone": "+37258374422",
+        "email": "Balcongrupp@gmail.com",
+        "taxID": "16294742"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bgrupp.ee/blog/tanavakivi-paigaldus-vs-omal-jou-tee-ise/"
+      },
+      "keywords": "tänavakivi paigaldus ise, DIY sillutis, tänavakivi hind m2, professionaalne paigaldus, tänavakivi vs asfalt"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kui palju maksab tänavakivi paigaldus ise 50 m² sissesõiduteele?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Materjal ja tööriistade rent kokku 1 200–1 850 € (24–37 €/m²), aga see ei sisalda pinnase väljakaeve, prahiäravedu ega omaenda ajakulu 10–14 tööpäeva. Kui arvestada tunnihinda 25 €/h, jõuab tegelik omahind 2 500–3 500 € kanti, mis on sarnane B Grupi paketiga 32–48 €/m² koos garantiiga."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Milline on kõige levinum DIY viga tänavakivi paigaldamisel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kolm kõige sagedasemat viga: (1) liiga õhuke killustikalus — peab olema vähemalt 20 cm sissesõiduteel, (2) ebapiisav kalle — vaja 2% või 2 cm meetri kohta, (3) vale vuugiliiv või ebapiisavalt täidetud vuugid. Nende vigade parandus maksab 25–35 €/m² ehk sisuliselt sama palju, kui uuesti tellida."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kui kaua peab õigesti paigaldatud tänavakivi vastu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Betoonkivi Brikers/Aroc/Premia standardi EVS-EN 1338 järgi peab õige alusega vastu 25–30 aastat. Graniitkivi standardi EVS-EN 1342 järgi peab vastu 40+ aastat. Halvasti tehtud alusega DIY-kivi vajub ja liigub tavaliselt 3–7 aasta järel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mis on B Grupi paigalduse hinnavahemik?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "16–45 €/m² sõltuvalt paketi ulatusest. 16 €/m² on ainult töökulu. 36–45 €/m² on võtmed kätte pakett: väljakaeve, killustikalus 20 cm, geotekstiil, kivipuru, paigaldus, äärekivi, vuugid ja materjalid."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas B Grupp annab paigaldusele garantii?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah, tööle kuni 2 aastat vastavalt lepingule. Paigaldame vastavalt standarditele EVS-EN 1338 (betoonkivi), EVS-EN 1342 (looduskivi) ja EVS 901-3 (paigaldustööd)."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://bgrupp.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://bgrupp.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tänavakivi paigaldus ise vs tellida – mis läheb tegelikult maksma",
+          "item": "https://bgrupp.ee/blog/tanavakivi-paigaldus-vs-omal-jou-tee-ise/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>B Grupp</h4>
+        <p style="color:#86efac">B Grupp — soodsa hinnaga tänavakivi paigaldus eramajadele üle Eesti. Fikseeritud hind, kiire algus.</p>
+        <p style="margin-top:12px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com</p>
+      </div>
+      <div>
+        <h4>Hinnad</h4>
+        <a href="#hinnad">Eramaja õu — 16 €/m²</a>
+        <a href="#hinnad">Tänavakivi tervik — 28 €/m²</a>
+        <a href="#hinnad">Graniit premium — 35 €/m²</a>
+        <a href="#hinnad">Äärekivi — 24 €/jm</a>
+      </div>
+      <div>
+        <h4>Piirkond</h4>
+        <a href="#">Tallinn ja Harjumaa</a>
+        <a href="#">Tartu ja Tartumaa</a>
+        <a href="#">Pärnu ja Pärnumaa</a>
+        <a href="#">Üle Eesti</a>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <a href="#kkk">Korduma kippuvad küsimused</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#">Privaatsuspoliitika</a>
+        <a href="#">Tingimused</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 B Grupp · Reg nr 16294742 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">⚡ Saa hind</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin saada kiiret hinnapakkumist sillutuse paigalduseks." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

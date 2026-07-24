@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi kalle ja vihmaveesüsteem — 2% nõue ja drenaaž...</title>
+  <meta name="description" content="Õige kalde arvutamine, drenaažikraavide ja sademevee restide paigutus, lompide vältimine sissesõiduteedel. Saa hind 1 minutiga. Fikseeritud lepingus, kiire">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bgrupp.ee/blog/tanavakivi-paigaldus-kalde-vihmaveesusteem/">
+
+  <meta property="og:title" content="Tänavakivi kalle ja vihmaveesüsteem — 2% nõue ja drenaaž...">
+  <meta property="og:description" content="Õige kalde arvutamine, drenaažikraavide ja sademevee restide paigutus, lompide vältimine sissesõiduteedel. Saa hind 1 minutiga. Fikseeritud lepingus, kiire">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bgrupp.ee/blog/tanavakivi-paigaldus-kalde-vihmaveesusteem/">
+  <meta property="og:image" content="https://bgrupp.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f7fdf9;--surface:#fff;--ink:#052e1a;--ink-2:#15543a;--muted:#5b8071;
+      --accent:#16a34a;--accent-dark:#15803d;--accent-soft:#dcfce7;
+      --line:#d1fae5;--success:#15803d;--warn:#b45309;--radius:12px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(5,46,26,.08);
+      --shadow-lg:0 10px 30px rgba(5,46,26,.12);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:88px 0}}
+
+    h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+    h1{font-size:clamp(2.1rem,5vw,3.4rem)}
+    h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:.5em}
+    h3{font-size:1.2rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1140px;margin:0 auto;gap:14px}
+    .brand{font-weight:900;font-size:1.2rem;letter-spacing:-.02em;display:inline-flex;align-items:baseline;gap:2px}
+    .brand b{color:var(--accent)}
+    .brand small{font-size:.7rem;color:var(--muted);font-weight:700;margin-left:6px;text-transform:uppercase;letter-spacing:.05em}
+    .top-cta{display:flex;align-items:center;gap:10px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem;white-space:nowrap}
+    @media(max-width:560px){.top-phone{display:none}}
+
+    /* Speed strip */
+    .speed-strip{background:var(--ink);color:#bbf7d0;font-size:.85rem;padding:8px 20px;text-align:center;font-weight:600}
+    .speed-strip strong{color:#fff}
+
+    /* Hero */
+    .hero{padding-top:48px;padding-bottom:32px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+    .hero-grid{display:grid;gap:32px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;gap:48px}.hero{padding-top:72px;padding-bottom:56px}}
+    .hero h1{margin-bottom:.4em}
+    .hero h1 mark{background:var(--accent-soft);color:var(--accent-dark);padding:0 .15em;border-radius:6px}
+    .hero .lead{margin-bottom:24px}
+
+    /* Big price tile */
+    .price-tile{display:inline-flex;align-items:baseline;gap:10px;background:var(--accent-soft);padding:14px 18px;border-radius:12px;margin-bottom:20px;border:1px solid var(--line)}
+    .price-tile .num{font-size:2rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.03em;line-height:1}
+    .price-tile .lbl{font-size:.95rem;color:var(--ink-2);font-weight:600}
+
+    /* Bullet list (USPs) */
+    .checks{list-style:none;margin:18px 0 24px;display:grid;gap:8px}
+    .checks li{font-size:1rem;color:var(--ink);padding-left:30px;position:relative}
+    .checks li::before{content:"✓";position:absolute;left:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;font-size:.8rem;font-weight:900;display:grid;place-items:center;top:1px}
+
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:800;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:50px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+
+    /* Quick form */
+    .quick{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-lg);border:2px solid var(--accent)}
+    .quick .label-stripe{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;font-weight:800;padding:4px 10px;border-radius:6px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+    .quick h2{font-size:1.4rem;margin-bottom:.3em}
+    .quick .sub{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+    .field{margin-bottom:12px}
+    .field label{display:block;font-weight:700;font-size:.85rem;color:var(--ink);margin-bottom:5px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    .quick .btn{width:100%;margin-top:6px}
+    .form-foot{margin-top:10px;font-size:.78rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:#fff;border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:24px}}
+    .trust-item .num{font-size:1.7rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.82rem;color:var(--muted);margin-top:2px;font-weight:600}
+
+    /* Pricing cards */
+    .pricing{background:#fff}
+    .pricing-grid{display:grid;gap:18px;margin-top:40px}
+    @media(min-width:760px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
+    .price-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:28px;position:relative;transition:transform .15s,border-color .15s,box-shadow .15s}
+    .price-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .price-card.featured{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft) 0%,#fff 30%)}
+    .price-card .ribbon{position:absolute;top:-12px;left:24px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.05em}
+    .price-card h3{font-size:1.15rem}
+    .price-card .from{font-size:.9rem;color:var(--muted);font-weight:600;margin-top:6px}
+    .price-card .big{font-size:2.2rem;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1;margin-top:4px}
+    .price-card .big small{font-size:1rem;color:var(--muted);font-weight:600}
+    .price-card ul{list-style:none;margin-top:18px}
+    .price-card ul li{font-size:.93rem;color:var(--ink-2);padding:6px 0 6px 22px;position:relative}
+    .price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+    .price-card .btn{width:100%;margin-top:18px}
+
+    /* Process strip */
+    .process{background:var(--ink);color:#fff;padding:48px 0;text-align:center}
+    .process h2{color:#fff}
+    .process .lead{color:#bbf7d0;margin-left:auto;margin-right:auto}
+    .process-grid{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(2,1fr)}
+    @media(min-width:760px){.process-grid{grid-template-columns:repeat(4,1fr)}}
+    .pstep{padding:18px}
+    .pstep .num{font-size:2.5rem;font-weight:900;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .pstep h3{color:#fff;margin-top:8px;font-size:1.05rem}
+    .pstep p{color:#bbf7d0;font-size:.92rem;margin-top:4px}
+
+    /* Gallery */
+    .gallery{background:var(--bg)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:36px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:10px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:780px;margin:40px auto 0}
+    .faq details{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:0;margin-bottom:8px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.4rem;color:var(--accent);transition:transform .15s;flex:none;font-weight:800}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 20px 18px;color:var(--ink-2);font-size:.95rem}
+
+    /* Final CTA */
+    .cta-final{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;text-align:center}
+    .cta-final h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem)}
+    .cta-final p{color:#dcfce7;font-size:1.1rem;max-width:540px;margin:12px auto 24px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:#fff;color:var(--accent-dark)}
+    .cta-final .btn-secondary:hover{background:var(--ink);color:#fff}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--accent-dark)}
+
+    footer{background:#022c1a;color:#86efac;padding:48px 0 28px;font-size:.92rem}
+    .foot-grid{display:grid;gap:28px;margin-bottom:32px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:12px;font-size:1rem}
+    .foot-grid a{color:#bbf7d0;display:block;padding:3px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #064e3b;padding-top:20px;text-align:center;font-size:.85rem}
+
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:46px;padding:11px;font-size:.93rem}
+    @media(max-width:760px){.sticky-bar{display:flex;gap:8px}body{padding-bottom:74px}}
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #16a34a;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">B<b>Grupp</b><small>Soodne sillutus</small></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">📞 +372 58374422</a>
+      <a href="#kontakt-top" class="btn btn-primary" style="padding:9px 14px;min-height:auto;font-size:.9rem">Saa hind</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi kalle ja vihmaveesüsteem — 2% nõue ja drenaaž 2026</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-08.jpg" alt="Tänavakivi kalle ja vihmaveesüsteem — 2% nõue ja drenaaž 2026" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi kalle ja vihmaveesüsteem — 2% nõue ja drenaaž 2026</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <nav aria-label="Breadcrumb">
+    <a href="/">Avaleht</a> › <a href="/blog/">Blog</a> › <span>Tänavakivi kalle ja vihmaveesüsteem</span>
+  </nav>
+  <p><strong>Avaldatud:</strong> 2. juuni 2026 · <strong>Autor:</strong> Keio Soo, B Grupp · <strong>Lugemisaeg:</strong> 8 min</p>
+</div>
+
+<h1>Tänavakivi kalle ja vihmaveesüsteem — 2% nõue ja drenaaž 2026</h1>
+
+<p class="lead">Tänavakivi õige kalle on <strong>2% ehk 2 cm meetri kohta</strong> — alla selle tekivad lombid, üle 4% libiseb liiv vuugist välja. Sissesõiduteele paigaldatakse sademevee rest iga 30–50 m² kohta ja drenaažikraav vajalik kõikjal, kus pinnas on savine või põhjavesi alla 1,2 m sügavusel.</p>
+
+<div class="answer-card">
+  <h2 style="margin-top:0">Lühivastus: kalde- ja drenaažinõuded ühe pilguga</h2>
+  <ul>
+    <li><strong>Miinimum kalle:</strong> 2% (2 cm/m) sõidukikoormusele, 1,5% jalgteele</li>
+    <li><strong>Maksimum kalle:</strong> 4% sõidukile, 5% jalgteele (libisemisoht)</li>
+    <li><strong>Restide samm:</strong> üks lineaarrest või punktirest 30–50 m² kohta</li>
+    <li><strong>Drenaaž:</strong> 100 mm perforeeritud toru killustikupadjas, kalle 0,5–1%</li>
+    <li><strong>Geotekstiil:</strong> 150 g/m² eraldab killustiku savipinnasest</li>
+    <li><strong>EVS-EN 1338</strong> betoonkivi + <strong>EVS 901-3</strong> sademevee käitlus</li>
+  </ul>
+</div>
+
+<h2>Miks 2% kalle on vältimatu — füüsika ja standard</h2>
+
+<p>Tänavakivi pind ei ole kunagi 100% veekindel: liivvuukide kaudu imbub vett pealtpoolt ja tasapinnaline ala (alla 1,5% kalde) hoiab vee kivipinnal kuni see aurustub. Eestis tähendab see talvel jäätumist ja külmaõhutsüklite tõttu kivide kerkimist. <strong>EVS 901-3</strong> standard nõuab sõiduteedele ja parklatele <strong>minimaalselt 2% pikikallet või põikkallet</strong>, et sademevesi liiguks kontrollitult restide või äärekivi suunas.</p>
+
+<h3>Mida 2% tegelikkuses tähendab</h3>
+
+<p>Praktiline näide: 6 m laiusel sissesõiduteel tähendab 2% põikkalle, et üks serv on <strong>12 cm madalam</strong> kui teine. 20 m pikkusel teel tähendab 2% pikikalle, et lõpp on <strong>40 cm madalam</strong> kui algus. Kui kaldenurka ei piisa, peab vesi minema restide kaudu kogumiskaevu — see on töö, mida me <a href="/tanavakivi-paigaldus-hind/">tänavakivi paigalduse hinnas</a> alati arvesse võtame.</p>
+
+<h2>Kaldetüübid: pikikalle, põikkalle, kogumiskalle</h2>
+
+<p>Kalle ei ole alati ühesuunaline. Sõltuvalt platsi geomeetriast ja sissevoolu suundadest kasutame kolme põhitüüpi:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kaldetüüp</th>
+      <th>Min %</th>
+      <th>Kus kasutame</th>
+      <th>Vee liikumissuund</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pikikalle (ühesuunaline)</td>
+      <td>2,0%</td>
+      <td>Kitsad sissesõiduteed kuni 4 m</td>
+      <td>Tee algusest lõppu, kogumisrest lõpus</td>
+    </tr>
+    <tr>
+      <td>Põikkalle (ühele küljele)</td>
+      <td>2,0%</td>
+      <td>Tänavad äärekiviga, parklad</td>
+      <td>Keskelt äärekivini, äärekivi joones lineaarrest</td>
+    </tr>
+    <tr>
+      <td>Kahepoolne harja-kalle</td>
+      <td>1,5%</td>
+      <td>Laiad parklad >15 m</td>
+      <td>Keskel kõrgem, vesi mõlemale poole</td>
+    </tr>
+    <tr>
+      <td>Sadulkalle (kogumiskalle)</td>
+      <td>2,0%</td>
+      <td>Punktirest keskel</td>
+      <td>Igast suunast keskmise punktrresti suunas</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Levinud viga: visuaalne tasapind</h3>
+
+<p>Klient näeb 2% kallet ja arvab, et "tee on kõver". Tegelikult ei märka inimsilm kuni 3% kallet — see on <em>insenerlik nõue, mitte esteetiline viga</em>. Kui hoiame kallet alla 1,5%, peame paari aasta pärast üksikkive uuesti laduma ja vuugiliiva taastama.</p>
+
+<h2>Drenaažikraav — millal vajalik ja kuidas ehitada</h2>
+
+<p>Mitte iga objekt ei vaja drenaažikraavi, aga need <strong>kolm tingimust</strong> teevad selle kohustuslikuks:</p>
+
+<ol>
+  <li><strong>Savipinnas</strong> sügavamal kui 30 cm (vesi ei imbu loomulikult)</li>
+  <li><strong>Põhjavesi</strong> kõrgemal kui 1,2 m maapinnast</li>
+  <li><strong>Sõidukikoormus</strong> üle 3,5 t (parkla, sissesõidutee)</li>
+  </ol>
+
+<h3>Drenaažikraavi konstruktsioon</h3>
+
+<p>Standardne lahendus, mida me <a href="/sissesoidu-sillutus-tallinn-hind-2026/">Tallinna sissesõiduteedel</a> ja <a href="/parkla-sillutus-arikinnistu-harjumaa-hind/">Harjumaa ärikinnistute parklates</a> kasutame:</p>
+
+<ul>
+  <li><strong>Kraavi sügavus:</strong> 60–80 cm allapoole tänavakivi alust</li>
+  <li><strong>Perforeeritud PVC-toru</strong> Ø100 mm, kalle 0,5–1% kogumiskaevu suunas</li>
+  <li><strong>Killustik 16/32 mm</strong> ümber toru, paksus 20 cm igas suunas</li>
+  <li><strong>Geotekstiil 150 g/m²</strong> ümber killustiku — takistab muda imbumist</li>
+  <li><strong>Liiv 0/4 mm</strong> peal, et taastada aluskonstruktsioon</li>
+</ul>
+
+<div class="warning">
+  <strong>Hoiatus:</strong> drenaažitoru ei tohi ühendada otse linna sademeveetorustikku ilma omavalitsuse loata. Tartus, Tallinnas ja Pärnus on vaja vee-ettevõttest <strong>liitumistingimused</strong> — meie taotleme need projektis. Loe lähemalt: <a href="/blog/sillutuskivi-paigaldus-load-ja-projekteerimine/">sillutuskivi paigalduse load ja projekteerimine</a>.
+</div>
+
+<h2>Sademevee restid — paigutus ja tüübid</h2>
+
+<p>Restide valik ja samm sõltub <strong>katuse pindalast, mis sademeveesüsteemi suundub</strong> ja maksimaalsest tunnisajus (Eestis arvestame 30 mm/h). Üks lineaarrest mahub vastu võtma <strong>15–25 liitrit sekundis</strong>, mis on tavaeramaja sissesõidutee tarbele piisav.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resti tüüp</th>
+      <th>Klass</th>
+      <th>Soovitatav koht</th>
+      <th>Hind €/jm või tk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Punktrest 30×30 cm (malm)</td>
+      <td>B125 (kerge koormus)</td>
+      <td>Jalgteed, õued, terrass</td>
+      <td>45–80 €</td>
+    </tr>
+    <tr>
+      <td>Punktrest 50×50 cm (malm)</td>
+      <td>C250 (sõidukikoormus)</td>
+      <td>Eramu sissesõidutee</td>
+      <td>120–180 €</td>
+    </tr>
+    <tr>
+      <td>Lineaarrest ACO-tüüpi</td>
+      <td>C250 / D400</td>
+      <td>Parkla, äärekivi joones</td>
+      <td>55–95 €/jm</td>
+    </tr>
+    <tr>
+      <td>Lineaarrest tugevdatud (D400)</td>
+      <td>D400 (raskeveok)</td>
+      <td>Ärikinnistu, tehasealune</td>
+      <td>120–180 €/jm</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Punktirest vs lineaarrest — kumb valida?</h3>
+
+<p>Eramu sissesõiduteel kuni 50 m² piisab <strong>ühest punktrestist</strong> tee madalaimas punktis. Üle 50 m² või kui sissesõidutee on laiem kui 5 m, eelistame <strong>lineaarresti</strong> garaaživärava ette või äärekivi joones — see kogub vee terve laiuse ulatuses. Vaata näidet: <a href="/sissesoidu-sillutus-2-auto-parkimiseks/">sissesõidu sillutus 2 auto parkimiseks</a>.</p>
+
+<div class="cta-strip">
+  <p><strong>Vajad õiget kalde- ja drenaažilahendust oma õue jaoks?</strong> Saa hind 1 minutiga — projekteerime sademeveesüsteemi ja toome tehnoloogilise lahenduse.</p>
+  <p>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+    <a href="/kalkulaator/" class="btn btn-ghost">Arvuta hind</a>
+  </p>
+</div>
+
+<h2>Lompide vältimine sissesõiduteedel — 6 sammu</h2>
+
+<p>Lombiteke tähendab kahte asja: kas <strong>kalle on alla 1,5%</strong> või <strong>aluskonstruktsioon on vajunud</strong>. Mõlemad on ennetatavad, kui paigaldus tehakse õigesti algusest peale.</p>
+
+<ol>
+  <li><strong>Maapinna ettevalmistus:</strong> eemalda taimekiht 30–40 cm, tihenda alus 95% Proctor tihendusega</li>
+  <li><strong>Killustikalus 25–35 cm</strong> sõidukikoormusele (fraktsioon 0/63 mm + 0/32 mm pealmine)</li>
+  <li><strong>Liivpadi 3–5 cm</strong> 0/4 mm fraktsioon, nivelleeritud kaldejoone järgi</li>
+  <li><strong>Kivide paigaldus</strong> kaldejoone järgi, vibreeritakse pärast vuukamist</li>
+  <li><strong>Vuugiliiv</strong> 0/2 mm — kvartsliiv, harjamine kuni vuuk täis (vt <a href="/blog/tanavakivi-vuugiliiv-pol%C3%BCmeerne-vs-tavaline/">vuugiliiv: polümeerne vs tavaline</a>)</li>
+  <li><strong>Äärekivi</strong> betoonalusele — takistab külgvajumist ja hoiab kalde stabiilsena (vt <a href="/blog/tanavakivi-aaretugi-betoonist-vs-graniidist/">äärekivi: betoon vs graniit</a>)</li>
+</ol>
+
+<h3>Kui kivi on juba paigaldatud ja lombid tekivad?</h3>
+
+<p>Kohaliku lombi (alla 1 m² ala) saab parandada ainult kivide ümberladumisega — võtame välja, lisame liiva alla, taastame kalde. Kui lombid on suuremad kui 2 m² või tekivad mitmes kohas, on alus vajunud ja vajab täielikku ümbertegemist. Sellest räägib detailsemalt <a href="/blog/sillutuskivi-aluse-ettevalmistus/">sillutuskivi aluse ettevalmistus</a>.</p>
+
+<h2>Erijuhud: kalle parklates, korteriühistutes ja äripindadel</h2>
+
+<p>Suuremate alade puhul kasutame <strong>kahepoolset harjakalde lahendust</strong> — see vähendab maksimaalset kaldekõrgust ja jagab vee kahele poolele. Tüüpiliselt ärikinnistutel paigaldame lineaarresti iga 25 m järel ja eraldi sajuvee kogumiskaevu iga 100 m² kohta. Vaata näiteid:</p>
+
+<ul>
+  <li><a href="/konnitee-sillutus-korteriuhistule-hind/">Kõnnitee sillutus korteriühistule</a> — pikad kõnniteed, vesi mõlemale poole</li>
+  <li><a href="/konnitee-paigaldus-parnu-korteriuhistule/">Kõnnitee paigaldus Pärnu KÜ-le</a> — sademevee integreerimine olemasolevasse süsteemi</li>
+  <li><a href="/parkla-sillutus-arikinnistu-harjumaa-hind/">Parkla sillutus ärikinnistu Harjumaal</a> — raskeveokitele D400 restid</li>
+  <li><a href="/sissesoidu-sillutus-harjumaa-hind-m2/">Sissesõidu sillutus Harjumaa hind m²</a> — eramu drenaažilahendus</li>
+</ul>
+
+<h2>Materjalide ja tööde hinnatasemed 2026</h2>
+
+<p>Drenaaži- ja sademeveelahendus lisab tüüpilisele sillutusprojektile <strong>15–25 €/m²</strong>, sõltuvalt restide arvust ja drenaažikraavi pikkusest.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lahendus</th>
+      <th>Hind</th>
+      <th>Kasutusiga</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lihtne põikkalle, ilma restita (alla 30 m²)</td>
+      <td>0 € lisaks</td>
+      <td>kogu kivipinna eluiga</td>
+    </tr>
+    <tr>
+      <td>1 punktrest C250 + ühendus</td>
+      <td>250–400 €</td>
+      <td>20+ aastat</td>
+    </tr>
+    <tr>
+      <td>Lineaarrest 6 jm + kogumiskaev</td>
+      <td>900–1400 €</td>
+      <td>20+ aastat</td>
+    </tr>
+    <tr>
+      <td>Drenaažikraav 20 jm (toru + killustik + geotekstiil)</td>
+      <td>700–1100 €</td>
+      <td>30+ aastat</td>
+    </tr>
+    <tr>
+      <td>Parkla kogu lahendus 200 m²</td>
+      <td>2800–4200 €</td>
+      <td>20+ aastat</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Täpse hinna oma projektile saad meie <a href="/kalkulaator/">kalkulaatorist</a> või kui sissesõidutee on Tallinnas, vaata <a href="/blog/tanavakivi-paigalduse-hind-m2-2026/">tänavakivi paigalduse hind m² 2026</a> ülevaadet.</p>
+
+<div class="cta-strip">
+  <p><strong>Soovid pakkumist drenaaži ja kaldelahendusega tänavakivile?</strong> Tuleme objektile, mõõdame ja teeme projekti — pakkumine 24 tunni jooksul.</p>
+  <p>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </p>
+</div>
+
+<h2>KKK — tänavakivi kalle ja drenaaž</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kas 2% kalle on alati piisav?</summary>
+    <p>2% on minimaalne nõue sõidukikoormusele EVS 901-3 standardi järgi. Pikematel sirgetel lõikudel üle 30 m kasutame 2,5–3% kallet, et vesi ei kogune. Jalgteele piisab 1,5%, kuid me eelistame ka seal 2%, kuna talvel takistab see jäätumist.</p>
+  </details>
+  <details>
+    <summary>Kui palju maksab sademevee rest koos paigaldusega?</summary>
+    <p>Üks punktrest C250 koos kaevu ja ühendustöödega maksab 250–400 €. Lineaarrest 6 jooksva meetri ulatuses koos kogumiskaevuga 900–1400 €. Hinnale lisandub torustiku pikkus kuni linna sademeveekaevu — Tallinnas keskmiselt 20–80 €/jm.</p>
+  </details>
+  <details>
+    <summary>Kas savipinnasel saab tänavakivi paigaldada ilma drenaažita?</summary>
+    <p>Saab, aga ainult kuni 30 m² aladel, kus pole sõidukikoormust ja vesi suudab ära voolata pinnale. Sõidukite teedele savipinnasel on drenaaž kohustuslik — vastasel juhul vajub alus 1–3 aasta jooksul ja kivid liiguvad. Lisame siis 25–35 cm killustikalust ja 60 cm sügavuse drenaažikraavi äärekivi taha.</p>
+  </details>
+  <details>
+    <summary>Kuidas tean, kas mu praeguse tee kalle on õige?</summary>
+    <p>Lihtne katse: peale vihma jälgi, kuhu lombid tekivad. Kui vesi seisab kauem kui 30 minutit, on kalle alla 1%. Mõõdista lasertaseme või nivelliriga — 2% kalle tähendab 6 m laiusel teel 12 cm kõrgusvahet servast servani. Kui mõõdate alla 8 cm, on kalle puudulik ja pind tuleb ümber teha.</p>
+  </details>
+  <details>
+    <summary>Kas me anname kalde- ja drenaažilahendusele garantii?</summary>
+    <p>Jah, kogu paigaldusele anname 2-aastase garantii — see hõlmab nii kivide vajumist, vuukide säilimist kui sademeveesüsteemi tööd. Kui garantiiajal tekivad lombid või drenaaž ei tööta, taastame oma kulul.</p>
+  </details>
+</div>
+
+<h2>Kokkuvõte: ära jäta kallet juhuse hooleks</h2>
+
+<p><a href="/">Tänavakivi paigaldus</a> ilma korraliku kalde- ja drenaažilahenduseta on raha tuulde — esimene talv toob jäätunud lombid, teine aasta vajunud servad ja kolmas aasta ümbertehtud tööd. <strong>2% põikkalle, üks rest 30–50 m² kohta ja drenaažikraav savipinnasel</strong> on baasstandard, millest me kunagi ei tagane. B Grupp projekteerib sademeveelahenduse alati paigalduspakkumise osana — sa ei pea seda eraldi tellima ega muretsema, kas keegi unustas selle ära.</p>
+
+<h2>Seotud artiklid</h2>
+
+<div class="related-grid">
+  <a href="/blog/sillutuskivi-aluse-ettevalmistus/"><strong>Sillutuskivi aluse ettevalmistus</strong><br>Killustikalus, liivpadi, tihendamine 95% Proctor</a>
+  <a href="/blog/tanavakivi-paigaldus-pohja-tallinn/"><strong>Tänavakivi paigaldus Põhja-Tallinnas</strong><br>Sissesõiduteed ja korteriühistute kõnniteed</a>
+  <a href="/blog/tanavakivi-vuugiliiv-pol%C3%BCmeerne-vs-tavaline/"><strong>Vuugiliiv: polümeerne vs tavaline</strong><br>Kumb pidab paremini ja kus eelistada</a>
+  <a href="/blog/sillutuskivi-paigaldus-load-ja-projekteerimine/"><strong>Sillutuskivi: load ja projekteerimine</strong><br>Kohaliku omavalitsuse nõuded ja liitumistingimused</a>
+  <a href="/blog/tanavakivi-paigalduse-hind-m2-2026/"><strong>Tänavakivi paigalduse hind m² 2026</strong><br>Tallinn, Tartu, Pärnu hinnatasemed</a>
+  <a href="/blog/tanavakivi-aaretugi-betoonist-vs-graniidist/"><strong>Äärekivi: betoon vs graniit</strong><br>Kumb sobib drenaažilahenduse äärde</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://bgrupp.ee/blog/tanavakivi-paigaldus-kalde-vihmaveesusteem/#article",
+      "headline": "Tänavakivi kalle ja vihmaveesüsteem — 2% nõue ja drenaaž 2026",
+      "description": "Tänavakivi õige kalle on 2% ehk 2 cm meetri kohta. Vaata kuidas projekteerida sademeveerestid, drenaažikraav ja vältida lompe sissesõiduteel. Hinnad 2026.",
+      "datePublished": "2026-06-02",
+      "dateModified": "2026-06-02",
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "Tegevjuht",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Balcon Grupp OÜ"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "url": "https://bgrupp.ee/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bgrupp.ee/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bgrupp.ee/blog/tanavakivi-paigaldus-kalde-vihmaveesusteem/"
+      },
+      "inLanguage": "et-EE",
+      "articleSection": "Tänavakivi paigaldus",
+      "keywords": "tänavakivi kalle, drenaaž sissesõidutee, sademevee rest, vihmavee süsteem, EVS 901-3"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kas 2% kalle on alati piisav?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2% on minimaalne nõue sõidukikoormusele EVS 901-3 standardi järgi. Pikematel sirgetel lõikudel üle 30 m kasutame 2,5–3% kallet. Jalgteele piisab 1,5%, kuid eelistame ka seal 2% talvise jäätumise vältimiseks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kui palju maksab sademevee rest koos paigaldusega?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Punktrest C250 koos kaevu ja ühendustöödega 250–400 €. Lineaarrest 6 jm koos kogumiskaevuga 900–1400 €. Torustik linna kaevuni 20–80 €/jm Tallinnas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas savipinnasel saab tänavakivi paigaldada ilma drenaažita?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kuni 30 m² jalgteele saab, sõidukite teedele savipinnasel on drenaaž kohustuslik. Vastasel juhul vajub alus 1–3 aasta jooksul. Lahendus: 25–35 cm killustikalus ja 60 cm sügavune drenaažikraav äärekivi taha."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kuidas tean, kas praegune kalle on õige?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Peale vihma jälgi lompe — kui vesi seisab üle 30 minuti, on kalle alla 1%. Mõõdista lasertaseme või nivelliriga: 2% kalle 6 m laiusel teel = 12 cm kõrgusvahe servast servani."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Milline on B Grupi garantii drenaažilahendusele?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kogu paigaldusele 2-aastane garantii — hõlmab kivide vajumist, vuukide säilimist ja sademeveesüsteemi tööd. Garantiiajal tekkinud lombid või drenaaži tõrked taastame oma kulul."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://bgrupp.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://bgrupp.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tänavakivi kalle ja vihmaveesüsteem",
+          "item": "https://bgrupp.ee/blog/tanavakivi-paigaldus-kalde-vihmaveesusteem/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>B Grupp</h4>
+        <p style="color:#86efac">B Grupp — soodsa hinnaga tänavakivi paigaldus eramajadele üle Eesti. Fikseeritud hind, kiire algus.</p>
+        <p style="margin-top:12px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com</p>
+      </div>
+      <div>
+        <h4>Hinnad</h4>
+        <a href="#hinnad">Eramaja õu — 16 €/m²</a>
+        <a href="#hinnad">Tänavakivi tervik — 28 €/m²</a>
+        <a href="#hinnad">Graniit premium — 35 €/m²</a>
+        <a href="#hinnad">Äärekivi — 24 €/jm</a>
+      </div>
+      <div>
+        <h4>Piirkond</h4>
+        <a href="#">Tallinn ja Harjumaa</a>
+        <a href="#">Tartu ja Tartumaa</a>
+        <a href="#">Pärnu ja Pärnumaa</a>
+        <a href="#">Üle Eesti</a>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <a href="#kkk">Korduma kippuvad küsimused</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#">Privaatsuspoliitika</a>
+        <a href="#">Tingimused</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 B Grupp · Reg nr 16294742 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">⚡ Saa hind</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin saada kiiret hinnapakkumist sillutuse paigalduseks." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

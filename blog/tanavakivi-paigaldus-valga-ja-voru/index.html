@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi paigaldus Valgas, Võrus ja Kagu-Eestis | B Grupp</title>
+  <meta name="description" content="Kagu-Eesti hinnaklassid, künkliku maastiku mõju drenaažile ja tüüpprojektide tähtajad. Saa hind 1 minutiga. Fikseeritud lepingus, kiire algus.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bgrupp.ee/blog/tanavakivi-paigaldus-valga-ja-voru/">
+
+  <meta property="og:title" content="Tänavakivi paigaldus Valgas, Võrus ja Kagu-Eestis">
+  <meta property="og:description" content="Kagu-Eesti hinnaklassid, künkliku maastiku mõju drenaažile ja tüüpprojektide tähtajad. Saa hind 1 minutiga. Fikseeritud lepingus, kiire algus.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bgrupp.ee/blog/tanavakivi-paigaldus-valga-ja-voru/">
+  <meta property="og:image" content="https://bgrupp.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f7fdf9;--surface:#fff;--ink:#052e1a;--ink-2:#15543a;--muted:#5b8071;
+      --accent:#16a34a;--accent-dark:#15803d;--accent-soft:#dcfce7;
+      --line:#d1fae5;--success:#15803d;--warn:#b45309;--radius:12px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(5,46,26,.08);
+      --shadow-lg:0 10px 30px rgba(5,46,26,.12);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:88px 0}}
+
+    h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+    h1{font-size:clamp(2.1rem,5vw,3.4rem)}
+    h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:.5em}
+    h3{font-size:1.2rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1140px;margin:0 auto;gap:14px}
+    .brand{font-weight:900;font-size:1.2rem;letter-spacing:-.02em;display:inline-flex;align-items:baseline;gap:2px}
+    .brand b{color:var(--accent)}
+    .brand small{font-size:.7rem;color:var(--muted);font-weight:700;margin-left:6px;text-transform:uppercase;letter-spacing:.05em}
+    .top-cta{display:flex;align-items:center;gap:10px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem;white-space:nowrap}
+    @media(max-width:560px){.top-phone{display:none}}
+
+    /* Speed strip */
+    .speed-strip{background:var(--ink);color:#bbf7d0;font-size:.85rem;padding:8px 20px;text-align:center;font-weight:600}
+    .speed-strip strong{color:#fff}
+
+    /* Hero */
+    .hero{padding-top:48px;padding-bottom:32px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+    .hero-grid{display:grid;gap:32px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;gap:48px}.hero{padding-top:72px;padding-bottom:56px}}
+    .hero h1{margin-bottom:.4em}
+    .hero h1 mark{background:var(--accent-soft);color:var(--accent-dark);padding:0 .15em;border-radius:6px}
+    .hero .lead{margin-bottom:24px}
+
+    /* Big price tile */
+    .price-tile{display:inline-flex;align-items:baseline;gap:10px;background:var(--accent-soft);padding:14px 18px;border-radius:12px;margin-bottom:20px;border:1px solid var(--line)}
+    .price-tile .num{font-size:2rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.03em;line-height:1}
+    .price-tile .lbl{font-size:.95rem;color:var(--ink-2);font-weight:600}
+
+    /* Bullet list (USPs) */
+    .checks{list-style:none;margin:18px 0 24px;display:grid;gap:8px}
+    .checks li{font-size:1rem;color:var(--ink);padding-left:30px;position:relative}
+    .checks li::before{content:"✓";position:absolute;left:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;font-size:.8rem;font-weight:900;display:grid;place-items:center;top:1px}
+
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:800;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:50px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+
+    /* Quick form */
+    .quick{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-lg);border:2px solid var(--accent)}
+    .quick .label-stripe{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;font-weight:800;padding:4px 10px;border-radius:6px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+    .quick h2{font-size:1.4rem;margin-bottom:.3em}
+    .quick .sub{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+    .field{margin-bottom:12px}
+    .field label{display:block;font-weight:700;font-size:.85rem;color:var(--ink);margin-bottom:5px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    .quick .btn{width:100%;margin-top:6px}
+    .form-foot{margin-top:10px;font-size:.78rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:#fff;border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:24px}}
+    .trust-item .num{font-size:1.7rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.82rem;color:var(--muted);margin-top:2px;font-weight:600}
+
+    /* Pricing cards */
+    .pricing{background:#fff}
+    .pricing-grid{display:grid;gap:18px;margin-top:40px}
+    @media(min-width:760px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
+    .price-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:28px;position:relative;transition:transform .15s,border-color .15s,box-shadow .15s}
+    .price-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .price-card.featured{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft) 0%,#fff 30%)}
+    .price-card .ribbon{position:absolute;top:-12px;left:24px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.05em}
+    .price-card h3{font-size:1.15rem}
+    .price-card .from{font-size:.9rem;color:var(--muted);font-weight:600;margin-top:6px}
+    .price-card .big{font-size:2.2rem;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1;margin-top:4px}
+    .price-card .big small{font-size:1rem;color:var(--muted);font-weight:600}
+    .price-card ul{list-style:none;margin-top:18px}
+    .price-card ul li{font-size:.93rem;color:var(--ink-2);padding:6px 0 6px 22px;position:relative}
+    .price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+    .price-card .btn{width:100%;margin-top:18px}
+
+    /* Process strip */
+    .process{background:var(--ink);color:#fff;padding:48px 0;text-align:center}
+    .process h2{color:#fff}
+    .process .lead{color:#bbf7d0;margin-left:auto;margin-right:auto}
+    .process-grid{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(2,1fr)}
+    @media(min-width:760px){.process-grid{grid-template-columns:repeat(4,1fr)}}
+    .pstep{padding:18px}
+    .pstep .num{font-size:2.5rem;font-weight:900;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .pstep h3{color:#fff;margin-top:8px;font-size:1.05rem}
+    .pstep p{color:#bbf7d0;font-size:.92rem;margin-top:4px}
+
+    /* Gallery */
+    .gallery{background:var(--bg)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:36px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:10px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:780px;margin:40px auto 0}
+    .faq details{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:0;margin-bottom:8px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.4rem;color:var(--accent);transition:transform .15s;flex:none;font-weight:800}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 20px 18px;color:var(--ink-2);font-size:.95rem}
+
+    /* Final CTA */
+    .cta-final{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;text-align:center}
+    .cta-final h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem)}
+    .cta-final p{color:#dcfce7;font-size:1.1rem;max-width:540px;margin:12px auto 24px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:#fff;color:var(--accent-dark)}
+    .cta-final .btn-secondary:hover{background:var(--ink);color:#fff}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--accent-dark)}
+
+    footer{background:#022c1a;color:#86efac;padding:48px 0 28px;font-size:.92rem}
+    .foot-grid{display:grid;gap:28px;margin-bottom:32px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:12px;font-size:1rem}
+    .foot-grid a{color:#bbf7d0;display:block;padding:3px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #064e3b;padding-top:20px;text-align:center;font-size:.85rem}
+
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:46px;padding:11px;font-size:.93rem}
+    @media(max-width:760px){.sticky-bar{display:flex;gap:8px}body{padding-bottom:74px}}
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #16a34a;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">B<b>Grupp</b><small>Soodne sillutus</small></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">📞 +372 58374422</a>
+      <a href="#kontakt-top" class="btn btn-primary" style="padding:9px 14px;min-height:auto;font-size:.9rem">Saa hind</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi paigaldus Valgas, Võrus ja Kagu-Eestis 2026</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-02.jpg" alt="Tänavakivi paigaldus Valgas, Võrus ja Kagu-Eestis 2026" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi paigaldus Valgas, Võrus ja Kagu-Eestis 2026</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <nav aria-label="Teekonnajäljed"><a href="/">Avaleht</a> › <a href="/blog/">Blog</a> › Tänavakivi paigaldus Valgas, Võrus ja Kagu-Eestis</nav>
+  <p><strong>Avaldatud:</strong> 18. juuli 2026 · <strong>Autor:</strong> Keio Soo, B Grupp OÜ tegevjuht · <strong>Lugemisaeg:</strong> ~9 min</p>
+</div>
+
+<h1>Tänavakivi paigaldus Valgas, Võrus ja Kagu-Eestis 2026</h1>
+
+<p class="lead">Kagu-Eesti kliima, künklik reljeef ja liivsavipinnas nõuavad tänavakivi paigalduselt tugevamat aluskihti ja läbimõeldud drenaaži. <strong>B Grupp</strong> paigaldab tänavakivi Valgas, Võrus, Otepääl, Antslas, Räpinas ja Põlvas hinnaklassis <strong>18–45 €/m²</strong> (paigaldustöö), materjaliga koos <strong>34–72 €/m²</strong>. Standardse 60 m² sissesõidutee valmistame ette ja paigaldame üldjuhul <strong>4–6 tööpäevaga</strong>.</p>
+
+<div class="answer-card">
+  <h2>Kagu-Eesti tänavakivi paigaldus — kiirvastus</h2>
+  <ul>
+    <li><strong>Paigalduse hind (Valga, Võru, Põlva):</strong> 18–45 €/m² (ainult töö), 34–72 €/m² (koos materjaliga)</li>
+    <li><strong>Aluskihi paksus künklikul maastikul:</strong> 25–35 cm killustik (0/32) + 3–5 cm sõelmed</li>
+    <li><strong>Drenaaž:</strong> minimaalne kalle 2 % kaldenurgast eemale (kohustuslik nõlvadel &gt;5°)</li>
+    <li><strong>Tüüpprojekti tähtaeg:</strong> 30 m² — 2–3 päeva · 60 m² — 4–6 päeva · 150 m² — 9–12 päeva</li>
+    <li><strong>Garantii:</strong> töödele 2 aastat, betoonkivile tehase 15 aastat (Brikers, Aroc, Premia)</li>
+    <li><strong>Standardid:</strong> EVS-EN 1338 (betoonkivi), EVS-EN 1342 (looduskivi), EVS 901-3 (paigaldus)</li>
+    <li><strong>Kontakt:</strong> <a href="tel:+37258374422">+372 58374422</a> · <a href="mailto:Balcongrupp@gmail.com">Balcongrupp@gmail.com</a></li>
+  </ul>
+</div>
+
+<h2>Miks Kagu-Eesti tänavakivi paigaldus erineb muudest piirkondadest</h2>
+
+<p>Valga ja Võru maakondade paigaldusobjektid asuvad enamasti kõrgustikel, kus kõrguste erinevused ühe kinnistu piires ulatuvad tihti 1,5–4 meetrini. Otepää kõrgustik ja Haanja kõrgustik toovad kaasa kaks kohalikku tegurit, mida rannikupiirkondade meistrid tihti alahindavad: <strong>pidev pinnaseniiskus mäenõlvade allosas</strong> ja <strong>hooajaline pinnaseliikumine</strong>. Nende tõttu on aluskihi ja drenaaži planeerimine olulisem kui kivi enda valik.</p>
+
+<h3>Kagu-Eesti pinnase eripära</h3>
+<p>Kagu-Eestis domineerib liivsavi ja tolmjas moreen — pinnased, mille kandevõime langeb sula- ja vihmaperioodidel märgatavalt. Sellepärast paigaldame Valgas, Võrus ja Põlvas killustikupadja alati 5–10 cm paksemalt kui Tallinna eramute standardobjektidel. Sissesõiduteel on aluskihi kogupaksus 30–40 cm, jalgtee puhul 20–25 cm.</p>
+
+<h3>Ilmastik ja hooaeg</h3>
+<p>Kagu-Eesti aktiivne paigaldushooaeg kestab <strong>aprilli lõpust oktoobri keskpaigani</strong>. Kevadised öökülmad kestavad siin sageli maini, seega ei alusta ka meie aluskihi rammimist enne, kui pinnas on sulanud minimaalselt 40 cm sügavuselt. Talvine paigaldus on võimalik ainult siseterrassidele ja kaetud sissepääsudele — <a href="/kivipaigaldus-talvel-eesti-kiire/">talvise kivipaigalduse tehnoloogia</a> on eraldi teenus, mille üldkatab köetud telk.</p>
+
+<h2>Hinnaklassid Valgas, Võrus ja Kagu-Eestis 2026</h2>
+
+<p>Kagu-Eesti hinnad on Tallinnaga võrreldes tavaliselt 8–15 % soodsamad tänu väiksemale logistilisele koormusele meie Tartu-Võru laopunkti kaudu. Alljärgnev tabel näitab suunavad hinnavahemikud kolme tüüpprojekti kohta 2026. aasta seisuga.</p>
+
+<table>
+  <thead>
+    <tr><th>Objekt</th><th>Ainult paigaldus €/m²</th><th>Koos materjaliga €/m²</th><th>Tavaline tähtaeg</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Eramaja sissesõidutee (40–80 m²)</td><td>22–38</td><td>42–68</td><td>4–6 päeva</td></tr>
+    <tr><td>Kõnnitee ja aiatee (jalakoormus)</td><td>18–29</td><td>34–52</td><td>2–4 päeva</td></tr>
+    <tr><td>Kortermaja hoov (150–400 m²)</td><td>24–36</td><td>44–62</td><td>8–14 päeva</td></tr>
+    <tr><td>Graniidist sissesõit (looduskivi)</td><td>32–45</td><td>58–72</td><td>6–9 päeva</td></tr>
+    <tr><td>Munakivi (dekoratiivne 15–40 m²)</td><td>28–42</td><td>52–70</td><td>3–5 päeva</td></tr>
+  </tbody>
+</table>
+
+<p>Konkreetne hind sõltub kolmest muutujast: <strong>kalde suurus</strong> (nõlvatöö on 12–18 % kallim), <strong>vana katte eemaldus</strong> (asfalt 6–9 €/m² lisaks) ja <strong>drenaažitorude paigaldus</strong> (12–24 €/jm). Vaata ka võrdlust <a href="/tanavakivi-paigaldus-viljandi-hind/">Viljandi hinnaklassidega</a> ning <a href="/tanavakivi-paigaldus-tartu-hind/">Tartu hinnaklassidega</a>, mis kajastavad sarnast Lõuna-Eesti reaalsust.</p>
+
+<div class="cta-strip">
+  <p><strong>Saa oma projekti täpne hind 1 minutiga</strong> — Valga, Võru, Otepää, Räpina, Põlva ja lähipiirkonnad.</p>
+  <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+  <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+</div>
+
+<h2>Künkliku maastiku mõju drenaažile</h2>
+
+<p>Künklikul reljeefil on drenaaži rolli võimatu üle hinnata: kui vesi ei liigu paigalduse pealt ega alt kontrollitud teed pidi minema, kaotab tänavakivi pind 3–5 aastaga tasapinna. Kagu-Eesti tüüpilises 4–8 % kaldega sissesõidutees kasutame kolmekihilist lahendust.</p>
+
+<h3>Kolmekihiline drenaažisüsteem nõlvadel</h3>
+<ul>
+  <li><strong>Pinnavesi:</strong> vähemalt 2 % kalle sillutise pinnal, sinusoidne või sirge äravool tänavakivi rennide kaudu. Tugevate kallakute puhul (&gt;6 °) lisame ristirenn iga 8–12 m tagant.</li>
+  <li><strong>Vahekihi vesi:</strong> geotekstiil (mass 200 g/m²) killustiku ja sõelmete piiril hoiab peene fraktsiooni ülemisest kihist eraldi ja väldib pumpamist külmumistsüklites.</li>
+  <li><strong>Süvavesi:</strong> perforeeritud drenaažitoru Ø 80–110 mm nõlva allservas, ühendatud imbkaevu või olemasoleva sadeveesüsteemiga.</li>
+</ul>
+
+<div class="warning">
+  <p><strong>Levinud viga:</strong> tellija palub „ainult kivi peale panna" olemasolevale kaldpinnale ilma killustiku uuendamiseta. Kagu-Eesti savipinnasel viib see 2 aasta jooksul lohkude tekkeni ja kivi valgumisele nõlva allossa. Nõustusime töid tegema ainult siis, kui aluskiht vastab EVS 901-3 nõuetele.</p>
+</div>
+
+<h3>Kalde ja veemahu arvutamine</h3>
+<p>60 m² sissesõiduteel, mille kalle on 5 %, koguneb tugevama vihma (25 mm/h) korral <strong>1,5 m³ vett tunnis</strong> ehk 25 liitrit minutis. See on maht, mida pinnase- ja killustikukiht üksi tulla ei tule — vaja on drenaaži. Meie Võru meister modelleerib igal Kagu-Eesti objektil veemahu enne aluskihi paksuse fikseerimist. Kui tegemist on erakordselt keerulise nõlvaga, kasutame lisaks <a href="/sissesoidu-sillutus-koos-drenaaziga-harjumaa/">koos drenaažiga sissesõidutee lahendust</a>, mille alusteosed vastavad täpsemale EVS 901-3 spetsifikatsioonile.</p>
+
+<h2>Tüüpprojektide tähtajad Kagu-Eestis</h2>
+
+<p>Kagu-Eesti tähtaegu mõjutavad kaks lokaalset tegurit: kaugus meie Võru laopunktist (materjali kohaletoomine 1 päev) ja töögrupi liikuvus külade vahel. Suvekuudel juuli–august on ooteaeg 10–20 päeva, kevadel ja sügisel 3–7 päeva.</p>
+
+<table>
+  <thead>
+    <tr><th>Projekti maht</th><th>Ettevalmistus</th><th>Paigaldus</th><th>Viimistlus</th><th>Kokku</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>30 m² (aiatee või väike sissesõit)</td><td>0,5 päeva</td><td>1,5 päeva</td><td>0,5 päeva</td><td>2–3 päeva</td></tr>
+    <tr><td>60 m² (eramaja sissesõidutee)</td><td>1 päev</td><td>3–4 päeva</td><td>0,5–1 päeva</td><td>4–6 päeva</td></tr>
+    <tr><td>150 m² (kortermaja sissepääs)</td><td>1,5 päeva</td><td>6–8 päeva</td><td>1,5 päeva</td><td>9–12 päeva</td></tr>
+    <tr><td>300 m² (parkla)</td><td>2 päeva</td><td>10–14 päeva</td><td>2 päeva</td><td>14–18 päeva</td></tr>
+  </tbody>
+</table>
+
+<p>Kagu-Eesti künklikul objektidel lisandub tähtajale keskmiselt 15–20 % suuruse kaldetöö tõttu — killustiku terrassimine ja lokaalne süvendamine võtab käsitööd, mida masin ei asenda.</p>
+
+<h2>Materjalivalik Valga ja Võru objektidele</h2>
+
+<p>Kasutame Kagu-Eesti kliima jaoks kolme betoonkivi tootjat — <strong>Brikers</strong> (Läti tehase toodang, hea külmakindlus F150), <strong>Aroc</strong> ja <strong>Premia</strong> (Eesti tehased, tugev logistiline eelis). Looduskivi puhul on esimene valik <strong>Soome ja Skandinaavia graniit</strong> (F250, minimaalne veeimavus &lt; 0,4 %), millele lisanduvad vajadusel Hiina ja India graniit hinnatundlikuma segmendi jaoks.</p>
+
+<h3>Miks graniit sobib Kagu-Eesti kliimasse</h3>
+<p>Graniit talub külmumis-sulamistsükleid ilma pragunemata — Kagu-Eestis, kus talvel esineb 80–120 tsüklit hooajas, on see kriitiline. Graniidi eluiga sissesõiduteel on <strong>50+ aastat</strong>, betoonkivi eluiga <strong>25–30 aastat</strong>. Detailsem võrdlus on lehel <a href="/graniitkivi-paigaldus-sissesoidutee/">graniitkivi paigaldus sissesõiduteele</a>. Kui eelistad kvaliteedigraniidi ilmet väiksema hinnaklassiga, vaata ka <a href="/graniit-sillutuskivi-paigaldus-eesti/">graniit-sillutuskivi paigaldust Eestis</a>.</p>
+
+<h3>Betoonkivi vs looduskivi Kagu-Eestis</h3>
+<table>
+  <thead>
+    <tr><th>Omadus</th><th>Betoonkivi (Brikers/Aroc/Premia)</th><th>Graniit (Soome/Skandinaavia)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Hind €/m² (materjal)</td><td>14–28</td><td>32–58</td></tr>
+    <tr><td>Eluiga</td><td>25–30 aastat</td><td>50+ aastat</td></tr>
+    <tr><td>Külmakindlus</td><td>F100–F150</td><td>F250+</td></tr>
+    <tr><td>Veeimavus</td><td>4–6 %</td><td>&lt; 0,4 %</td></tr>
+    <tr><td>Standard</td><td>EVS-EN 1338</td><td>EVS-EN 1342</td></tr>
+    <tr><td>Kagu-Eesti sobivus</td><td>Väga hea eramutel</td><td>Parim kortermajade ja intensiivse liikluse aladel</td></tr>
+  </tbody>
+</table>
+
+<h2>Kagu-Eesti piirkonnad, kus me töötame</h2>
+
+<p>Meie mobiilne meeskond katab Valga, Võru ja Põlva maakonnad ning nendega piirnevad Lõuna-Tartumaa alad. Peamised paigalduslinnad ja -vallad:</p>
+
+<ul>
+  <li><strong>Valga maakond:</strong> Valga linn, Otepää, Tõrva, Antsla, Karula, Puka</li>
+  <li><strong>Võru maakond:</strong> Võru linn, Rõuge, Haanja, Vastseliina, Antsla, Misso</li>
+  <li><strong>Põlva maakond:</strong> Põlva, Räpina, Kanepi, Värska</li>
+  <li><strong>Lõuna-Tartumaa:</strong> Elva, Nõo, Rõngu (vaata ka <a href="/tanavakivi-paigaldus-elva-ja-otepaa/">tänavakivi paigaldus Elva ja Otepää piirkonnas</a>)</li>
+</ul>
+
+<p>Valga vallas asuvatele objektidele on eraldi hooldushinnastik lehel <a href="/sillutuskivi-paigaldus-valga-vald/">sillutuskivi paigaldus Valga vallas</a>.</p>
+
+<h2>Tellimuse protsess samm-sammult</h2>
+
+<ol>
+  <li><strong>Päring:</strong> saada projekti fotod ja mõõdud e-posti või telefoni teel. Vastame üldjuhul sama päeva jooksul.</li>
+  <li><strong>Objekti ülevaatus:</strong> Kagu-Eesti objektidel käib meister kohapeal 3–7 päeva jooksul (Valga ja Võru linn tasuta, äärealad kokkuleppel).</li>
+  <li><strong>Hinnapakkumine:</strong> saad detailse hinnapakkumise 2–3 tööpäeva jooksul koos aluskihi ja drenaaži spetsifikatsiooniga.</li>
+  <li><strong>Leping ja ajakava:</strong> kinnitame paigalduse alguskuupäeva. Ettemaks 30 % materjalitellimuseks.</li>
+  <li><strong>Töö:</strong> paigaldame vastavalt tähtaegade tabelile. Jälgime EVS 901-3 nõudeid ja fikseerime iga kihi paksuse fotoraportina.</li>
+  <li><strong>Üleandmine ja garantii:</strong> 2-aastane töögarantii ja 15-aastane tehase materjaligarantii. Fotoraport ja täidetud üleandmisleping.</li>
+</ol>
+
+<p>Kui soovid enne detailset pakkumist esialgset hinnangut, kasuta <a href="/kalkulaator/">hinnakalkulaatorit</a> või <a href="/sillutuskivi-hinnakalkulaator-1-minutiga/">1-minutilist sillutuskivi kalkulaatorit</a>.</p>
+
+<div class="cta-strip">
+  <p><strong>Kagu-Eesti kevadhooaeg 2026 täitub kiiresti</strong> — kinnita oma tähtaeg juba täna. Broneering ilma ettemaksuta.</p>
+  <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+  <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+</div>
+
+<h2>Kvaliteedistandardid ja garantii</h2>
+
+<p>Kõik B Grupi Kagu-Eestis teostatavad paigaldused vastavad kolmele Eesti standardile:</p>
+<ul>
+  <li><strong>EVS-EN 1338</strong> — betoonist sillutuskivid (survetugevus, veeimavus, külmakindlus).</li>
+  <li><strong>EVS-EN 1342</strong> — looduskivist sillutuskivid.</li>
+  <li><strong>EVS-EN 1340</strong> — betoonist äärekivid (mida kombineerime tänavakiviga; vaata ka <a href="/aarekivi-paigaldus-hind-eesti/">äärekivi paigalduse hinda Eestis</a>).</li>
+  <li><strong>EVS 901-3</strong> — teekonstruktsiooni ehitamine (aluskihi tihendus, kalded, geotekstiil).</li>
+</ul>
+
+<p>Anname töödele <strong>2-aastase garantii</strong> (vajumine, spuugide lahtinemine, äärekivi paigalduse defektid). Materjalile kehtib tootja garantii — Brikers, Aroc ja Premia betoonkividel üldjuhul 15 aastat, graniidile praktikas piiramatu eluiga.</p>
+
+<h2>Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kui palju maksab tänavakivi paigaldus Võrus 60 m² sissesõiduteele?</summary>
+    <p>60 m² sissesõidutee Võrus maksab 2026. aasta seisuga <strong>2 520–4 080 €</strong> koos materjaliga (42–68 €/m²) või <strong>1 320–2 280 €</strong> ainult paigaldustöö eest (22–38 €/m²). Lõplik hind sõltub kaldest, olemasoleva katte eemaldusest ja drenaažitorude vajadusest.</p>
+  </details>
+  <details>
+    <summary>Kas Kagu-Eesti künklikul objektil on aluskihi paksus tõesti oluline?</summary>
+    <p>Jah. Kagu-Eesti savipinnasel ja 4–8 % kaldega objektidel paigaldame killustikupadja paksusega <strong>25–35 cm</strong> (sissesõiduteel), mis on 5–10 cm rohkem kui rannikupiirkondades. Väiksem aluskiht viib 2–3 aasta jooksul vajumise ja veepäraldiste tekkeni.</p>
+  </details>
+  <details>
+    <summary>Kui kaua tänavakivi paigaldus Valgas kestab?</summary>
+    <p>Standardne 60 m² eramaja sissesõidutee valmib Valgas <strong>4–6 tööpäevaga</strong>, 30 m² aiatee <strong>2–3 päevaga</strong>, 150 m² kortermaja hoov <strong>9–12 päevaga</strong>. Künklikul objektidel lisandub keskmiselt 15–20 % suuremast maastiku ettevalmistusest.</p>
+  </details>
+  <details>
+    <summary>Millise materjali soovitate Otepää künklikule objektile?</summary>
+    <p>Otepää kõrgustiku aktiivses külmumis-sulamistsüklis (80–120 tsüklit hooajas) soovitame <strong>Soome või Skandinaavia graniiti</strong> (F250, veeimavus &lt; 0,4 %). Kui eelarve nõuab betoonkivi, on parim valik Brikers F150 klass. Betoonkivi eluiga on 25–30 aastat, graniidi eluiga 50+ aastat.</p>
+  </details>
+  <details>
+    <summary>Kas talvel saab Valgas või Võrus tänavakivi paigaldada?</summary>
+    <p>Klassikaline välipaigaldus on Kagu-Eestis võimalik <strong>aprillist oktoobrini</strong>. Talvine paigaldus toimub ainult kaetud/köetud töökeskkonnas (nt kaetud sissepääs või köetud telk). Aluskihti ei rammita külmunud pinnasele.</p>
+  </details>
+</div>
+
+<h2>Seotud lehed</h2>
+
+<div class="related-grid">
+  <ul>
+    <li><a href="/tanavakivi-paigaldus-tartu-hind/">Tänavakivi paigaldus Tartu — hind 2026</a></li>
+    <li><a href="/tanavakivi-paigaldus-viljandi-hind/">Tänavakivi paigaldus Viljandi — hind</a></li>
+    <li><a href="/tanavakivi-paigaldus-elva-ja-otepaa/">Tänavakivi paigaldus Elva ja Otepää piirkonnas</a></li>
+    <li><a href="/sillutuskivi-paigaldus-valga-vald/">Sillutuskivi paigaldus Valga vallas</a></li>
+    <li><a href="/graniitkivi-paigaldus-sissesoidutee-hind/">Graniitkivi paigaldus sissesõiduteele — hind</a></li>
+    <li><a href="/sissesoidu-sillutus-koos-drenaaziga-harjumaa/">Sissesõidu sillutus koos drenaažiga</a></li>
+    <li><a href="/kivipaigaldus-talvel-eesti-kiire/">Kivipaigaldus talvel Eestis</a></li>
+    <li><a href="/kalkulaator/">Hinnakalkulaator</a></li>
+    <li><a href="/blog/tanavakivi-paigaldus-kohtla-jarve-ja-johvis/">Blog: Tänavakivi paigaldus Kohtla-Järvel ja Jõhvis</a></li>
+    <li><a href="/blog/tanavakivi-paigaldus-viljandi-ja-abja/">Blog: Tänavakivi paigaldus Viljandis ja Abjas</a></li>
+  </ul>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://bgrupp.ee/blog/tanavakivi-paigaldus-valga-ja-voru/#article",
+      "headline": "Tänavakivi paigaldus Valgas, Võrus ja Kagu-Eestis 2026",
+      "description": "Kagu-Eesti künklikul maastikul tänavakivi paigalduse hinnaklassid (18–45 €/m²), drenaažilahendused, aluskihi paksus (25–35 cm) ja tüüpprojektide tähtajad Valgas, Võrus, Otepääl, Räpinas ja Põlvas.",
+      "datePublished": "2026-07-18",
+      "dateModified": "2026-07-18",
+      "inLanguage": "et",
+      "url": "https://bgrupp.ee/blog/tanavakivi-paigaldus-valga-ja-voru/",
+      "mainEntityOfPage": "https://bgrupp.ee/blog/tanavakivi-paigaldus-valga-ja-voru/",
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "Tegevjuht",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Balcon Grupp OÜ"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "legalName": "Balcon Grupp OÜ",
+        "url": "https://bgrupp.ee/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bgrupp.ee/logo.png"
+        },
+        "telephone": "+372 58374422",
+        "email": "Balcongrupp@gmail.com",
+        "vatID": "16294742",
+        "foundingDate": "2021-08-18"
+      },
+      "articleSection": "Tänavakivi paigaldus",
+      "keywords": "tänavakivi paigaldus Võru, tänavakivi paigaldus Valga, sillutuskivi Kagu-Eesti, Otepää tänavakivi, künkliku maastiku drenaaž"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bgrupp.ee/blog/tanavakivi-paigaldus-valga-ja-voru/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kui palju maksab tänavakivi paigaldus Võrus 60 m² sissesõiduteele?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "60 m² sissesõidutee Võrus maksab 2026. aasta seisuga 2 520–4 080 € koos materjaliga (42–68 €/m²) või 1 320–2 280 € ainult paigaldustöö eest (22–38 €/m²). Lõplik hind sõltub kaldest, vana katte eemaldusest ja drenaaživajadusest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas Kagu-Eesti künklikul objektil on aluskihi paksus tõesti oluline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah. Kagu-Eesti savipinnasel ja 4–8 % kaldega objektidel paigaldame killustikupadja paksusega 25–35 cm (sissesõiduteel), mis on 5–10 cm rohkem kui rannikupiirkondades. Väiksem aluskiht viib 2–3 aasta jooksul vajumise ja veepäraldiste tekkeni."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kui kaua tänavakivi paigaldus Valgas kestab?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standardne 60 m² eramaja sissesõidutee valmib Valgas 4–6 tööpäevaga, 30 m² aiatee 2–3 päevaga, 150 m² kortermaja hoov 9–12 päevaga. Künklikul objektidel lisandub keskmiselt 15–20 % suuremast maastiku ettevalmistusest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Millise materjali soovitate Otepää künklikule objektile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Otepää kõrgustiku aktiivses külmumis-sulamistsüklis (80–120 tsüklit hooajas) soovitame Soome või Skandinaavia graniiti (F250, veeimavus alla 0,4 %). Kui eelarve nõuab betoonkivi, on parim valik Brikers F150 klass. Betoonkivi eluiga on 25–30 aastat, graniidi eluiga 50+ aastat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas talvel saab Valgas või Võrus tänavakivi paigaldada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Klassikaline välipaigaldus on Kagu-Eestis võimalik aprillist oktoobrini. Talvine paigaldus toimub ainult kaetud või köetud töökeskkonnas. Aluskihti ei rammita külmunud pinnasele."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bgrupp.ee/blog/tanavakivi-paigaldus-valga-ja-voru/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://bgrupp.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://bgrupp.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tänavakivi paigaldus Valgas, Võrus ja Kagu-Eestis 2026",
+          "item": "https://bgrupp.ee/blog/tanavakivi-paigaldus-valga-ja-voru/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>B Grupp</h4>
+        <p style="color:#86efac">B Grupp — soodsa hinnaga tänavakivi paigaldus eramajadele üle Eesti. Fikseeritud hind, kiire algus.</p>
+        <p style="margin-top:12px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com</p>
+      </div>
+      <div>
+        <h4>Hinnad</h4>
+        <a href="#hinnad">Eramaja õu — 16 €/m²</a>
+        <a href="#hinnad">Tänavakivi tervik — 28 €/m²</a>
+        <a href="#hinnad">Graniit premium — 35 €/m²</a>
+        <a href="#hinnad">Äärekivi — 24 €/jm</a>
+      </div>
+      <div>
+        <h4>Piirkond</h4>
+        <a href="#">Tallinn ja Harjumaa</a>
+        <a href="#">Tartu ja Tartumaa</a>
+        <a href="#">Pärnu ja Pärnumaa</a>
+        <a href="#">Üle Eesti</a>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <a href="#kkk">Korduma kippuvad küsimused</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#">Privaatsuspoliitika</a>
+        <a href="#">Tingimused</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 B Grupp · Reg nr 16294742 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">⚡ Saa hind</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin saada kiiret hinnapakkumist sillutuse paigalduseks." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

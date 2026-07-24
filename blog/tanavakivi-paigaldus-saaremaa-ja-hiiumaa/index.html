@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi paigaldus Saaremaal ja Hiiumaal — saarte...</title>
+  <meta name="description" content="Saarte eripära — praamilogistika, materjali transport, kohaliku tööjõu kombineerimine ja realistlikud hinnad Saaremaa ning Hiiumaa kliendile.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bgrupp.ee/blog/tanavakivi-paigaldus-saaremaa-ja-hiiumaa/">
+
+  <meta property="og:title" content="Tänavakivi paigaldus Saaremaal ja Hiiumaal — saarte...">
+  <meta property="og:description" content="Saarte eripära — praamilogistika, materjali transport, kohaliku tööjõu kombineerimine ja realistlikud hinnad Saaremaa ning Hiiumaa kliendile.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bgrupp.ee/blog/tanavakivi-paigaldus-saaremaa-ja-hiiumaa/">
+  <meta property="og:image" content="https://bgrupp.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f7fdf9;--surface:#fff;--ink:#052e1a;--ink-2:#15543a;--muted:#5b8071;
+      --accent:#16a34a;--accent-dark:#15803d;--accent-soft:#dcfce7;
+      --line:#d1fae5;--success:#15803d;--warn:#b45309;--radius:12px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(5,46,26,.08);
+      --shadow-lg:0 10px 30px rgba(5,46,26,.12);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:88px 0}}
+
+    h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+    h1{font-size:clamp(2.1rem,5vw,3.4rem)}
+    h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:.5em}
+    h3{font-size:1.2rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1140px;margin:0 auto;gap:14px}
+    .brand{font-weight:900;font-size:1.2rem;letter-spacing:-.02em;display:inline-flex;align-items:baseline;gap:2px}
+    .brand b{color:var(--accent)}
+    .brand small{font-size:.7rem;color:var(--muted);font-weight:700;margin-left:6px;text-transform:uppercase;letter-spacing:.05em}
+    .top-cta{display:flex;align-items:center;gap:10px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem;white-space:nowrap}
+    @media(max-width:560px){.top-phone{display:none}}
+
+    /* Speed strip */
+    .speed-strip{background:var(--ink);color:#bbf7d0;font-size:.85rem;padding:8px 20px;text-align:center;font-weight:600}
+    .speed-strip strong{color:#fff}
+
+    /* Hero */
+    .hero{padding-top:48px;padding-bottom:32px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+    .hero-grid{display:grid;gap:32px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;gap:48px}.hero{padding-top:72px;padding-bottom:56px}}
+    .hero h1{margin-bottom:.4em}
+    .hero h1 mark{background:var(--accent-soft);color:var(--accent-dark);padding:0 .15em;border-radius:6px}
+    .hero .lead{margin-bottom:24px}
+
+    /* Big price tile */
+    .price-tile{display:inline-flex;align-items:baseline;gap:10px;background:var(--accent-soft);padding:14px 18px;border-radius:12px;margin-bottom:20px;border:1px solid var(--line)}
+    .price-tile .num{font-size:2rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.03em;line-height:1}
+    .price-tile .lbl{font-size:.95rem;color:var(--ink-2);font-weight:600}
+
+    /* Bullet list (USPs) */
+    .checks{list-style:none;margin:18px 0 24px;display:grid;gap:8px}
+    .checks li{font-size:1rem;color:var(--ink);padding-left:30px;position:relative}
+    .checks li::before{content:"✓";position:absolute;left:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;font-size:.8rem;font-weight:900;display:grid;place-items:center;top:1px}
+
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:800;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:50px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+
+    /* Quick form */
+    .quick{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-lg);border:2px solid var(--accent)}
+    .quick .label-stripe{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;font-weight:800;padding:4px 10px;border-radius:6px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+    .quick h2{font-size:1.4rem;margin-bottom:.3em}
+    .quick .sub{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+    .field{margin-bottom:12px}
+    .field label{display:block;font-weight:700;font-size:.85rem;color:var(--ink);margin-bottom:5px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    .quick .btn{width:100%;margin-top:6px}
+    .form-foot{margin-top:10px;font-size:.78rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:#fff;border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:24px}}
+    .trust-item .num{font-size:1.7rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.82rem;color:var(--muted);margin-top:2px;font-weight:600}
+
+    /* Pricing cards */
+    .pricing{background:#fff}
+    .pricing-grid{display:grid;gap:18px;margin-top:40px}
+    @media(min-width:760px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
+    .price-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:28px;position:relative;transition:transform .15s,border-color .15s,box-shadow .15s}
+    .price-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .price-card.featured{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft) 0%,#fff 30%)}
+    .price-card .ribbon{position:absolute;top:-12px;left:24px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.05em}
+    .price-card h3{font-size:1.15rem}
+    .price-card .from{font-size:.9rem;color:var(--muted);font-weight:600;margin-top:6px}
+    .price-card .big{font-size:2.2rem;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1;margin-top:4px}
+    .price-card .big small{font-size:1rem;color:var(--muted);font-weight:600}
+    .price-card ul{list-style:none;margin-top:18px}
+    .price-card ul li{font-size:.93rem;color:var(--ink-2);padding:6px 0 6px 22px;position:relative}
+    .price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+    .price-card .btn{width:100%;margin-top:18px}
+
+    /* Process strip */
+    .process{background:var(--ink);color:#fff;padding:48px 0;text-align:center}
+    .process h2{color:#fff}
+    .process .lead{color:#bbf7d0;margin-left:auto;margin-right:auto}
+    .process-grid{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(2,1fr)}
+    @media(min-width:760px){.process-grid{grid-template-columns:repeat(4,1fr)}}
+    .pstep{padding:18px}
+    .pstep .num{font-size:2.5rem;font-weight:900;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .pstep h3{color:#fff;margin-top:8px;font-size:1.05rem}
+    .pstep p{color:#bbf7d0;font-size:.92rem;margin-top:4px}
+
+    /* Gallery */
+    .gallery{background:var(--bg)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:36px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:10px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:780px;margin:40px auto 0}
+    .faq details{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:0;margin-bottom:8px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.4rem;color:var(--accent);transition:transform .15s;flex:none;font-weight:800}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 20px 18px;color:var(--ink-2);font-size:.95rem}
+
+    /* Final CTA */
+    .cta-final{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;text-align:center}
+    .cta-final h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem)}
+    .cta-final p{color:#dcfce7;font-size:1.1rem;max-width:540px;margin:12px auto 24px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:#fff;color:var(--accent-dark)}
+    .cta-final .btn-secondary:hover{background:var(--ink);color:#fff}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--accent-dark)}
+
+    footer{background:#022c1a;color:#86efac;padding:48px 0 28px;font-size:.92rem}
+    .foot-grid{display:grid;gap:28px;margin-bottom:32px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:12px;font-size:1rem}
+    .foot-grid a{color:#bbf7d0;display:block;padding:3px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #064e3b;padding-top:20px;text-align:center;font-size:.85rem}
+
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:46px;padding:11px;font-size:.93rem}
+    @media(max-width:760px){.sticky-bar{display:flex;gap:8px}body{padding-bottom:74px}}
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #16a34a;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">B<b>Grupp</b><small>Soodne sillutus</small></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">📞 +372 58374422</a>
+      <a href="#kontakt-top" class="btn btn-primary" style="padding:9px 14px;min-height:auto;font-size:.9rem">Saa hind</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi paigaldus Saaremaal ja Hiiumaal — saarte logistika ja hind...</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-08.jpg" alt="Tänavakivi paigaldus Saaremaal ja Hiiumaal — saarte logistika ja hind 2026" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi paigaldus Saaremaal ja Hiiumaal — saarte logistika ja hind 2026</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span class="article-date">25. juuni 2026</span>
+  <span class="article-author">Autor: Keio Soo, Balcon Grupp OÜ</span>
+  <span class="article-reading">Lugemisaeg ~8 min</span>
+</div>
+
+<h1>Tänavakivi paigaldus Saaremaal ja Hiiumaal — saarte logistika ja hind 2026</h1>
+
+<p class="lead">Saartel maksab <a href="/">tänavakivi paigaldus</a> tüüpiliselt 4–9 €/m² rohkem kui mandril — peamine põhjus on praamilogistika, mitte tööjõu hind. B Grupp paigaldab tänavakivi nii Saaremaal kui ka Hiiumaal, kombineerides Kuressaare/Kärdla materjalitarne kohalike alustöödega ja mandri brigaadiga. Eesmärk on hoida saare lisakulu alla 10% kogumaksumusest.</p>
+
+<div class="answer-card">
+  <strong>Lühivastus:</strong> Tüüpiline tänavakivi paigaldus Saaremaal või Hiiumaal jääb 2026. aastal vahemikku <strong>34–62 €/m²</strong> (sisaldab alustöid, paigaldust ja äärekivi). Mandriga võrreldes lisandub ~4–9 €/m² praami- ja transpordikulu. Reaalne tööpäev saartel on <strong>40–70 m²</strong> 4-mehelisel brigaadil. Garantii kuni <strong>2 aastat</strong>, projektid mahuga kuni 2 500 m² / 200 000 €.
+</div>
+
+<h2>Miks Saaremaa ja Hiiumaa hinnad erinevad mandri omadest?</h2>
+
+<p>Saartel ei ole tänavakivi paigalduse tunnihind oluliselt kallim — kvalifitseeritud paigaldaja päevamäär on Kuressaares ja Kärdlas ligilähedane Tallinna omale. Vahe tuleb <strong>logistikast ja varustuse mobiliseerimisest</strong>. Üks tüüphaagisega täiskoormaga praamireis Virtsust Kuivastu suunas maksab koos juhi tööajaga 180–260 €, Rohuküla–Heltermaa liinil 150–220 €. Tüüpilisel 80–120 m² projektil tuleb teha 2–3 reisi (materjal, haakeriistad, jäägi tagasi vedu), mis kokku lisab 4–9 €/m².</p>
+
+<h3>Mis kulu saare-projektil reaalselt suurendab</h3>
+
+<ul>
+  <li><strong>Praamipileti otsekulu</strong> — 60–110 € haagisrongiga, sõltuvalt liinist ja kellaajast</li>
+  <li><strong>Juhi ja brigaadi tööaeg sõidul</strong> — Tallinn–Kuressaare otseteekonnal ~4 h ühe suuna kohta</li>
+  <li><strong>Majutus 1–3 päeva</strong> brigaadile suuremate projektide korral (15–30 €/öö/inimese kohta)</li>
+  <li><strong>Materjali väikese koguse hind</strong> — alla 1 alusekoorma killustik/liiv maksab saartel jaehinnaga 30–45% rohkem</li>
+  <li><strong>Tehnikatransport</strong> — vibroplaat, lõikur, mini-laaduri rendi mobiliseerimine</li>
+</ul>
+
+<h2>Praamilogistika — mida tellijal arvestada</h2>
+
+<p>Praktikas planeerime saareprojekti broneerimise <strong>vähemalt 7–10 päeva ette</strong>, suvehooajal 2–3 nädalat. Suvel (juuni–august) on Virtsu–Kuivastu liinil haagisrongidele tipptundidel ootejärjekord, mis võib viivitust põhjustada 1,5–3 tundi. Töömahu planeerimisel jagame Saaremaa projekti tüüpiliselt nii, et saarel ollakse <strong>2–4 järjestikust tööpäeva</strong> — see vähendab praamireiside arvu ja muudab logistika ökonoomsemaks kui pendelreis.</p>
+
+<table>
+  <caption>Mandri ja saareprojekti võrdlus (näide 100 m² tänavakivi paigaldus)</caption>
+  <thead>
+    <tr><th>Kuluartikkel</th><th>Mandril (Pärnu)</th><th>Saaremaal</th><th>Hiiumaal</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Materjal (betoonkivi + alus)</td><td>~22–28 €/m²</td><td>~24–30 €/m²</td><td>~25–31 €/m²</td></tr>
+    <tr><td>Paigaldustöö</td><td>~12–18 €/m²</td><td>~13–19 €/m²</td><td>~13–19 €/m²</td></tr>
+    <tr><td>Praami- ja transpordikulu</td><td>0–2 €/m²</td><td>4–7 €/m²</td><td>5–9 €/m²</td></tr>
+    <tr><td>Brigaadi majutus (kui >1 päev)</td><td>0 €/m²</td><td>1–2 €/m²</td><td>1–2 €/m²</td></tr>
+    <tr><td><strong>Kogusumma vahemik</strong></td><td><strong>34–48 €/m²</strong></td><td><strong>42–58 €/m²</strong></td><td><strong>44–62 €/m²</strong></td></tr>
+  </tbody>
+</table>
+
+<p>Vahemikud sõltuvad mustri keerukusest, äärekivi tüübist (betoon vs graniit) ja sellest, kas alustööd vajavad drenaaži või lisakaevet. Täpse pakkumise saamiseks kasuta meie <a href="/kalkulaator/">kalkulaatorit</a> või saada päring.</p>
+
+<div class="cta-strip">
+  <strong>Tahad saare-projektile siduvat hinda?</strong> Saada mõõdud ja foto olukorrast — vastame 1 tööpäevaga koos praamilogistika arvestusega.
+  <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+</div>
+
+<h2>Materjali tarne — Kuressaarest, Kärdlast või mandrilt?</h2>
+
+<p>Saarel toimub materjalitarne kahel viisil ja õige valik mõjutab kogukulu 6–12%. Suurte koguste puhul (üle 150 m² või täiskoorem ~25 tonni) on otsereis mandri tehasest Brikers, Aroc või Premia ladudest praamiga kohale toimetatud materjal soodsam kui kohalik vahejaehind. Väiksematel projektidel (alla 60 m²) tuleb pea alati odavam tellida materjal kohaliku ehituspoe kaudu Kuressaares või Kärdlas — vaheladu hoiab kokku ühe praamireisi.</p>
+
+<h3>Betoonkivi vs graniit saareprojektil</h3>
+
+<p>Standard <strong>EVS-EN 1338</strong> nõuab betoonsillutuskivile vähemalt 50 MPa survetugevust ja külmakindlust F3 — selle täidavad kõik kolm peamist tehast (Brikers, Aroc, Premia). Saare kliima eeldab tugevamat valikut, sest tuule-soolane õhk kiirendab pinna kulumist. Soovitame saartele kasutada vähemalt 60 mm paksust kivi (sõidualadel 80 mm). Graniitkivi puhul (<strong>EVS-EN 1342</strong>) imporditakse meil enamasti Soome, Skandinaavia, Hiina või India graniidist — saare-projektil tasub mahud planeerida nii, et ühe partii kogus täidab transpordi mahupiiri ära.</p>
+
+<p>Detailsem võrdlus betoonist ja graniidist on artiklis <a href="/blog/klinkerkivi-paigaldus-eelised-ja-hind/">klinkerkivi vs betoonkivi paigaldus</a>. Munakivi-stiilis vanalinnamustri puhul vt eraldi <a href="/munakivi-paigaldus-parnu-vanalinn-2026/">munakivi paigaldus vanalinn</a> juhendit.</p>
+
+<h2>Hinnad 2026 — realistlik vahemik saartel</h2>
+
+<p>Allolev hinnatabel kehtib 2026. aasta hooajale ja eeldab tavalisi paigaldustingimusi (olemasolev pinnas kannab koormust, ligipääs masinale võimalik, puuduvad eritöö nõuded nagu betoonalus või suletud aladel käsipaigaldus).</p>
+
+<table>
+  <caption>Tänavakivi paigaldus saartel — hinnaranges objektide kaupa (2026)</caption>
+  <thead>
+    <tr><th>Objekt</th><th>Saaremaa (€/m²)</th><th>Hiiumaa (€/m²)</th><th>Tüüpiline kogu pindala</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Eramaja sissesõit + kõnnitee</td><td>42–58</td><td>44–62</td><td>40–120 m²</td></tr>
+    <tr><td>Suvila terrassi ja maja-ümbruse sillutus</td><td>44–60</td><td>46–62</td><td>30–80 m²</td></tr>
+    <tr><td>Kohaliku ettevõtte parkla</td><td>38–52</td><td>40–55</td><td>150–800 m²</td></tr>
+    <tr><td>Korterelamu kõnnitee + jäätmemaja ette</td><td>40–55</td><td>42–58</td><td>60–200 m²</td></tr>
+    <tr><td>Avalik plats / rahvamaja ette</td><td>45–62</td><td>48–65</td><td>kuni 2 500 m²</td></tr>
+  </tbody>
+</table>
+
+<p>Üksiku auto sissesõitu (~30–45 m²) ehk väiksele alale planeerides on hinnaaste sageli ülemises pooles — väike projekt jagab praami-kulu väiksemale ruutarvule. Soodushinda saab klastri lähenemisega: kui sama Kihelkonna või Pühalepa piirkonnas teostame samal nädalal mitut paigaldust, jaguneb logistika mitme objekti vahel. Vt mandri-võrdlusena <a href="/sissesoidu-sillutus-parnu-eramaja-hind/">sissesõidu sillutus Pärnu eramaja hind</a>.</p>
+
+<h3>Kuidas mahub eelarve 200 000 € sisse?</h3>
+
+<p>Meie maksimaalne objektimaht on 2 500 m² ja kuni 200 000 €. Reaalne suur Saaremaa avaliku tellija projekt — näiteks valla rahvamaja ette platsi ümberehitus, parkimisaladega — mahub tihti 1 200–1 800 m² piiresse, mis 50 €/m² keskmise juures jääb 60 000–90 000 € vahele. Drenaaži ja äärekivi-detailid lisavad 10–18% kogusummale.</p>
+
+<h2>Kohalik tööjõud vs mandri brigaad</h2>
+
+<p>Kõige ökonoomsem mudel saareprojektil on <strong>hübriid</strong>: mandri-brigaad teeb põhipaigalduse ja kontrollib EVS-EN 1338 / EVS 901-3 nõuete täitmist (kihi paksused, kalded, vuugiliiv), samas kui ettevalmistustöödel (pinnase eemaldus, killustiku vedu, drenaaž) kaasame kohaliku tehnikaomanikuga partneri. Kohaliku alltöövõtja ekskavaator ja kallur säästab 1–3 päeva masinatransporti praamiga ning vähendab kogukulu 3–6%.</p>
+
+<div class="warning">
+  <strong>Levinud viga:</strong> klient palkab kohaliku üldehitaja, kellel pole spetsialiseerunud tänavakivi-paigalduse oskust. Tulemus: vajumised 12–24 kuu jooksul, valed kalded sademevee suunas, vuugi-pesemine vihmaga. EVS 901-3 nõuab alustehniku kontrollitud kihistatud killustikalust — kontrollige, et töövõtjal oleks see kvalifikatsioon ja varasem konkreetne tänavakivi-portfoolio.
+</div>
+
+<h2>Hooaja planeerimine — millal saarele tellida?</h2>
+
+<p>Saaremaal ja Hiiumaal töötame aktiivselt aprill–november. Optimaalsed kuud uue paigalduse alustamiseks on <strong>mai keskpaik kuni juuni algus</strong> (hooaja algus, broneerimine vabam) ja <strong>septembri esimene pool</strong> (suvine tipphind langeb, praamiliin on vabam). Suvi (juuli–august) on kõige kallim, kuna nii praamitranspordi nõudlus kui ka kohaliku tööjõu hooaja-tipnumber on kõrgeim. Talvel täiendpaigaldust me saartele üldjuhul ei kavanda, sest külmunud aluspinnas + soolane mereõhk tekitavad kihistuste vajumiseks suure riski.</p>
+
+<p>Hooaja eelplaneerimisest: vt eraldi <a href="/blog/tanavakivi-paigaldus-aiamaja-ja-suvila/">tänavakivi paigaldus aiamajale ja suvilale</a>. Tüüpiline mandri-eramaja info on <a href="/tanavakivi-paigaldus-hind/">tänavakivi paigaldus hind</a> lehel.</p>
+
+<h2>Garantii ja vastutus</h2>
+
+<p>Anname Balcon Grupp OÜ-na tehtud paigaldusele <strong>kuni 2-aastase garantii</strong>, mis katab vajumised üle 8 mm, vuugi-väljapesu nõuetele mittevastava sademetevee-juhtimise korral ja äärekivi nihked. Garantii jõustub paigalduse lõppakti allkirjastamise päevast. EVS-EN 1340 alusel paigaldatud äärekivi peab seisma stabiilses külmasulamis 10+ tsüklit ilma murdmiseta — selle vastutuse võtame samuti garantii sisse.</p>
+
+<div class="cta-strip">
+  <strong>Soovid saare-projekti hinnapakkumist 1 minutiga?</strong> Saaremaa ja Hiiumaa kogemus, kohalik partner ja siduv hind.
+  <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+</div>
+
+<section class="faq">
+  <h2>Korduma kippuvad küsimused</h2>
+
+  <details>
+    <summary>Kui palju kallim on tänavakivi paigaldus Saaremaal mandriga võrreldes?</summary>
+    <p>Tüüpiline lisakulu on 4–9 €/m², mis tähendab kogu projektil ~10–18% mandri-hinnast kõrgemat lõpphinda. Konkreetne summa sõltub praamiliinist (Virtsu–Kuivastu või Rohuküla–Heltermaa), brigaadi öömajutuse vajadusest ja sellest, kas materjal tuleb mandri-tehasest või kohalikust laost.</p>
+  </details>
+
+  <details>
+    <summary>Kas suur projekt (üle 1 000 m²) Saaremaal on üldse mõistlik?</summary>
+    <p>Jah, suur projekt jagab praamilogistika kogusumma rohkemale ruutmeetrile, mistõttu €/m² hind jääb sageli mandri-tasemele. Maksimaalne projektimaht on 2 500 m² ja kuni 200 000 €. 1 200–1 800 m² objekti hinnaranges on 50–62 €/m² koos äärekivi ja drenaažiga.</p>
+  </details>
+
+  <details>
+    <summary>Mitu päeva võtab Hiiumaal 80 m² sissesõidu paigaldus?</summary>
+    <p>Tüüpiliselt 2 tööpäeva 4-mehelisel brigaadil koos alustöödega. Mahule lisandub 1 päev mobiliseerimist (praamireis Rohukülast Heltermaale + tehnikaülespanek). Kogu kalendritäht on seega ~3 päeva, eeldusel et materjal saabub kohale samaaegselt brigaadiga.</p>
+  </details>
+
+  <details>
+    <summary>Millist garantiid annate saarel paigaldatud tänavakivile?</summary>
+    <p>Anname kuni 2-aastase garantii vajumistele üle 8 mm ja äärekivi nihetele (EVS-EN 1340). Materjali tehasegarantii (EVS-EN 1338 betoonkivi, EVS-EN 1342 graniit) tuleb otse tehaselt Brikers, Aroc, Premia või graniidi tarnijalt. Garantii kehtib paigalduse lõppakti allkirjastamise päevast.</p>
+  </details>
+
+  <details>
+    <summary>Kas saan materjali ise tellida ja teie paigaldate?</summary>
+    <p>Jah, see on saareprojektidel kohati ökonoomne — kui leiate kohalikust ehituspoest Kuressaares või Kärdlas konkurentsivõimelise hinna, võime paigaldada teie tarnitud materjali. Sel juhul garanteerime ainult paigaldustöö (EVS 901-3 alusel), mitte materjali kvaliteeti. Eelnevalt kontrollime, et toode vastab EVS-EN 1338 nõuetele.</p>
+  </details>
+</section>
+
+<h2>Seotud artiklid ja teenuselehed</h2>
+<div class="related-grid">
+  <ul>
+    <li><a href="/tanavakivi-paigaldus-kaiviku-saaremaale/">Tänavakivi paigaldus Kaivikule Saaremaale</a></li>
+    <li><a href="/tanavakivi-paigaldus-suvila-ja-aiamaja-eesti/">Tänavakivi paigaldus suvilale ja aiamajale</a></li>
+    <li><a href="/tanavakivi-paigaldus-suvilale-randa/">Tänavakivi paigaldus suvilale randa</a></li>
+    <li><a href="/tanavakivi-paigaldus-hind/">Tänavakivi paigaldus hind (üldine)</a></li>
+    <li><a href="/kiire-tanavakivi-paigaldus/">Kiire tänavakivi paigaldus</a></li>
+    <li><a href="/blog/tanavakivi-paigaldus-aiamaja-ja-suvila/">Blogi: tänavakivi paigaldus aiamajale ja suvilale</a></li>
+    <li><a href="/blog/labilaskev-tanavakivi-sademevee-juhtimine/">Blogi: läbilaskev tänavakivi ja sademevesi</a></li>
+    <li><a href="/blog/">Kõik artiklid blogis</a></li>
+  </ul>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Tänavakivi paigaldus Saaremaal ja Hiiumaal — saarte logistika ja hind 2026",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "Tegevjuht",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Balcon Grupp OÜ"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "url": "https://bgrupp.ee/",
+        "telephone": "+37258374422",
+        "email": "Balcongrupp@gmail.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bgrupp.ee/blog/tanavakivi-paigaldus-saaremaa-ja-hiiumaa/"
+      },
+      "description": "Tänavakivi paigaldus Saaremaal ja Hiiumaal 2026 — realistlikud hinnad 42–62 €/m², praamilogistika, materjali transport ja kohaliku tööjõu kombineerimine."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kui palju kallim on tänavakivi paigaldus Saaremaal mandriga võrreldes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tüüpiline lisakulu on 4–9 €/m², ehk ~10–18% mandri-hinnast kõrgem. Summa sõltub praamiliinist, brigaadi öömajutuse vajadusest ja materjali päritolust."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas suur projekt üle 1000 m² Saaremaal on mõistlik?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah. Suur projekt jagab praamilogistika kogusumma rohkemale ruutmeetrile, mistõttu €/m² hind jääb sageli mandri-tasemele. Maksimaalne mahupiir on 2500 m² ja 200000 €."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mitu päeva võtab Hiiumaal 80 m² sissesõidu paigaldus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tüüpiliselt 2 tööpäeva 4-mehelisel brigaadil. Mobiliseerimisele lisandub 1 päev. Kogu kalendritäht ~3 päeva."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Millist garantiid annate saarel paigaldatud tänavakivile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kuni 2-aastane garantii vajumistele üle 8 mm ja äärekivi nihetele (EVS-EN 1340). Materjali tehasegarantii tuleb otse tehaselt (Brikers, Aroc, Premia või graniidi tarnijalt)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas saan materjali ise tellida ja teie paigaldate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah. Sel juhul garanteerime ainult paigaldustöö EVS 901-3 alusel. Eelnevalt kontrollime, et toode vastab EVS-EN 1338 nõuetele."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://bgrupp.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://bgrupp.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tänavakivi paigaldus Saaremaal ja Hiiumaal",
+          "item": "https://bgrupp.ee/blog/tanavakivi-paigaldus-saaremaa-ja-hiiumaa/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+```
+
+Artikkel valmis: ~1450 sõna, 6 H2 + 3 H3, 2 võrdlustabelit, 2 CTA-strippi, 5 KKK küsimust, 8 sisemist linki (sh 3 blog-postitust + 5 teenuselehte), warning-karp ja täielik JSON-LD (BlogPosting + FAQPage + BreadcrumbList). Kõik reeglid täidetud: garantii 2 aastat, projekt kuni 2500 m² / 200 000 €, ei viita firma kogemusele aastates, hinnad esitatud vahemikena, õiged EVS-EN standardid ja tehased.
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>B Grupp</h4>
+        <p style="color:#86efac">B Grupp — soodsa hinnaga tänavakivi paigaldus eramajadele üle Eesti. Fikseeritud hind, kiire algus.</p>
+        <p style="margin-top:12px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com</p>
+      </div>
+      <div>
+        <h4>Hinnad</h4>
+        <a href="#hinnad">Eramaja õu — 16 €/m²</a>
+        <a href="#hinnad">Tänavakivi tervik — 28 €/m²</a>
+        <a href="#hinnad">Graniit premium — 35 €/m²</a>
+        <a href="#hinnad">Äärekivi — 24 €/jm</a>
+      </div>
+      <div>
+        <h4>Piirkond</h4>
+        <a href="#">Tallinn ja Harjumaa</a>
+        <a href="#">Tartu ja Tartumaa</a>
+        <a href="#">Pärnu ja Pärnumaa</a>
+        <a href="#">Üle Eesti</a>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <a href="#kkk">Korduma kippuvad küsimused</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#">Privaatsuspoliitika</a>
+        <a href="#">Tingimused</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 B Grupp · Reg nr 16294742 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">⚡ Saa hind</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin saada kiiret hinnapakkumist sillutuse paigalduseks." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

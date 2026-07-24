@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi paigalduse hind ruutmeetri kohta 2026 | B Grupp</title>
+  <meta name="description" content="Detailne hinnakalkulaator: materjali, töötunni ja aluskihtide hinnad eraldi, näidisarvestused 30/50/100 m² objektidele. Saa hind 1 minutiga. Fikseeritud le">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bgrupp.ee/blog/tanavakivi-paigalduse-hinnakalkulaator-m2-kohta/">
+
+  <meta property="og:title" content="Tänavakivi paigalduse hind ruutmeetri kohta 2026">
+  <meta property="og:description" content="Detailne hinnakalkulaator: materjali, töötunni ja aluskihtide hinnad eraldi, näidisarvestused 30/50/100 m² objektidele. Saa hind 1 minutiga. Fikseeritud le">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bgrupp.ee/blog/tanavakivi-paigalduse-hinnakalkulaator-m2-kohta/">
+  <meta property="og:image" content="https://bgrupp.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f7fdf9;--surface:#fff;--ink:#052e1a;--ink-2:#15543a;--muted:#5b8071;
+      --accent:#16a34a;--accent-dark:#15803d;--accent-soft:#dcfce7;
+      --line:#d1fae5;--success:#15803d;--warn:#b45309;--radius:12px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(5,46,26,.08);
+      --shadow-lg:0 10px 30px rgba(5,46,26,.12);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:88px 0}}
+
+    h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+    h1{font-size:clamp(2.1rem,5vw,3.4rem)}
+    h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:.5em}
+    h3{font-size:1.2rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1140px;margin:0 auto;gap:14px}
+    .brand{font-weight:900;font-size:1.2rem;letter-spacing:-.02em;display:inline-flex;align-items:baseline;gap:2px}
+    .brand b{color:var(--accent)}
+    .brand small{font-size:.7rem;color:var(--muted);font-weight:700;margin-left:6px;text-transform:uppercase;letter-spacing:.05em}
+    .top-cta{display:flex;align-items:center;gap:10px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem;white-space:nowrap}
+    @media(max-width:560px){.top-phone{display:none}}
+
+    /* Speed strip */
+    .speed-strip{background:var(--ink);color:#bbf7d0;font-size:.85rem;padding:8px 20px;text-align:center;font-weight:600}
+    .speed-strip strong{color:#fff}
+
+    /* Hero */
+    .hero{padding-top:48px;padding-bottom:32px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+    .hero-grid{display:grid;gap:32px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;gap:48px}.hero{padding-top:72px;padding-bottom:56px}}
+    .hero h1{margin-bottom:.4em}
+    .hero h1 mark{background:var(--accent-soft);color:var(--accent-dark);padding:0 .15em;border-radius:6px}
+    .hero .lead{margin-bottom:24px}
+
+    /* Big price tile */
+    .price-tile{display:inline-flex;align-items:baseline;gap:10px;background:var(--accent-soft);padding:14px 18px;border-radius:12px;margin-bottom:20px;border:1px solid var(--line)}
+    .price-tile .num{font-size:2rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.03em;line-height:1}
+    .price-tile .lbl{font-size:.95rem;color:var(--ink-2);font-weight:600}
+
+    /* Bullet list (USPs) */
+    .checks{list-style:none;margin:18px 0 24px;display:grid;gap:8px}
+    .checks li{font-size:1rem;color:var(--ink);padding-left:30px;position:relative}
+    .checks li::before{content:"✓";position:absolute;left:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;font-size:.8rem;font-weight:900;display:grid;place-items:center;top:1px}
+
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:800;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:50px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+
+    /* Quick form */
+    .quick{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-lg);border:2px solid var(--accent)}
+    .quick .label-stripe{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;font-weight:800;padding:4px 10px;border-radius:6px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+    .quick h2{font-size:1.4rem;margin-bottom:.3em}
+    .quick .sub{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+    .field{margin-bottom:12px}
+    .field label{display:block;font-weight:700;font-size:.85rem;color:var(--ink);margin-bottom:5px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    .quick .btn{width:100%;margin-top:6px}
+    .form-foot{margin-top:10px;font-size:.78rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:#fff;border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:24px}}
+    .trust-item .num{font-size:1.7rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.82rem;color:var(--muted);margin-top:2px;font-weight:600}
+
+    /* Pricing cards */
+    .pricing{background:#fff}
+    .pricing-grid{display:grid;gap:18px;margin-top:40px}
+    @media(min-width:760px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
+    .price-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:28px;position:relative;transition:transform .15s,border-color .15s,box-shadow .15s}
+    .price-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .price-card.featured{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft) 0%,#fff 30%)}
+    .price-card .ribbon{position:absolute;top:-12px;left:24px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.05em}
+    .price-card h3{font-size:1.15rem}
+    .price-card .from{font-size:.9rem;color:var(--muted);font-weight:600;margin-top:6px}
+    .price-card .big{font-size:2.2rem;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1;margin-top:4px}
+    .price-card .big small{font-size:1rem;color:var(--muted);font-weight:600}
+    .price-card ul{list-style:none;margin-top:18px}
+    .price-card ul li{font-size:.93rem;color:var(--ink-2);padding:6px 0 6px 22px;position:relative}
+    .price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+    .price-card .btn{width:100%;margin-top:18px}
+
+    /* Process strip */
+    .process{background:var(--ink);color:#fff;padding:48px 0;text-align:center}
+    .process h2{color:#fff}
+    .process .lead{color:#bbf7d0;margin-left:auto;margin-right:auto}
+    .process-grid{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(2,1fr)}
+    @media(min-width:760px){.process-grid{grid-template-columns:repeat(4,1fr)}}
+    .pstep{padding:18px}
+    .pstep .num{font-size:2.5rem;font-weight:900;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .pstep h3{color:#fff;margin-top:8px;font-size:1.05rem}
+    .pstep p{color:#bbf7d0;font-size:.92rem;margin-top:4px}
+
+    /* Gallery */
+    .gallery{background:var(--bg)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:36px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:10px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:780px;margin:40px auto 0}
+    .faq details{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:0;margin-bottom:8px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.4rem;color:var(--accent);transition:transform .15s;flex:none;font-weight:800}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 20px 18px;color:var(--ink-2);font-size:.95rem}
+
+    /* Final CTA */
+    .cta-final{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;text-align:center}
+    .cta-final h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem)}
+    .cta-final p{color:#dcfce7;font-size:1.1rem;max-width:540px;margin:12px auto 24px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:#fff;color:var(--accent-dark)}
+    .cta-final .btn-secondary:hover{background:var(--ink);color:#fff}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--accent-dark)}
+
+    footer{background:#022c1a;color:#86efac;padding:48px 0 28px;font-size:.92rem}
+    .foot-grid{display:grid;gap:28px;margin-bottom:32px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:12px;font-size:1rem}
+    .foot-grid a{color:#bbf7d0;display:block;padding:3px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #064e3b;padding-top:20px;text-align:center;font-size:.85rem}
+
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:46px;padding:11px;font-size:.93rem}
+    @media(max-width:760px){.sticky-bar{display:flex;gap:8px}body{padding-bottom:74px}}
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #16a34a;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">B<b>Grupp</b><small>Soodne sillutus</small></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">📞 +372 58374422</a>
+      <a href="#kontakt-top" class="btn btn-primary" style="padding:9px 14px;min-height:auto;font-size:.9rem">Saa hind</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi paigalduse hind ruutmeetri kohta 2026 — täielik hinnakiri</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-01.jpg" alt="Tänavakivi paigalduse hind ruutmeetri kohta 2026 — täielik hinnakiri" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi paigalduse hind ruutmeetri kohta 2026 — täielik hinnakiri</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span class="meta-date">19. juuni 2026</span>
+  <span class="meta-sep">•</span>
+  <span class="meta-author">Keio Soo, B Grupp</span>
+  <span class="meta-sep">•</span>
+  <span class="meta-read">8 min lugemist</span>
+</div>
+
+<h1>Tänavakivi paigalduse hind ruutmeetri kohta 2026 — täielik hinnakiri</h1>
+
+<p class="lead">Tänavakivi paigalduse hind 2026. aastal jääb Eestis vahemikku <strong>35–95 €/m²</strong> sõltuvalt aluskihtide sügavusest, kivi tüübist ja objekti suurusest. Selles juhendis lahkame iga hinnakomponendi eraldi — materjal, töötund, killustik, geotekstiil — ning toome näidisarvestused 30 m², 50 m² ja 100 m² objektidele, et saaksid täpse eelarve enne pakkumise küsimist.</p>
+
+<div class="answer-card">
+  <strong>Kiire vastus:</strong> Tänavakivi paigalduse keskmine hind 2026 Eestis on <strong>45–65 €/m²</strong> standardlahendusele (15 cm killustikalus + betoonkivi 6 cm + paigaldus). Sõidukoormusele kasvab hind <strong>70–95 €/m²</strong> (20–30 cm alus + 8 cm kivi). Materjal moodustab ~40%, töö ~35% ja aluskihid ~25% lõpphinnast. Saa täpne hind 1 minutiga: <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a></div>
+
+<h2>Tänavakivi paigalduse hinnakomponendid 2026</h2>
+
+<p>Tänavakivi paigalduse <strong>m² hind</strong> koosneb neljast põhilisest komponendist: kivimaterjal ise, aluskihtide materjal (killustik, liiv, geotekstiil), tööjõu kulu ja masinatöö (ekskavaator, vibroplaat, lõikur). Allpool on iga komponendi 2026. aasta keskmised hinnad Eesti turul, mille põhjal saad ise kalkulaatorit kokku panna.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Komponent</th>
+      <th>Ühik</th>
+      <th>Hind 2026 (€)</th>
+      <th>Osakaal lõpphinnast</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Betoonkivi (Brikers, Aroc, Premia) 6 cm</td>
+      <td>€/m²</td>
+      <td>14–22</td>
+      <td>~30%</td>
+    </tr>
+    <tr>
+      <td>Betoonkivi 8 cm (sõidukoormus)</td>
+      <td>€/m²</td>
+      <td>18–28</td>
+      <td>~30%</td>
+    </tr>
+    <tr>
+      <td>Graniidist tänavakivi (Hiina/India)</td>
+      <td>€/m²</td>
+      <td>32–55</td>
+      <td>~45%</td>
+    </tr>
+    <tr>
+      <td>Killustik 0–32 mm (alus)</td>
+      <td>€/m³</td>
+      <td>14–18</td>
+      <td>~12%</td>
+    </tr>
+    <tr>
+      <td>Paigaldusliiv 0–4 mm</td>
+      <td>€/m³</td>
+      <td>18–24</td>
+      <td>~5%</td>
+    </tr>
+    <tr>
+      <td>Geotekstiil 100 g/m²</td>
+      <td>€/m²</td>
+      <td>1,2–2,0</td>
+      <td>~3%</td>
+    </tr>
+    <tr>
+      <td>Töötund (paigalduse meeskond)</td>
+      <td>€/m²</td>
+      <td>16–28</td>
+      <td>~35%</td>
+    </tr>
+    <tr>
+      <td>Masinatöö (ekskavaator, vibroplaat)</td>
+      <td>€/m²</td>
+      <td>4–8</td>
+      <td>~10%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Hinnad eeldavad standardset Eesti turuolukorda: tasane krunt, ligipääsu vahemaa kuni 15 m, olemasolev pinnas eemaldatav ja äravedu lähima ladestuspaika alla 30 km. Erikorralised tingimused — kallak üle 8%, savine pinnas, raske ligipääs — lisavad 10–25% kogumaksumusele.</p>
+
+<h3>Aluskihtide hind ruutmeetri kohta</h3>
+
+<p>Aluskihid on <strong>tänavakivi paigalduse hind m2</strong> arvestuses kõige sagedamini alahinnatud osa. EVS 901-3 nõuab kõnnitee jaoks vähemalt 15 cm killustikalust, sõiduteel 25–30 cm. Praktikas tähendab see järgmist kulu:</p>
+
+<ul>
+  <li><strong>Kõnnitee (15 cm killustik + 4 cm liiv)</strong>: materjal 3,8–5,2 €/m², kaevamine ja äravedu 4–7 €/m², tihendamine 2–3 €/m² → <strong>10–15 €/m² ainult aluskihtide eest</strong></li>
+  <li><strong>Sõidutee (25 cm killustik + 5 cm liiv)</strong>: materjal 6,5–9 €/m², kaevamine ja äravedu 7–11 €/m², tihendamine 3–4 €/m² → <strong>16–24 €/m²</strong></li>
+  <li><strong>Tugevdatud alus (30 cm + geotekstiil)</strong>: lisaks geotekstiil 1,5 €/m² ja sügavam kaevamine → <strong>22–30 €/m²</strong></li>
+</ul>
+
+<p>Lähemalt aluskihtide ülesehitusest räägib meie <a href="/blog/tanavakivi-aluskihtide-paigalduse-tehnoloogia/">aluskihtide paigaldustehnoloogia juhend</a>, kus on EVS 901-3 standardi nõuded ja tihendusprotsessi tehnilised detailid.</p>
+
+<h2>Näidisarvestus: 30 m² sissesõidutee</h2>
+
+<p>Väike sissesõidutee ühele autole on Eestis kõige tellitavam tänavakivi objekt. Standardlahendus 6×3 m või 5×3 m + manööverdusala mahub 30 m² piiresse. Allpool on 2026. aasta keskmine täiskalkulatsioon Harjumaa eraldihinnaga.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tööetapp / materjal</th>
+      <th>Kogus</th>
+      <th>Ühikuhind</th>
+      <th>Kokku</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kaevamine + olemasoleva pinnase äravedu</td>
+      <td>9 m³</td>
+      <td>22 €/m³</td>
+      <td>198 €</td>
+    </tr>
+    <tr>
+      <td>Geotekstiil 100 g/m²</td>
+      <td>32 m²</td>
+      <td>1,5 €/m²</td>
+      <td>48 €</td>
+    </tr>
+    <tr>
+      <td>Killustik 0–32 mm (25 cm kihina)</td>
+      <td>8 m³</td>
+      <td>16 €/m³</td>
+      <td>128 €</td>
+    </tr>
+    <tr>
+      <td>Paigaldusliiv 0–4 mm (5 cm)</td>
+      <td>1,5 m³</td>
+      <td>22 €/m³</td>
+      <td>33 €</td>
+    </tr>
+    <tr>
+      <td>Betoonkivi Brikers 8 cm (sõidukoormus)</td>
+      <td>30 m²</td>
+      <td>22 €/m²</td>
+      <td>660 €</td>
+    </tr>
+    <tr>
+      <td>Paigaldustöö + tihendamine + vuugiliiv</td>
+      <td>30 m²</td>
+      <td>24 €/m²</td>
+      <td>720 €</td>
+    </tr>
+    <tr>
+      <td>Masinatöö (vibroplaat, lõikur)</td>
+      <td>30 m²</td>
+      <td>6 €/m²</td>
+      <td>180 €</td>
+    </tr>
+    <tr>
+      <td><strong>Kokku 30 m² sissesõidutee</strong></td>
+      <td></td>
+      <td><strong>~66 €/m²</strong></td>
+      <td><strong>~1 967 €</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Kui valid sama 30 m² objekti graniidist tänavakiviga (näiteks Hiina hall graniit 8 cm), kasvab materjalihind ~22 €/m² → ~45 €/m² ja kogusumma jõuab vahemikku <strong>2 600–2 850 €</strong>. Vaata võrdluseks <a href="/blog/betoonkivi-vs-graniidist-tanavakivi-vordlus/">betoonkivi vs graniidist tänavakivi võrdlust</a> — graniit kestab 60–80 aastat, betoonkivi 25–40 aastat.</p>
+
+<h2>Näidisarvestus: 50 m² õuesillutis</h2>
+
+<p>Keskmine eramaja õuesillutis (terrass + jalgrada + osa parkimisalast) jääb 45–60 m² piiresse. Kuna kõnniala ei kanna sõidukoormust kogu ulatuses, kasutame jagatud lahendust: 30 m² sõiduala (20 cm alus) + 20 m² kõnniala (15 cm alus).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Etapp</th>
+      <th>Kogus</th>
+      <th>Hind</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kaevamine, äravedu, planeerimine</td>
+      <td>50 m²</td>
+      <td>380 €</td>
+    </tr>
+    <tr>
+      <td>Geotekstiil + killustikalus (segatud sügavus)</td>
+      <td>50 m²</td>
+      <td>720 €</td>
+    </tr>
+    <tr>
+      <td>Paigaldusliiv 4 cm kihina</td>
+      <td>2,5 m³</td>
+      <td>55 €</td>
+    </tr>
+    <tr>
+      <td>Betoonkivi 6 cm (kõnniala 20 m²)</td>
+      <td>20 m²</td>
+      <td>360 €</td>
+    </tr>
+    <tr>
+      <td>Betoonkivi 8 cm (sõiduala 30 m²)</td>
+      <td>30 m²</td>
+      <td>660 €</td>
+    </tr>
+    <tr>
+      <td>Paigaldus + tihendamine + vuugiliiv</td>
+      <td>50 m²</td>
+      <td>1 100 €</td>
+    </tr>
+    <tr>
+      <td>Äärekivi 100×20×8 cm + paigaldus</td>
+      <td>28 jm</td>
+      <td>560 €</td>
+    </tr>
+    <tr>
+      <td><strong>Kokku 50 m² õuesillutis</strong></td>
+      <td></td>
+      <td><strong>~3 835 € (~77 €/m²)</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Äärekivi maksumus on eraldi rida, sest see arvestatakse jooksva meetri kaupa — keskmiselt 18–24 €/jm graniidist ja 12–16 €/jm betoonist. Vaata täpsemat juhendit <a href="/aarekivi-paigaldus-hind-jooksev-meeter/">äärekivi paigalduse jooksva meetri hind</a>, kus on igale äärekivi tüübile eraldi tabel.</p>
+
+<div class="cta-strip">
+  <strong>Sa ei pea ise kalkulaatorit täitma.</strong> Saada krundi mõõdud ja saame tagasi täpse hinnapakkumise 1 minutiga — ilma kohapealse mõõdistuseta. <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a> <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+</div>
+
+<h2>Näidisarvestus: 100 m² suur objekt</h2>
+
+<p>100 m² ja suuremad objektid saavad mahuallahindlust 8–15%, kuna meeskonna logistika (transport, masinad, materjali ühekordne tarne) jaotub suuremale alale. 2026 keskmised tariifid 100 m² eramaja täisõue jaoks:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lahendus 100 m²</th>
+      <th>€/m²</th>
+      <th>Kokku</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eelarvelahendus (Brikers 6 cm, 15 cm alus, kõnnialad)</td>
+      <td>48–55</td>
+      <td>4 800–5 500 €</td>
+    </tr>
+    <tr>
+      <td>Standard (Brikers/Aroc 8 cm, 20 cm alus, sissesõit)</td>
+      <td>62–72</td>
+      <td>6 200–7 200 €</td>
+    </tr>
+    <tr>
+      <td>Premium (Premia 8 cm + osa graniiti, 25 cm alus)</td>
+      <td>78–92</td>
+      <td>7 800–9 200 €</td>
+    </tr>
+    <tr>
+      <td>Graniit täiskate (Hiina/India 8 cm, 25 cm alus)</td>
+      <td>95–125</td>
+      <td>9 500–12 500 €</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Suuremate objektide kohta on meil eraldi paketinäide: <a href="/oue-sillutus-100m2-pakett-hind/">100 m² õuesillutise pakett</a>. Üle 100 m² objektid algavad enamasti 9 000 €-st ja meie maksimum on 2 500 m² / 200 000 € — sellest suuremad teostatakse alltöövõtu partnerite kaudu.</p>
+
+<h3>Mahuallahindluse loogika</h3>
+
+<p>Miks 100 m² maksab €/m² kohta vähem kui 30 m²? Sissevedu, masinate paigaldus ja meeskonna ülessättimine on fikseeritud kulu olenemata pinnasuurusest. Kui 30 m² objekt peab need kulud ära katma 30 ruutmeetriga, siis 100 m² objekt jagab sama kulu 3,3× suuremale alale:</p>
+
+<ul>
+  <li><strong>Alla 30 m²</strong>: lisandub väikeobjekti tasu 350–500 € (mahub €/m² sisse, kuid hind tundub kõrge)</li>
+  <li><strong>30–50 m²</strong>: standardhind ilma allahindluseta</li>
+  <li><strong>50–100 m²</strong>: -5% kuni -8% materjalihinnast</li>
+  <li><strong>100–500 m²</strong>: -10% kuni -15% kogumaksumusest</li>
+  <li><strong>Üle 500 m²</strong>: -15% kuni -20%, eraldi pakkumine</li>
+</ul>
+
+<h2>Mis lisandub hinnale lisaks ruutmeetrile</h2>
+
+<p>2026. aasta hindades on standardne €/m² number sageli alahinnatud, kuna see ei sisalda eraldi tellitavaid töid. Allpool on lisakulud, mida tasub eelarvesse arvestada juba pakkumise küsimise hetkel:</p>
+
+<ul>
+  <li><strong>Äärekivi paigaldus</strong>: 12–28 €/jm sõltuvalt tüübist. Vaata <a href="/aarekivi-paigaldus-hind-jooksva-meetri-kohta-2026/">2026 aastapõhist äärekivi hinda</a></li>
+  <li><strong>Drenaaž ja sademevee lahendus</strong>: 18–35 €/jm. Drenaažikraavi vajab enamik objekte savise pinnasega. Vt <a href="/sissesoidu-sillutus-koos-drenaaziga-harjumaa/">sissesõidu sillutus koos drenaažiga</a></li>
+  <li><strong>Olemasoleva katte lammutamine</strong> (asfalt, vana sillutis): 8–15 €/m² + äravedu</li>
+  <li><strong>Mustri lõikamine</strong> (kalasaba, ringmuster, geomeetrilised lahendused): +6–12 €/m² käsitöö eest</li>
+  <li><strong>Trapikate äravoolurennidega</strong>: 45–80 €/jm valmislahendus + paigaldus</li>
+  <li><strong>Vihmavee maa-alused mahutid</strong>: 850–2 200 € sõltuvalt mahust</li>
+  <li><strong>Kallak üle 8%</strong>: lisandub 10–15% materjali kogusest tugimüüri/treppi jaoks</li>
+</ul>
+
+<div class="warning">
+  <strong>Hoiatus:</strong> Kui pakkumine on alla 35 €/m² isegi väikese objekti puhul, on tõenäoliselt jäetud välja kas geotekstiil, korrektne aluskihi sügavus või äravedu. Selline lahendus võib küll esimesel aastal välja näha korralik, aga vajub 2–4 aasta jooksul, mis tähendab kogu töö kordamist. EVS 901-3 nõuded ei ole soovitused.
+</div>
+
+<h2>Piirkondlikud hinnaerinevused 2026</h2>
+
+<p>Tänavakivi paigalduse hind erineb Eestis piirkonniti 8–18%. Kõige kõrgemad on hinnad Tallinnas ja Pärnu rannarajoonis suvehooajal, kõige soodsamad Lõuna-Eestis ja talvel (kui ilm lubab):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Piirkond</th>
+      <th>Keskmine €/m²</th>
+      <th>Hooaja mõju</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tallinn (kesklinn, Pirita, Kadriorg)</td>
+      <td>58–82</td>
+      <td>Suvel +12%</td>
+    </tr>
+    <tr>
+      <td>Harjumaa (Saue, Keila, Rae, Harku)</td>
+      <td>52–72</td>
+      <td>Suvel +8%</td>
+    </tr>
+    <tr>
+      <td>Tartu ja Tartumaa</td>
+      <td>48–68</td>
+      <td>Suvel +5%</td>
+    </tr>
+    <tr>
+      <td>Pärnu (suvel/rannarajoonil)</td>
+      <td>55–78</td>
+      <td>Suvel +15%</td>
+    </tr>
+    <tr>
+      <td>Pärnu (talvel/sügisel)</td>
+      <td>45–62</td>
+      <td>Baashind</td>
+    </tr>
+    <tr>
+      <td>Lääne-Virumaa (Rakvere)</td>
+      <td>44–60</td>
+      <td>Suvel +5%</td>
+    </tr>
+    <tr>
+      <td>Ida-Virumaa (Narva, Kohtla-Järve)</td>
+      <td>42–58</td>
+      <td>Suvel +3%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Piirkondade detailsed pakkumised: <a href="/tanavakivi-paigaldus-parnu-hind-2026/">Pärnu 2026 hind</a>, <a href="/tanavakivi-paigaldus-narva-hind/">Narva hind</a>, <a href="/tanavakivi-paigaldus-rakvere-hind/">Rakvere hind</a>, <a href="/tanavakivi-paigaldus-saue-vald-2026/">Saue valla pakkumine</a> ja <a href="/tanavakivi-paigaldus-keila-hind/">Keila hind</a>. Lisaks vaata, kuidas <a href="/blog/sillutuskivi-paigaldus-kevadel-vs-sugisel/">kevad- ja sügishooaja hinnaerinevus</a> mõjutab eelarvet.</p>
+
+<h2>Kuidas kalkulaator töötab — sisesta oma numbrid</h2>
+
+<p>Kui tahad <strong>tänavakivi paigalduse m² hinda</strong> ise välja arvutada enne pakkumise küsimist, kasuta seda valemit:</p>
+
+<ul>
+  <li><strong>1. samm — mõõtmed:</strong> mõõda ala m² (pikkus × laius). Ebakorrapärase kuju puhul jaga ristkülikuteks ja liida kokku.</li>
+  <li><strong>2. samm — koormus:</strong> kõnniala = 15 cm alus + 6 cm kivi; sõiduala = 20–25 cm alus + 8 cm kivi</li>
+  <li><strong>3. samm — kivi valik:</strong> betoonkivi 16–24 €/m² või graniit 35–55 €/m²</li>
+  <li><strong>4. samm — aluskihi hind:</strong> kõnnialal 12 €/m², sõidualal 20 €/m² (sisaldab kaevamist + materjali + tihendamist)</li>
+  <li><strong>5. samm — paigaldustöö:</strong> 22–28 €/m² standardseks paigalduseks</li>
+  <li><strong>6. samm — äärekivi:</strong> mõõda ümbermõõt ja korruta 18 €/jm-ga</li>
+  <li><strong>7. samm — lisa 10%</strong> reserv ettenägematuteks kuludeks (kaeve käigus ilmnevad jäägid, lisamaterjal vuugiliivaks)</li>
+</ul>
+
+<p>Lihtsam variant: kasuta meie <a href="/kalkulaator/">veebipõhist kalkulaatorit</a> või saada krundi mõõdud meilile/telefonile ja anname täpse hinna 1 minutiga. Vaata ka eraldi piirkondlikud kalkulaatorid: <a href="/tanavakivi-paigaldus-kiire-hind-1-minutiga/">kiire hind 1 minutiga</a>, <a href="/tanavakivi-paigaldus-hind/">üldine tänavakivi paigalduse hind</a> ja <a href="/sillutuskivi-paigaldus-16-45-eur-m2/">16–45 €/m² hinnaranges sillutuse pakett</a>.</p>
+
+<h2>Maksumeetodid ja arve struktuur</h2>
+
+<p>B Grupp arveldab kõikide objektide eest etappide kaupa, mis annab tellijale läbipaistvuse ja vähendab riski. 2026. aasta standardne arvestus eraisikule alla 10 000 € objektil:</p>
+
+<ul>
+  <li><strong>30%</strong> materjali ettemaks (tarne käivitamiseks)</li>
+  <li><strong>40%</strong> aluskihtide valmimisel (kontrollitav etapp)</li>
+  <li><strong>30%</strong> objekti üleandmisel ja garantiidokumendi väljastamisel</li>
+</ul>
+
+<p>Käibemaks 22% (2026 aasta määr) lisandub kõikidele hindadele. Eraisikutele kehtib 0% käibemaksu määr ainult kuni 4 000 € väikeobjektidel teatud erijuhtudel — täpsustame iga juhtumi puhul eraldi. Juriidilistele isikutele kehtib tavaline 22% arvestus.</p>
+
+<h2>Garantii ja kvaliteet</h2>
+
+<p>Kõikidele meie tänavakivi paigaldustöödele kehtib <strong>2-aastane garantii</strong>, mis hõlmab paigalduse stabiilsust, vuugite tervikut ja äravoolukallaku säilitust. Kivi enda garantii (Brikers, Aroc, Premia) on 5–10 aastat tehasepoolse värvi ja kuju säilivuse osas. Loe lähemalt, mida <a href="/blog/tanavakivi-paigaldus-kindlustus-ja-garantii/">garantii kõik täpselt sisaldab</a>.</p>
+
+<p>Kasutame ainult EVS-EN 1338 sertifitseeritud betoonkive, EVS-EN 1342 looduskive ning EVS-EN 1340 äärekive. Aluskihtide paigaldus järgib EVS 901-3 standardi nõudeid Eesti kliimatingimustele (külmataluvus, tihendusaste, kallakud sademevee jaoks).</p>
+
+<h2>Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Mis on tänavakivi paigalduse keskmine hind ruutmeetri kohta 2026?</summary>
+    <p>2026. aasta keskmine hind Eestis on <strong>45–65 €/m²</strong> standardlahendusele (15 cm killustikalus + 6 cm betoonkivi + paigaldus). Sõidukoormusele kerkib hind <strong>70–95 €/m²</strong>. Graniidist tänavakivi maksab 85–125 €/m². Hind sisaldab materjali, töötundi ja aluskihte, kuid mitte äärekivi (12–28 €/jm) ega drenaaži (18–35 €/jm).</p>
+  </details>
+  <details>
+    <summary>Miks on 30 m² objekti €/m² hind kõrgem kui 100 m² objektil?</summary>
+    <p>Sissevedu, masinate paigaldus ja meeskonna ülessättimine on fikseeritud kulu (250–450 €) olenemata pindala suurusest. 30 m² puhul jaguneb see 30 ruutmeetrile (~10 €/m²), 100 m² puhul ainult ~3 €/m². Lisaks saab suurem objekt materjali mahuallahindluse 8–15%. Seetõttu maksab 30 m² ~66 €/m², 100 m² aga ~52–62 €/m² samadel materjalidel.</p>
+  </details>
+  <details>
+    <summary>Kas pakkumise hind sisaldab aluskihte ja kaevamist?</summary>
+    <p>B Grupi pakkumised on alati tervikhinnad, mis sisaldavad aluskihte (geotekstiil + killustik + liiv), kaevamist ja äravedu kuni 30 km kaugusele. Ainukesed eraldi read on äärekivi (€/jm), drenaaž (€/jm) ja mustri lõikamine (+€/m²). Kui konkurendi pakkumine on alla 35 €/m², on tõenäoliselt aluskiht või äravedu välja jäetud — küsi alati pakkumise eristust komponentideks.</p>
+  </details>
+  <details>
+    <summary>Kui kiiresti saab pakkumise ja millal töö algab?</summary>
+    <p>Pakkumise anname 1 minutiga telefoni teel, kui sa tead krundi mõõte. Detailsem kirjalik pakkumine (PDF koos materjalispetsifikatsioonidega) jõuab e-postile 24 tunni jooksul. Tööde alustamine sõltub hooajast: aprillis–juunis 3–5 nädala etteteatamine, juulis–septembris 5–8 nädalat, oktoobris–märtsis 1–2 nädalat (kui ilm lubab). Vaata <a href="/tanavakivi-paigaldus-kevad-2026-broneerimine/">kevad 2026 broneerimine</a> jaoks vabu kuupäevi.</p>
+  </details>
+  <details>
+    <summary>Kas tänavakivi paigaldus on talvel võimalik?</summary>
+    <p>Jah, kuid teatud tingimustel: õhutemperatuur peab olema vähemalt -5 °C, pinnas tohi olla külmunud üle 5 cm sügavusele ja vuugiliiv tuleb tarnida niiskuskaitstud kotis. Talvel teeme peamiselt väikeobjekte (30–60 m²) ja hooldustöid. Suurte objektide puhul soovitame oodata kevadet. Vt eraldi juhend <a href="/sillutuskivi-paigaldus-talvel-eesti/">talvine sillutuskivi paigaldus</a>.</p>
+  </details>
+</div>
+
+<div class="cta-strip">
+  <strong>Saada krundi mõõdud ja saa hind 1 minutiga.</strong> B Grupp — Balcon Grupp OÜ, CEO Keio Soo. 2-aastane garantii, EVS-EN sertifitseeritud materjalid, etappide kaupa arveldus. <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a> <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+</div>
+
+<h2>Seotud artiklid ja lehed</h2>
+
+<div class="related-grid">
+  <a href="/blog/betoonkivi-vs-graniidist-tanavakivi-vordlus/">Betoonkivi vs graniit — kumb tasub end ära?</a>
+  <a href="/blog/tanavakivi-aluskihtide-paigalduse-tehnoloogia/">Aluskihtide paigaldustehnoloogia EVS 901-3</a>
+  <a href="/blog/tanavakivi-paigaldus-kindlustus-ja-garantii/">Garantii ja kindlustus — mida pakkumine katab</a>
+  <a href="/blog/sillutuskivi-paigaldus-kevadel-vs-sugisel/">Kevadine vs sügisene paigaldus — hinnaerinevus</a>
+  <a href="/blog/tanavakivi-paigaldus-tartu-ja-tartumaa/">Tänavakivi paigaldus Tartu ja Tartumaa</a>
+  <a href="/blog/tanavakivi-paigaldus-parnu-ja-rannarajoon/">Tänavakivi paigaldus Pärnu rannarajoonil</a>
+  <a href="/kalkulaator/">Veebipõhine hinnakalkulaator</a>
+  <a href="/blog/">Kõik blogiartiklid</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://bgrupp.ee/blog/tanavakivi-paigalduse-hinnakalkulaator-m2-kohta/#article",
+      "headline": "Tänavakivi paigalduse hind ruutmeetri kohta 2026 — täielik hinnakiri",
+      "description": "Detailne tänavakivi paigalduse hinnakalkulaator 2026: materjali, töötunni ja aluskihtide hinnad eraldi, näidisarvestused 30/50/100 m² objektidele. Keskmine hind 45-95 €/m².",
+      "datePublished": "2026-06-19",
+      "dateModified": "2026-06-19",
+      "inLanguage": "et",
+      "url": "https://bgrupp.ee/blog/tanavakivi-paigalduse-hinnakalkulaator-m2-kohta/",
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "Tegevjuht",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Balcon Grupp OÜ"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "url": "https://bgrupp.ee/",
+        "telephone": "+372 58374422",
+        "email": "Balcongrupp@gmail.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bgrupp.ee/blog/tanavakivi-paigalduse-hinnakalkulaator-m2-kohta/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bgrupp.ee/blog/tanavakivi-paigalduse-hinnakalkulaator-m2-kohta/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Mis on tänavakivi paigalduse keskmine hind ruutmeetri kohta 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2026. aasta keskmine hind Eestis on 45-65 €/m² standardlahendusele (15 cm killustikalus + 6 cm betoonkivi + paigaldus). Sõidukoormusele kerkib hind 70-95 €/m². Graniidist tänavakivi maksab 85-125 €/m². Hind sisaldab materjali, töötundi ja aluskihte, kuid mitte äärekivi (12-28 €/jm) ega drenaaži (18-35 €/jm)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Miks on 30 m² objekti €/m² hind kõrgem kui 100 m² objektil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sissevedu, masinate paigaldus ja meeskonna ülessättimine on fikseeritud kulu (250-450 €) olenemata pindala suurusest. 30 m² puhul jaguneb see 30 ruutmeetrile (~10 €/m²), 100 m² puhul ainult ~3 €/m². Lisaks saab suurem objekt materjali mahuallahindluse 8-15%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas pakkumise hind sisaldab aluskihte ja kaevamist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "B Grupi pakkumised on alati tervikhinnad, mis sisaldavad aluskihte (geotekstiil + killustik + liiv), kaevamist ja äravedu kuni 30 km kaugusele. Ainukesed eraldi read on äärekivi (€/jm), drenaaž (€/jm) ja mustri lõikamine (+€/m²)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kui kiiresti saab pakkumise ja millal töö algab?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pakkumise anname 1 minutiga telefoni teel, kui tead krundi mõõte. Detailsem kirjalik pakkumine jõuab e-postile 24 tunni jooksul. Tööde alustamine sõltub hooajast: aprillis-juunis 3-5 nädala etteteatamine, juulis-septembris 5-8 nädalat, oktoobris-märtsis 1-2 nädalat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas tänavakivi paigaldus on talvel võimalik?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah, kuid teatud tingimustel: õhutemperatuur peab olema vähemalt -5 °C, pinnas tohi olla külmunud üle 5 cm sügavusele ja vuugiliiv tuleb tarnida niiskuskaitstud kotis. Talvel teeme peamiselt väikeobjekte (30-60 m²) ja hooldustöid."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bgrupp.ee/blog/tanavakivi-paigalduse-hinnakalkulaator-m2-kohta/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://bgrupp.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://bgrupp.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tänavakivi paigalduse hind ruutmeetri kohta 2026",
+          "item": "https://bgrupp.ee/blog/tanavakivi-paigalduse-hinnakalkulaator-m2-kohta/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>B Grupp</h4>
+        <p style="color:#86efac">B Grupp — soodsa hinnaga tänavakivi paigaldus eramajadele üle Eesti. Fikseeritud hind, kiire algus.</p>
+        <p style="margin-top:12px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com</p>
+      </div>
+      <div>
+        <h4>Hinnad</h4>
+        <a href="#hinnad">Eramaja õu — 16 €/m²</a>
+        <a href="#hinnad">Tänavakivi tervik — 28 €/m²</a>
+        <a href="#hinnad">Graniit premium — 35 €/m²</a>
+        <a href="#hinnad">Äärekivi — 24 €/jm</a>
+      </div>
+      <div>
+        <h4>Piirkond</h4>
+        <a href="#">Tallinn ja Harjumaa</a>
+        <a href="#">Tartu ja Tartumaa</a>
+        <a href="#">Pärnu ja Pärnumaa</a>
+        <a href="#">Üle Eesti</a>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <a href="#kkk">Korduma kippuvad küsimused</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#">Privaatsuspoliitika</a>
+        <a href="#">Tingimused</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 B Grupp · Reg nr 16294742 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">⚡ Saa hind</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin saada kiiret hinnapakkumist sillutuse paigalduseks." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

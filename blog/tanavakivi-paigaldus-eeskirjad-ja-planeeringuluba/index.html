@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi paigalduse eeskirjad ja load 2026 – millal on...</title>
+  <meta name="description" content="Ülevaade Eesti kohalike omavalitsuste eeskirjadest ja planeeringulubadest tänavakivi paigaldusel – millal, kellele ja kui palju maksab.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bgrupp.ee/blog/tanavakivi-paigaldus-eeskirjad-ja-planeeringuluba/">
+
+  <meta property="og:title" content="Tänavakivi paigalduse eeskirjad ja load 2026 – millal on...">
+  <meta property="og:description" content="Ülevaade Eesti kohalike omavalitsuste eeskirjadest ja planeeringulubadest tänavakivi paigaldusel – millal, kellele ja kui palju maksab.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bgrupp.ee/blog/tanavakivi-paigaldus-eeskirjad-ja-planeeringuluba/">
+  <meta property="og:image" content="https://bgrupp.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f7fdf9;--surface:#fff;--ink:#052e1a;--ink-2:#15543a;--muted:#5b8071;
+      --accent:#16a34a;--accent-dark:#15803d;--accent-soft:#dcfce7;
+      --line:#d1fae5;--success:#15803d;--warn:#b45309;--radius:12px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(5,46,26,.08);
+      --shadow-lg:0 10px 30px rgba(5,46,26,.12);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:88px 0}}
+
+    h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+    h1{font-size:clamp(2.1rem,5vw,3.4rem)}
+    h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:.5em}
+    h3{font-size:1.2rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1140px;margin:0 auto;gap:14px}
+    .brand{font-weight:900;font-size:1.2rem;letter-spacing:-.02em;display:inline-flex;align-items:baseline;gap:2px}
+    .brand b{color:var(--accent)}
+    .brand small{font-size:.7rem;color:var(--muted);font-weight:700;margin-left:6px;text-transform:uppercase;letter-spacing:.05em}
+    .top-cta{display:flex;align-items:center;gap:10px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem;white-space:nowrap}
+    @media(max-width:560px){.top-phone{display:none}}
+
+    /* Speed strip */
+    .speed-strip{background:var(--ink);color:#bbf7d0;font-size:.85rem;padding:8px 20px;text-align:center;font-weight:600}
+    .speed-strip strong{color:#fff}
+
+    /* Hero */
+    .hero{padding-top:48px;padding-bottom:32px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+    .hero-grid{display:grid;gap:32px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;gap:48px}.hero{padding-top:72px;padding-bottom:56px}}
+    .hero h1{margin-bottom:.4em}
+    .hero h1 mark{background:var(--accent-soft);color:var(--accent-dark);padding:0 .15em;border-radius:6px}
+    .hero .lead{margin-bottom:24px}
+
+    /* Big price tile */
+    .price-tile{display:inline-flex;align-items:baseline;gap:10px;background:var(--accent-soft);padding:14px 18px;border-radius:12px;margin-bottom:20px;border:1px solid var(--line)}
+    .price-tile .num{font-size:2rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.03em;line-height:1}
+    .price-tile .lbl{font-size:.95rem;color:var(--ink-2);font-weight:600}
+
+    /* Bullet list (USPs) */
+    .checks{list-style:none;margin:18px 0 24px;display:grid;gap:8px}
+    .checks li{font-size:1rem;color:var(--ink);padding-left:30px;position:relative}
+    .checks li::before{content:"✓";position:absolute;left:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;font-size:.8rem;font-weight:900;display:grid;place-items:center;top:1px}
+
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:800;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:50px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+
+    /* Quick form */
+    .quick{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-lg);border:2px solid var(--accent)}
+    .quick .label-stripe{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;font-weight:800;padding:4px 10px;border-radius:6px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+    .quick h2{font-size:1.4rem;margin-bottom:.3em}
+    .quick .sub{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+    .field{margin-bottom:12px}
+    .field label{display:block;font-weight:700;font-size:.85rem;color:var(--ink);margin-bottom:5px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    .quick .btn{width:100%;margin-top:6px}
+    .form-foot{margin-top:10px;font-size:.78rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:#fff;border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:24px}}
+    .trust-item .num{font-size:1.7rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.82rem;color:var(--muted);margin-top:2px;font-weight:600}
+
+    /* Pricing cards */
+    .pricing{background:#fff}
+    .pricing-grid{display:grid;gap:18px;margin-top:40px}
+    @media(min-width:760px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
+    .price-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:28px;position:relative;transition:transform .15s,border-color .15s,box-shadow .15s}
+    .price-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .price-card.featured{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft) 0%,#fff 30%)}
+    .price-card .ribbon{position:absolute;top:-12px;left:24px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.05em}
+    .price-card h3{font-size:1.15rem}
+    .price-card .from{font-size:.9rem;color:var(--muted);font-weight:600;margin-top:6px}
+    .price-card .big{font-size:2.2rem;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1;margin-top:4px}
+    .price-card .big small{font-size:1rem;color:var(--muted);font-weight:600}
+    .price-card ul{list-style:none;margin-top:18px}
+    .price-card ul li{font-size:.93rem;color:var(--ink-2);padding:6px 0 6px 22px;position:relative}
+    .price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+    .price-card .btn{width:100%;margin-top:18px}
+
+    /* Process strip */
+    .process{background:var(--ink);color:#fff;padding:48px 0;text-align:center}
+    .process h2{color:#fff}
+    .process .lead{color:#bbf7d0;margin-left:auto;margin-right:auto}
+    .process-grid{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(2,1fr)}
+    @media(min-width:760px){.process-grid{grid-template-columns:repeat(4,1fr)}}
+    .pstep{padding:18px}
+    .pstep .num{font-size:2.5rem;font-weight:900;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .pstep h3{color:#fff;margin-top:8px;font-size:1.05rem}
+    .pstep p{color:#bbf7d0;font-size:.92rem;margin-top:4px}
+
+    /* Gallery */
+    .gallery{background:var(--bg)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:36px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:10px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:780px;margin:40px auto 0}
+    .faq details{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:0;margin-bottom:8px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.4rem;color:var(--accent);transition:transform .15s;flex:none;font-weight:800}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 20px 18px;color:var(--ink-2);font-size:.95rem}
+
+    /* Final CTA */
+    .cta-final{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;text-align:center}
+    .cta-final h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem)}
+    .cta-final p{color:#dcfce7;font-size:1.1rem;max-width:540px;margin:12px auto 24px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:#fff;color:var(--accent-dark)}
+    .cta-final .btn-secondary:hover{background:var(--ink);color:#fff}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--accent-dark)}
+
+    footer{background:#022c1a;color:#86efac;padding:48px 0 28px;font-size:.92rem}
+    .foot-grid{display:grid;gap:28px;margin-bottom:32px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:12px;font-size:1rem}
+    .foot-grid a{color:#bbf7d0;display:block;padding:3px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #064e3b;padding-top:20px;text-align:center;font-size:.85rem}
+
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:46px;padding:11px;font-size:.93rem}
+    @media(max-width:760px){.sticky-bar{display:flex;gap:8px}body{padding-bottom:74px}}
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #16a34a;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">B<b>Grupp</b><small>Soodne sillutus</small></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">📞 +372 58374422</a>
+      <a href="#kontakt-top" class="btn btn-primary" style="padding:9px 14px;min-height:auto;font-size:.9rem">Saa hind</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi paigalduse eeskirjad ja load 2026 – millal on vaja...</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-07.jpg" alt="Tänavakivi paigalduse eeskirjad ja load 2026 – millal on vaja projekti?" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi paigalduse eeskirjad ja load 2026 – millal on vaja projekti?</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span class="meta-date">Avaldatud: 16. juuli 2026</span>
+  <span class="meta-author">Autor: Keio Soo, Balcon Grupp OÜ tegevjuht</span>
+  <span class="meta-read">Lugemisaeg: ~9 min</span>
+</div>
+
+<h1>Tänavakivi paigalduse eeskirjad ja load 2026 – millal on vaja projekti?</h1>
+
+<p class="lead">Eesti eramaja hoovis, mis jääb kinnistu piiridesse ja kus ei muudeta veejooksu ega olemasolevaid tehnovõrke, saab tänavakivi paigaldada ilma ehitusloata. Niipea, kui töö puudutab avalikku ruumi, üle 60 m² katet, tänavaäärt, tehnovõrke või krundist väljumist, tekib kohalikul omavalitsusel (KOV) õigus nõuda projekti, teatist või kirjalikku nõusolekut – Tallinnas, Tartus ja Pärnus on kord kõige rangem.</p>
+
+<div class="answer-card">
+  <strong>Kiire vastus 2026:</strong>
+  <ul>
+    <li><strong>Eramaja hoov kuni ~60 m² olemasoleval alusel:</strong> load ei ole vajalikud, piisab omaniku otsusest.</li>
+    <li><strong>Uus sissesõidutee tänavast krundile:</strong> vajalik KOV-i kirjalik nõusolek või liitumispunkti kooskõlastus (Tallinnas Transpordiamet).</li>
+    <li><strong>Korteriühistu õu, äri- ja avalik ala:</strong> vajalik ehitusteatis + projekt, kui pindala ületab ~60 m² või muudetakse veejooksu.</li>
+    <li><strong>Muinsuskaitseala (vanalinn, mõisad, kalmistud):</strong> alati kirjalik luba – ilma selleta trahv 640–3 200 €.</li>
+    <li><strong>B Grupp aitab</strong> load ja projektid koordineerida: <a href="tel:+37258374422">+372 58374422</a>.</li>
+  </ul>
+</div>
+
+<h2>Millal ei ole tänavakivi paigaldusel luba vaja?</h2>
+
+<p>Enamik eramajaomanikest saab hoovi sillutada ilma ühegi loata. Ehitusseadustiku (EhS) järgi loetakse <a href="/">tänavakivi paigaldus</a> krundisiseseks rajatiseks juhul, kui see ei muuda ehitise kasutusotstarvet, ei laienda hoonestusala ja jääb olemasolevatele piiridele. Ka väljakujunenud alust (killustik + liiv) võib ümber laduda ilma kooskõlastuseta – tegemist on hoolduse, mitte uue ehitusega.</p>
+
+<p>Praktikas tähendab see, et kui teie sissesõidutee, terrass või õuesillutis vastab kõigile alljärgnevatele tingimustele, ei ole ehitusluba ega -teatist vaja:</p>
+
+<ul>
+  <li>Kate jääb <strong>eramaja krundi piiridesse</strong> ja ei ulatu tänava aluspinnale.</li>
+  <li>Pindala on <strong>alla 60 m²</strong> (osades KOV-des 20 m² – kontrollige alati kohalikku ehitusmäärust).</li>
+  <li>Ei muudeta <strong>sademevee ärajuhtimist</strong> naaberkrundile.</li>
+  <li>Ei kaevata <strong>tehnovõrkudest sügavamale</strong> kui 40 cm ega paigaldata uusi torusid.</li>
+  <li>Objekt <strong>ei asu muinsuskaitsealal</strong> ega looduskaitseala vööndis.</li>
+</ul>
+
+<p>Kui plaanite hoovi renoveerimist tavaeramajale, kus paigalduspind jääb 20–100 m² vahele, tutvuge lisaks meie juhistega – <a href="/oue-sillutus-eramule-paketid/">õue sillutuse eramule paketid</a> koondab hinnaklassid ja tehnilised nõuded ühte kohta. Kevadhooajaks broneerimine ilma load-menetluseta on kirjeldatud lehel <a href="/tanavakivi-paigaldus-kevad-2026-ennetellimine/">tänavakivi paigaldus kevad 2026 ennetellimine</a>.</p>
+
+<h3>Näide: 45 m² sissesõidutee ilma loata</h3>
+
+<p>Klient Saku vallas soovis olemasolevale killustikualusele lisada betoonkivi 45 m² ulatuses. Kuna töö jäi krundi piiridesse, veejooks juhiti olemasolevasse kraavi ning paigaldati Brikers Standard 8 cm kivi (EVS-EN 1338), teostasime paigalduse ilma teatiseta. Aluskonstruktsioon: 25 cm fr 0–32 killustik + 4 cm fr 2–5 liiv. Hind 22 €/m² koos materjalidega, valmis 2 päevaga. Vaadake sarnast projekti: <a href="/sillutuskivi-paigaldus-saku-ja-saue-vald/">sillutuskivi paigaldus Saku ja Saue vald</a>.</p>
+
+<h2>Millal on vaja ehitusteatist või -luba?</h2>
+
+<p>Ehitusteatis on lihtsam menetlus kui täisluba – KOV vastab 10 tööpäeva jooksul ning riigilõivu ei ole. Ehitusluba on põhjalikum, sisaldab kooskõlastusi tehnovõrkude valdajatega ja maksab 30–250 €. Alljärgnev tabel toob välja, millal kumbki menetlus käivitub.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Olukord</th>
+      <th>Vajalik menetlus</th>
+      <th>Riigilõiv</th>
+      <th>Menetlusaeg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eramaja hoov &lt; 60 m², olemasolev alus</td>
+      <td>Puudub</td>
+      <td>0 €</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Eramaja sissesõit uus, ühendus KOV-teega</td>
+      <td>Kirjalik nõusolek + liitumisprojekt</td>
+      <td>0–35 €</td>
+      <td>10–20 tp</td>
+    </tr>
+    <tr>
+      <td>Hoov 60–500 m² uue alustööga</td>
+      <td>Ehitusteatis + projekt</td>
+      <td>0 €</td>
+      <td>10 tp</td>
+    </tr>
+    <tr>
+      <td>Korteriühistu õu, äriparkla &gt; 500 m²</td>
+      <td>Ehitusluba + põhiprojekt</td>
+      <td>30–250 €</td>
+      <td>30 tp</td>
+    </tr>
+    <tr>
+      <td>Muinsuskaitseala (vanalinn, mõis)</td>
+      <td>Muinsuskaitseameti luba + põhiprojekt</td>
+      <td>0 €</td>
+      <td>30–60 tp</td>
+    </tr>
+    <tr>
+      <td>Sademevee tehnilise lahenduse muutmine</td>
+      <td>Vee-ettevõtja kooskõlastus</td>
+      <td>0 €</td>
+      <td>14 tp</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Praktikas näeme kõige sagedamini kolme olukorda, kus omanikud ei tea teatise nõudest: sissesõidu laiendamine tänava poole, korteriühistu suurema õue täieuuendus ja äärekivi paigaldus tänava serva. Viimasel juhul on abiks meie ülevaade <a href="/aarekivi-paigaldus-hind-eesti/">äärekivi paigaldus hind Eestis</a> ning konkreetsete linnade puhul <a href="/aarekivi-paigaldus-hind-tallinn/">äärekivi paigaldus hind Tallinn</a> ja <a href="/aarekivi-paigaldus-hind-tartu/">äärekivi paigaldus hind Tartu</a>.</p>
+
+<h3>Ehitusteatise põhikomponendid</h3>
+
+<ul>
+  <li>Asendiplaan mõõtkavas 1:500 – näitab paigaldatavat pinda ja piire.</li>
+  <li>Ristlõige aluskonstruktsioonist (killustik, liiv, kivi paksus).</li>
+  <li>Sademevee ärajuhtimise skeem – kuhu vesi voolab.</li>
+  <li>Materjalide sertifikaadid (EVS-EN 1338 betoonkivile, EVS-EN 1342 looduskivile, EVS-EN 1340 äärekivile).</li>
+  <li>Töövõtja tegevusluba või MTR-registreering.</li>
+</ul>
+
+<div class="cta-strip">
+  <p><strong>Ei tea, kas teie projekt vajab luba?</strong> Saadame teile 24 tunni jooksul KOV-i eeskirjade kokkuvõtte ja soovituse. Konsultatsioon on tasuta.</p>
+  <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+  <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+</div>
+
+<h2>Tallinn, Tartu, Pärnu – kohalikud erinevused 2026</h2>
+
+<p>Kolme suurema linna eeskirjad on rangemad kui väiksemates omavalitsustes ning erinevad ka omavahel. Alljärgnevalt tähtsamad nüansid, mida iga tellija peaks teadma enne materjali tellimist.</p>
+
+<h3>Tallinn</h3>
+
+<p>Tallinna linnavalitsuse heakorra eeskiri (2019, muudatustega 2024) nõuab ehitusteatist iga kõvakattega ala kohta, mis ületab 60 m² või mille aluses tehakse süvakaevet üle 40 cm. Vanalinn kuulub muinsuskaitsealale – seal on kohustuslik loodusliku munakivi kasutamine ja Muinsuskaitseameti luba. Kesklinnas Kadriorus ja Nõmmel kehtivad täiendavad mustripiirangud. Uus sissesõidutee tänavast krundile vajab alati Tallinna Transpordiameti kirjalikku nõusolekut, mis väljastatakse 15 tööpäeva jooksul.</p>
+
+<p>Konkreetsete Tallinna piirkondade näpunäited: <a href="/tanavakivi-paigaldus-nomme-eramaja/">tänavakivi paigaldus Nõmme eramaja</a>, <a href="/tanavakivi-paigaldus-lasnamae-hind/">tänavakivi paigaldus Lasnamäe hind</a>, <a href="/tanavakivi-paigaldus-haabersti-tallinn/">tänavakivi paigaldus Haabersti Tallinn</a> ja muinsuskaitsealal <a href="/graniitkivi-sillutus-tallinna-vanalinn-hind/">graniitkivi sillutus Tallinna vanalinn hind</a>.</p>
+
+<h3>Tartu</h3>
+
+<p>Tartu linna ehitusmäärus (§ 24) lubab eramaja krundil ilma teatiseta paigaldada kuni 100 m² kõvakatet, mis on üks Eesti leebemaid piirmäärasid. Küll aga on Tartus rangelt reguleeritud vihmavee ärajuhtimine – kogu sademevesi peab jääma krundile või juhitama immutuskaevu. Kesklinna piirkonnas (Emajõe kallastel ja ülikooli lähedal) on täiendav dendroloogiline kooskõlastus, kui puude juurestik jääb 3 m kaugusele.</p>
+
+<p>Vaadake ka <a href="/tanavakivi-paigaldus-tartu-hind/">tänavakivi paigaldus Tartu hind</a> ning kesklinna erilahendused <a href="/sillutuskivi-paigaldus-tartu-kesklinna-kaubanduskeskus/">sillutuskivi paigaldus Tartu kesklinna kaubanduskeskus</a>.</p>
+
+<h3>Pärnu</h3>
+
+<p>Pärnu linnavalitsuse heakorra eeskiri on suunatud eelkõige rannaäärse arhitektuuri säilitamisele. Rannarajoonis, Vanalinnas ja Kuursaali ümbruses ei ole lubatud värviline betoonkivi – kohustuslik on hall või naturaalne graniit. Ehitusteatist nõutakse alates 80 m² kõvakattest, kuid muinsuskaitsealal alati. Suvemajade ja aiamajade puhul on levinud lihtsustatud kord, kui kate jääb elamu ette.</p>
+
+<p>Detailsed hinnad ja tingimused: <a href="/tanavakivi-paigaldus-parnu-hind/">tänavakivi paigaldus Pärnu hind</a>, <a href="/sissesoidu-sillutus-parnu-eramaja/">sissesõidu sillutus Pärnu eramaja</a> ning muinsuskaitseala näide <a href="/munakivi-paigaldus-parnu-vanalinn-2026/">munakivi paigaldus Pärnu vanalinn 2026</a>.</p>
+
+<h2>Muinsuskaitse ja looduskaitse – kõige rangem regulatsioon</h2>
+
+<p>Muinsuskaitseseadus (MuKS) § 52 kohustab iga tänavakivi paigaldustööd muinsuskaitsealal (Tallinna vanalinn, Kuressaare, Rakvere ordulinnus, Narva vanalinn, Viljandi vanalinn, Haapsalu piiskopilinnus, Pärnu vanalinn) läbi käia Muinsuskaitseameti kaudu. Menetlusaeg on 30 tööpäeva, keerukamatel juhtudel kuni 60 tööpäeva.</p>
+
+<div class="warning">
+  <strong>Hoiatus:</strong> muinsuskaitsealal ilma loata paigaldatud kivi tuleb 100% juhtudel eemaldada omaniku kulul. Trahv füüsilisele isikule on kuni 3 200 €, juriidilisele isikule kuni 32 000 €. Ärge alustage tööd enne, kui teil on kirjalik luba käes.
+</div>
+
+<p>Muinsuskaitseala nõuded konkreetsele materjalile:</p>
+
+<ul>
+  <li><strong>Munakivi</strong> (naturaalne graniit, 8–12 cm läbimõõt) – ainuke lubatud materjal Tallinna vanalinnas ja Pärnu vanalinna keskosas.</li>
+  <li><strong>Skandinaavia graniidi tänavakivi</strong> (10×10×10 cm) – lubatud Kuressaare, Narva ja Viljandi vanalinnades.</li>
+  <li><strong>Historiseeriv betoonkivi</strong> (Brikers Antique või Aroc Vecais) – lubatud kaitsealavälistel ajaloolistel tänavatel Muinsuskaitseameti kirjalikul nõusolekul.</li>
+</ul>
+
+<p>Vaata ka <a href="/munakivi-paigaldus-vanalinn-kaitseala-hind/">munakivi paigaldus vanalinn kaitseala hind</a> ning ajastut järgiv paigaldusstiil <a href="/tanavakivi-paigaldus-keskaegne-muster-vanalinn/">tänavakivi paigaldus keskaegne muster vanalinn</a>.</p>
+
+<h2>Korteriühistu ja äriala – mida silmas pidada?</h2>
+
+<p>Korteriühistu puhul on eeskirjad KOV-i tasemel samad, kuid lisandub Korteriomandi- ja korteriühistuseadusest tulenev otsustusõigus. Enne KOV-i taotluse esitamist peab ühistu üldkoosolek otsustama:</p>
+
+<ol>
+  <li>Üldkoosoleku otsus ehitustööde tellimiseks (vähemalt 51% häältest kaasomanike üldarvust).</li>
+  <li>Töövõtja valik konkursi teel või kolme hinnapakkumise võrdlemisel.</li>
+  <li>Rahastamisallikas – remondifond, sihtotstarbeline sissemakse või pangalaen.</li>
+  <li>Sademevee ärajuhtimise projekt, kui õue põhikate uuendatakse.</li>
+</ol>
+
+<p>Äriparkla ja avaliku ala korral (üle 500 m²) on kohustuslik põhiprojekt A-klassi projekteerija poolt, geodeetiline alusplaan ja ehitusluba. B Grupp koordineerib nii projekteerimist kui ka menetluskirjade koostamist paketiga, mille hind on 800–2 400 € sõltuvalt pindalast.</p>
+
+<p>Detailsemad ühistute lahendused: <a href="/tanavakivi-paigaldus-korterihoov-2026/">tänavakivi paigaldus korterihoov 2026</a>, <a href="/tanavakivi-paigaldus-korteriuhistu-sissesoidule/">tänavakivi paigaldus korteriühistu sissesõidule</a> ning parklate osas <a href="/tanavakivi-paigaldus-arihoone-parkla-tallinn/">tänavakivi paigaldus ärihoone parkla Tallinn</a> ja <a href="/parkla-sillutus-arikinnistu-harjumaa-hind/">parkla sillutus ärikinnistu Harjumaa hind</a>.</p>
+
+<h2>Projekt ja kooskõlastused – kes teeb ja mis maksab?</h2>
+
+<p>Väiksemaid projekte (kuni ~300 m²) võib teostada B-klassi projekteerija või sertifitseeritud paigaldusmeister koos vastutava tegevjuhiga. Suuremad tööd (üle 500 m², ärikinnistud, muinsuskaitseala) nõuavad A-klassi projekteerijat. Alljärgnev tabel annab tegelikud turuhinnad 2026. aasta suvel.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Projekti liik</th>
+      <th>Pindala</th>
+      <th>Projekti maksumus</th>
+      <th>Menetlusaeg KOV-is</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ehitusteatise skeem</td>
+      <td>60–200 m²</td>
+      <td>180–350 €</td>
+      <td>10 tp</td>
+    </tr>
+    <tr>
+      <td>Eelprojekt eramaja hoovile</td>
+      <td>200–500 m²</td>
+      <td>450–900 €</td>
+      <td>10 tp</td>
+    </tr>
+    <tr>
+      <td>Põhiprojekt korteriühistule</td>
+      <td>500–1 500 m²</td>
+      <td>1 200–2 400 €</td>
+      <td>30 tp</td>
+    </tr>
+    <tr>
+      <td>Põhiprojekt ärikinnistule</td>
+      <td>1 500–2 500 m²</td>
+      <td>2 200–3 800 €</td>
+      <td>30 tp</td>
+    </tr>
+    <tr>
+      <td>Muinsuskaitseala eriprojekt</td>
+      <td>Iga suurus</td>
+      <td>1 800–4 500 €</td>
+      <td>30–60 tp</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>B Grupi paigalduskomplekt sisaldab tavaliselt kogu projektikäibe – asendiplaan, ristlõige, sademevee skeem, materjalide sertifikaadid ja teatis esitatakse teie eest KOV-ile. Vaadake meie hinnavahemikke <a href="/tanavakivi-paigaldus-ruutmeetri-hind-2026/">tänavakivi paigaldus ruutmeetri hind 2026</a> ning kiireloomulise lahenduse jaoks <a href="/tanavakivi-paigaldus-kiirteenus-2-paevaga/">tänavakivi paigaldus kiirteenus 2 päevaga</a>.</p>
+
+<h2>Tehnovõrgud ja kaeveluba</h2>
+
+<p>Iga kord, kui teie <a href="/">tänavakivi paigaldus</a> nõuab kaevet üle 40 cm sügavuse (näiteks uue aluskonstruktsiooni ehitamiseks), peate tellima kaeveloa KOV-i teede- ja tehnovõrkude osakonnast. Menetlusaeg on Tallinnas ja Tartus 10 tööpäeva, väiksemates KOV-des 5 tööpäeva. Kaeveluba on tasuta, kuid nõuab:</p>
+
+<ul>
+  <li><strong>Kaabelduse plaan</strong> Elektrilevi, Elisa, Telia ja Enefit Connect kaudu – tasuta e-taotlus.</li>
+  <li><strong>Gaasitrassi info</strong> Gaasivõrgud AS kaudu, kui piirkonnas on gaasitrassid.</li>
+  <li><strong>Vee- ja kanalisatsiooni skeem</strong> AS Tallinna Vesi, Tartu Veevärk või piirkondlik ettevõte.</li>
+  <li><strong>Sademevee lahendus</strong> – ei tohi juhtida naaberkrundile ega tänava alla ilma vee-ettevõtja kirjaliku nõusolekuta.</li>
+</ul>
+
+<p>Kaevetööde puhul on kohustuslik ka kaeviku tähistus, ohutuspiirded ja tööde tagastamise protokoll. B Grupi projektijuht koordineerib kõik võrgud üheaegselt, mis hoiab kokku 2–3 nädalat menetlust. Loe lisaks aluskonstruktsiooni valikust <a href="/blog/tanavakivi-teraskiu-betoon-vs-tavaline-alus/">teraskiu betoon vs tavaline alus</a> ning drenaaži lahendustest <a href="/blog/tanavakivi-drenaaz-ja-vihmavee-lahendus/">tänavakivi drenaaž ja vihmavee lahendus</a>.</p>
+
+<h2>Trahvid ja järelvalve – mis juhtub, kui load puuduvad?</h2>
+
+<p>Ehitusseadustik (§ 133) ja karistusseadustik (§ 359) reguleerivad ilma loata paigaldatud kõvakatte tagajärgi. 2026. aasta trahvimäärad on:</p>
+
+<ul>
+  <li><strong>Eramaja omanikule</strong> ilma teatiseta paigalduse eest: 100–800 €.</li>
+  <li><strong>Korteriühistule</strong> või juriidilisele isikule: 640–3 200 €.</li>
+  <li><strong>Muinsuskaitseala rikkumise eest</strong>: kuni 3 200 € (füüsiline) või kuni 32 000 € (juriidiline) + kate tuleb eemaldada.</li>
+  <li><strong>Sademevee ilma loata juhtimine</strong> naaberkrundile: kuni 1 600 € + tsiviilhagi naabri kahju hüvitamiseks.</li>
+</ul>
+
+<p>Praktikas alustavad KOV-id järelvalvet naabri kaebuse või Google Maps'i lennufoto muutuse baasil. Trahvist olulisem on tavaliselt kohustus algne olukord taastada – see tähendab, et 3 000 € eest paigaldatud kate tuleb 1 500 € eest lammutada ja aluspind taastada. Kokku 4 500 € kaotus, mille oleks saanud vältida 200 € projektiga.</p>
+
+<div class="cta-strip">
+  <p><strong>Vajate ühest kohast projekti, load ja paigaldust?</strong> B Grupp katab kogu tsükli: asendiplaan, ehitusteatis, kaeveluba, tehnovõrkude kooskõlastus ja töö teostamine 5–14 päevaga. Kuni 2 500 m² projektid, kuni 200 000 € eelarve.</p>
+  <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+</div>
+
+<h2>Kokkuvõte – lubade otsustuspuu</h2>
+
+<p>Kui teete oma eramaja hoovis alla 60 m² katet olemasoleval alusel ilma tänavaäärt puudutamata, ei vaja te 2026. aastal ühtegi luba. Iga muu olukord – suurem pindala, uus sissesõit, korteriühistu õu, muinsuskaitseala, äri- või avalik ala – nõuab kas ehitusteatist, kaeveluba, muinsuskaitseluba või kõiki kolme. Menetlusaeg jääb 10–60 tööpäeva vahemikku, projekti maksumus 180–4 500 €.</p>
+
+<p>Kõige levinum viga on eeldada, et "hoov on minu, ma teen mida tahan". Tegelikult kontrollivad KOV-id ja naabrid täna iga uut kõvakatet ning trahvid on suuremad kui projekti maksumus. Alustage alati eeskirjade kontrollist – B Grupp teeb selle teie eest tasuta 24 tunni jooksul.</p>
+
+<h2>KKK – tänavakivi paigalduse load ja eeskirjad</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kas eramaja hoovi tänavakivi paigalduseks on Eestis alati luba vaja?</summary>
+    <p>Ei ole. Kui pindala jääb alla 60 m² (Tartus alla 100 m²), kate paigaldatakse olemasoleva aluse peale ega muudeta sademevee ärajuhtimist ega tänavaäärt, siis 2026. aastal ei ole vaja ehitusteatist ega -luba. Piisab omaniku otsusest ja töövõtja valikust.</p>
+  </details>
+  <details>
+    <summary>Kui kaua võtab aega ehitusteatise menetlus KOV-is?</summary>
+    <p>Ehitusseadustik nõuab KOV-ilt vastust 10 tööpäeva jooksul teatise saamisest. Kui KOV ei vasta selle aja jooksul, loetakse teatis vaikimisi kooskõlastatuks. Ehitusloa (üle 500 m² projektid) menetlusaeg on 30 tööpäeva.</p>
+  </details>
+  <details>
+    <summary>Kui suur on trahv ilma loata paigalduse eest muinsuskaitsealal?</summary>
+    <p>Füüsilisele isikule kuni 3 200 €, juriidilisele isikule (näiteks korteriühistu) kuni 32 000 €. Lisaks tuleb 100% juhtudel kate omaniku kulul eemaldada ja aluspind taastada – kogukulu jääb tavaliselt 5 000–15 000 € vahemikku.</p>
+  </details>
+  <details>
+    <summary>Kas B Grupp aitab load ja kooskõlastused korraldada?</summary>
+    <p>Jah, projektikoordinatsioon on osa meie paigalduskomplektist. Koostame asendiplaani, aluse ristlõike, sademevee skeemi ja esitame teatise KOV-ile. Muinsuskaitseala ja üle 500 m² objektide puhul kaasame A-klassi projekteerija. Hind 180–2 400 € sõltuvalt keerukusest.</p>
+  </details>
+  <details>
+    <summary>Mis on erinevus ehitusteatise ja ehitusloa vahel?</summary>
+    <p>Ehitusteatis on lihtsam menetlus 60–500 m² projektidele – KOV-ile teavitatakse tööst, riigilõivu ei ole ja menetlusaeg on 10 tööpäeva. Ehitusluba on nõutav üle 500 m² katete või avaliku ala puhul, sisaldab kooskõlastusi tehnovõrkude valdajatega, riigilõiv on 30–250 € ja menetlusaeg 30 tööpäeva.</p>
+  </details>
+</div>
+
+<h2>Seotud artiklid ja teenused</h2>
+
+<div class="related-grid">
+  <a href="/blog/tanavakivi-drenaaz-ja-vihmavee-lahendus/">Tänavakivi drenaaž ja vihmavee lahendus – projekti nõuded</a>
+  <a href="/blog/tanavakivi-teraskiu-betoon-vs-tavaline-alus/">Teraskiu betoon vs tavaline alus – millal kumbki?</a>
+  <a href="/blog/tanavakivi-fugimaterjal-liiv-vs-polumeer/">Fugimaterjal – liiv vs polümeer</a>
+  <a href="/blog/tanavakivi-vs-asfalt-sissesoidutee-vordlus/">Tänavakivi vs asfalt sissesõiduteel</a>
+  <a href="/tanavakivi-paigaldus-hind/">Tänavakivi paigalduse hinnavahemik 2026</a>
+  <a href="/tanavakivi-paigaldus-kevad-2026-broneerimine/">Kevad 2026 – varajase broneerimise soodustus</a>
+  <a href="/sillutuskivi-hinnakalkulaator-1-minutiga/">Hinnakalkulaator – vastus 1 minutiga</a>
+  <a href="/blog/">Kõik B Grupi blogiartiklid</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tänavakivi paigalduse eeskirjad ja load 2026 – millal on vaja projekti?",
+  "description": "Ülevaade Eesti kohalike omavalitsuste eeskirjadest ja planeeringulubadest tänavakivi paigaldusel – millal, kellele ja kui palju maksab. Tallinn, Tartu, Pärnu erinevused, trahvid, projektihinnad.",
+  "datePublished": "2026-07-16",
+  "dateModified": "2026-07-16",
+  "author": {
+    "@type": "Person",
+    "name": "Keio Soo",
+    "jobTitle": "Tegevjuht",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Balcon Grupp OÜ"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Balcon Grupp OÜ",
+    "url": "https://bgrupp.ee/",
+    "telephone": "+372 58374422",
+    "email": "Balcongrupp@gmail.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bgrupp.ee/blog/tanavakivi-paigaldus-eeskirjad-ja-planeeringuluba/"
+  },
+  "keywords": "tänavakivi paigaldus load eeskirjad, ehitusteatis, planeeringuluba, muinsuskaitse, KOV eeskirjad, sissesõidutee luba"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kas eramaja hoovi tänavakivi paigalduseks on Eestis alati luba vaja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ei ole. Kui pindala jääb alla 60 m² (Tartus alla 100 m²), kate paigaldatakse olemasoleva aluse peale ega muudeta sademevee ärajuhtimist ega tänavaäärt, siis 2026. aastal ei ole vaja ehitusteatist ega -luba. Piisab omaniku otsusest ja töövõtja valikust."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kui kaua võtab aega ehitusteatise menetlus KOV-is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ehitusseadustik nõuab KOV-ilt vastust 10 tööpäeva jooksul teatise saamisest. Kui KOV ei vasta selle aja jooksul, loetakse teatis vaikimisi kooskõlastatuks. Ehitusloa menetlusaeg on 30 tööpäeva."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kui suur on trahv ilma loata paigalduse eest muinsuskaitsealal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Füüsilisele isikule kuni 3 200 €, juriidilisele isikule kuni 32 000 €. Lisaks tuleb 100% juhtudel kate omaniku kulul eemaldada ja aluspind taastada – kogukulu jääb tavaliselt 5 000–15 000 € vahemikku."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kas B Grupp aitab load ja kooskõlastused korraldada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jah. Koostame asendiplaani, aluse ristlõike, sademevee skeemi ja esitame teatise KOV-ile. Muinsuskaitseala ja üle 500 m² objektide puhul kaasame A-klassi projekteerija. Hind 180–2 400 € sõltuvalt keerukusest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mis on erinevus ehitusteatise ja ehitusloa vahel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ehitusteatis on lihtsam menetlus 60–500 m² projektidele – riigilõivu ei ole ja menetlusaeg on 10 tööpäeva. Ehitusluba on nõutav üle 500 m² katete või avaliku ala puhul, sisaldab kooskõlastusi tehnovõrkude valdajatega, riigilõiv on 30–250 € ja menetlusaeg 30 tööpäeva."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Avaleht",
+      "item": "https://bgrupp.ee/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://bgrupp.ee/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tänavakivi paigalduse eeskirjad ja load 2026",
+      "item": "https://bgrupp.ee/blog/tanavakivi-paigaldus-eeskirjad-ja-planeeringuluba/"
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>B Grupp</h4>
+        <p style="color:#86efac">B Grupp — soodsa hinnaga tänavakivi paigaldus eramajadele üle Eesti. Fikseeritud hind, kiire algus.</p>
+        <p style="margin-top:12px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com</p>
+      </div>
+      <div>
+        <h4>Hinnad</h4>
+        <a href="#hinnad">Eramaja õu — 16 €/m²</a>
+        <a href="#hinnad">Tänavakivi tervik — 28 €/m²</a>
+        <a href="#hinnad">Graniit premium — 35 €/m²</a>
+        <a href="#hinnad">Äärekivi — 24 €/jm</a>
+      </div>
+      <div>
+        <h4>Piirkond</h4>
+        <a href="#">Tallinn ja Harjumaa</a>
+        <a href="#">Tartu ja Tartumaa</a>
+        <a href="#">Pärnu ja Pärnumaa</a>
+        <a href="#">Üle Eesti</a>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <a href="#kkk">Korduma kippuvad küsimused</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#">Privaatsuspoliitika</a>
+        <a href="#">Tingimused</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 B Grupp · Reg nr 16294742 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">⚡ Saa hind</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin saada kiiret hinnapakkumist sillutuse paigalduseks." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

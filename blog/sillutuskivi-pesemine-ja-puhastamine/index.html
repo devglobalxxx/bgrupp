@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sillutuskivi pesemine ja puhastamine – täielik | B Grupp</title>
+  <meta name="description" content="Praktiline hooldusjuhend: survepesuri kasutamine, samblatõrje, õliplekkide eemaldamine ja vuukide säilitamine pesu ajal.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bgrupp.ee/blog/sillutuskivi-pesemine-ja-puhastamine/">
+
+  <meta property="og:title" content="Sillutuskivi pesemine ja puhastamine – täielik">
+  <meta property="og:description" content="Praktiline hooldusjuhend: survepesuri kasutamine, samblatõrje, õliplekkide eemaldamine ja vuukide säilitamine pesu ajal.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bgrupp.ee/blog/sillutuskivi-pesemine-ja-puhastamine/">
+  <meta property="og:image" content="https://bgrupp.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f7fdf9;--surface:#fff;--ink:#052e1a;--ink-2:#15543a;--muted:#5b8071;
+      --accent:#16a34a;--accent-dark:#15803d;--accent-soft:#dcfce7;
+      --line:#d1fae5;--success:#15803d;--warn:#b45309;--radius:12px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(5,46,26,.08);
+      --shadow-lg:0 10px 30px rgba(5,46,26,.12);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:88px 0}}
+
+    h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+    h1{font-size:clamp(2.1rem,5vw,3.4rem)}
+    h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:.5em}
+    h3{font-size:1.2rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1140px;margin:0 auto;gap:14px}
+    .brand{font-weight:900;font-size:1.2rem;letter-spacing:-.02em;display:inline-flex;align-items:baseline;gap:2px}
+    .brand b{color:var(--accent)}
+    .brand small{font-size:.7rem;color:var(--muted);font-weight:700;margin-left:6px;text-transform:uppercase;letter-spacing:.05em}
+    .top-cta{display:flex;align-items:center;gap:10px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem;white-space:nowrap}
+    @media(max-width:560px){.top-phone{display:none}}
+
+    /* Speed strip */
+    .speed-strip{background:var(--ink);color:#bbf7d0;font-size:.85rem;padding:8px 20px;text-align:center;font-weight:600}
+    .speed-strip strong{color:#fff}
+
+    /* Hero */
+    .hero{padding-top:48px;padding-bottom:32px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+    .hero-grid{display:grid;gap:32px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;gap:48px}.hero{padding-top:72px;padding-bottom:56px}}
+    .hero h1{margin-bottom:.4em}
+    .hero h1 mark{background:var(--accent-soft);color:var(--accent-dark);padding:0 .15em;border-radius:6px}
+    .hero .lead{margin-bottom:24px}
+
+    /* Big price tile */
+    .price-tile{display:inline-flex;align-items:baseline;gap:10px;background:var(--accent-soft);padding:14px 18px;border-radius:12px;margin-bottom:20px;border:1px solid var(--line)}
+    .price-tile .num{font-size:2rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.03em;line-height:1}
+    .price-tile .lbl{font-size:.95rem;color:var(--ink-2);font-weight:600}
+
+    /* Bullet list (USPs) */
+    .checks{list-style:none;margin:18px 0 24px;display:grid;gap:8px}
+    .checks li{font-size:1rem;color:var(--ink);padding-left:30px;position:relative}
+    .checks li::before{content:"✓";position:absolute;left:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;font-size:.8rem;font-weight:900;display:grid;place-items:center;top:1px}
+
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:800;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:50px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+
+    /* Quick form */
+    .quick{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-lg);border:2px solid var(--accent)}
+    .quick .label-stripe{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;font-weight:800;padding:4px 10px;border-radius:6px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+    .quick h2{font-size:1.4rem;margin-bottom:.3em}
+    .quick .sub{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+    .field{margin-bottom:12px}
+    .field label{display:block;font-weight:700;font-size:.85rem;color:var(--ink);margin-bottom:5px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    .quick .btn{width:100%;margin-top:6px}
+    .form-foot{margin-top:10px;font-size:.78rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:#fff;border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:24px}}
+    .trust-item .num{font-size:1.7rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.82rem;color:var(--muted);margin-top:2px;font-weight:600}
+
+    /* Pricing cards */
+    .pricing{background:#fff}
+    .pricing-grid{display:grid;gap:18px;margin-top:40px}
+    @media(min-width:760px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
+    .price-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:28px;position:relative;transition:transform .15s,border-color .15s,box-shadow .15s}
+    .price-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .price-card.featured{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft) 0%,#fff 30%)}
+    .price-card .ribbon{position:absolute;top:-12px;left:24px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.05em}
+    .price-card h3{font-size:1.15rem}
+    .price-card .from{font-size:.9rem;color:var(--muted);font-weight:600;margin-top:6px}
+    .price-card .big{font-size:2.2rem;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1;margin-top:4px}
+    .price-card .big small{font-size:1rem;color:var(--muted);font-weight:600}
+    .price-card ul{list-style:none;margin-top:18px}
+    .price-card ul li{font-size:.93rem;color:var(--ink-2);padding:6px 0 6px 22px;position:relative}
+    .price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+    .price-card .btn{width:100%;margin-top:18px}
+
+    /* Process strip */
+    .process{background:var(--ink);color:#fff;padding:48px 0;text-align:center}
+    .process h2{color:#fff}
+    .process .lead{color:#bbf7d0;margin-left:auto;margin-right:auto}
+    .process-grid{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(2,1fr)}
+    @media(min-width:760px){.process-grid{grid-template-columns:repeat(4,1fr)}}
+    .pstep{padding:18px}
+    .pstep .num{font-size:2.5rem;font-weight:900;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .pstep h3{color:#fff;margin-top:8px;font-size:1.05rem}
+    .pstep p{color:#bbf7d0;font-size:.92rem;margin-top:4px}
+
+    /* Gallery */
+    .gallery{background:var(--bg)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:36px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:10px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:780px;margin:40px auto 0}
+    .faq details{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:0;margin-bottom:8px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.4rem;color:var(--accent);transition:transform .15s;flex:none;font-weight:800}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 20px 18px;color:var(--ink-2);font-size:.95rem}
+
+    /* Final CTA */
+    .cta-final{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;text-align:center}
+    .cta-final h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem)}
+    .cta-final p{color:#dcfce7;font-size:1.1rem;max-width:540px;margin:12px auto 24px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:#fff;color:var(--accent-dark)}
+    .cta-final .btn-secondary:hover{background:var(--ink);color:#fff}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--accent-dark)}
+
+    footer{background:#022c1a;color:#86efac;padding:48px 0 28px;font-size:.92rem}
+    .foot-grid{display:grid;gap:28px;margin-bottom:32px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:12px;font-size:1rem}
+    .foot-grid a{color:#bbf7d0;display:block;padding:3px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #064e3b;padding-top:20px;text-align:center;font-size:.85rem}
+
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:46px;padding:11px;font-size:.93rem}
+    @media(max-width:760px){.sticky-bar{display:flex;gap:8px}body{padding-bottom:74px}}
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #16a34a;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">B<b>Grupp</b><small>Soodne sillutus</small></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">📞 +372 58374422</a>
+      <a href="#kontakt-top" class="btn btn-primary" style="padding:9px 14px;min-height:auto;font-size:.9rem">Saa hind</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Sillutuskivi pesemine ja puhastamine – täielik juhend 2026</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-04.jpg" alt="Sillutuskivi pesemine ja puhastamine – täielik juhend 2026" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Sillutuskivi pesemine ja puhastamine – täielik juhend 2026</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <span>📅 7. juuni 2026</span> · <span>✍️ Keio Soo, B Grupp tegevjuht</span> · <span>⏱️ 8 min lugemine</span>
+</div>
+
+<h1>Sillutuskivi pesemine ja puhastamine – täielik juhend 2026</h1>
+
+<p class="lead">Sillutuskivi pesemine 1× aastas (kevadel, aprill–mai) pikendab katte eluiga 25–30 aastalt 35–40 aastani. Õigesti tehtud survepesu eemaldab sambla, samblikud ja tolmukihi 60–90 minutiga 50 m² kohta, ilma vuuke välja pesemata. Vale tehnika seevastu lõhub vuugid 1–2 hooajaga ja kivi vajub ebaühtlaselt.</p>
+
+<div class="answer-card">
+  <strong>Lühivastus:</strong> Survepesuri rõhk 100–120 bar (mitte üle 150 bar), otsiku kaugus kivist 25–30 cm, nurk 30–45°, pesemissuund vuuke pidi. Pesule järgneb kohe vuukide täitmine kuiva vuugiliivaga (0–2 mm) ja kogu pinna kuivpühkimine. Õliplekkide eemaldamiseks erialane degreaser, samblatõrjeks naatriumkarbonaadi lahus või kommertstoode.
+</div>
+
+<h2>Miks sillutuskivi peseda – konkreetne kasu</h2>
+
+<p>Korralikult hooldatud sillutuskivi peab vastu 30–40 aastat. Hooldamata kate näitab esimesi probleeme juba 5.–7. aastal: vuukidesse kasvab sammal ja umbrohi, pind muutub libedaks, õliplekid söövivad kivipinda. Pesemise eesmärk on kolm asja korraga.</p>
+
+<ul>
+  <li><strong>Sambla ja umbrohu eemaldamine vuukidest</strong> – takistab juurte tungimist liiva sisse, mis hoiab vuugid stabiilsetena.</li>
+  <li><strong>Pinna libeduse vähendamine</strong> – sammaldunud kivi on talvel kuni 3× libedam kui puhas pind.</li>
+  <li><strong>Esteetiline värskendus</strong> – hall tolm- ja õhusaastekiht muudab heleda kivi 3–5 aastaga tumeroheliseks.</li>
+</ul>
+
+<p>Kui katte paigaldus on värske, võtab esmane pesu ja vuukide järelhooldus aega 20–30 minutit/10 m². Hooldamata vana katte taastamine läheb 60–90 minutit/10 m² ja võib nõuda kohati kivi väljavõtmist ning vuugiliiva täielikku vahetust. Lugege ka, kuidas <a href="/blog/tanavakivi-paigalduse-garantii-ja-leping/">tänavakivi paigalduse garantii ja leping</a> reguleerivad esimese 24 kuu hooldustöid.</p>
+
+<h2>Survepesuri kasutamine – õige tehnika</h2>
+
+<p>Survepesu on tõhusaim meetod, kuid valede seadetega rikub see katte 1–2 hooajaga. Eestis töötab enamik kodukasutaja masinaid (Kärcher K4–K7, Nilfisk C, Bosch AQT) rõhul 110–160 bar – sellest jätkub täiesti. Kui rõhk on üle 150 bar, koorub vuugiliiv välja kuni 2–3 cm sügavuselt ja kivi hakkab nikatama.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameeter</th>
+      <th>Õige väärtus</th>
+      <th>Tagajärg vea korral</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Veerõhk</td>
+      <td>100–120 bar</td>
+      <td>üle 150 bar: vuugid välja, kivi nikatab</td>
+    </tr>
+    <tr>
+      <td>Otsiku kaugus kivist</td>
+      <td>25–30 cm</td>
+      <td>alla 15 cm: kivipinnale jäävad triibud</td>
+    </tr>
+    <tr>
+      <td>Otsiku nurk</td>
+      <td>30–45° kalle</td>
+      <td>90° (otse alla): vuugid puhtaks pestud</td>
+    </tr>
+    <tr>
+      <td>Pesemissuund</td>
+      <td>vuuke pidi (mitte ristipidi)</td>
+      <td>ristipidi: vuugiliiv väljas 40–60% ulatuses</td>
+    </tr>
+    <tr>
+      <td>Otsiku tüüp</td>
+      <td>lehvikotsik 25°</td>
+      <td>punkt- või rootorotsik: pinda krunditakse</td>
+    </tr>
+    <tr>
+      <td>Vee temperatuur</td>
+      <td>külm (10–20 °C)</td>
+      <td>üle 50 °C: betoonkivi pinnaviimistlus mureneb</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Sammud survepesuga töötamiseks</h3>
+
+<ol>
+  <li><strong>Eelpühkimine:</strong> hari kogu pinnalt lahtine praht, leheprügi ja jäme tolm – muidu pritsib tagasi.</li>
+  <li><strong>Eelleotus:</strong> kasta kogu pind külma veega, lase 10 minutit seista – nii lahustub tolm parem.</li>
+  <li><strong>Sammaldunud kohad enne pesu:</strong> kanna samblatõrje (vt allpool), oota 24–48 tundi.</li>
+  <li><strong>Sektsioonidena pesu:</strong> 2–3 m² korraga, vuugijoont pidi, alati ülevalt allapoole.</li>
+  <li><strong>Vuukide taasliivamine:</strong> kohe pärast pesu kanna kuiv vuugiliiv (fraktsioon 0–2 mm) ja luuata harjaga sisse.</li>
+  <li><strong>Tihendus:</strong> kui omad vibroplaati, lase 1 läbim vuukide kinniseks vibreerimiseks (kummist matiga, et kivi mitte rikkuda).</li>
+</ol>
+
+<p>Suurematel pindadel (üle 200 m²) tasub kaaluda profimasinat 200–250 bar mootoriga, mida kasutavad <a href="/kiire-tanavakivi-paigaldus/">kiire tänavakivi paigaldus</a> meeskonnad ka taastusprojektidel. Hind: 80–120 €/päev üürides.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Vajad professionaalset pesu või katte taastamist?</strong>
+    <p>B Grupp pakub sillutuskivi hooldust 50–2 500 m² objektidel. Saa hind 1 minutiga.</p>
+  </div>
+  <div>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Samblatõrje – mis töötab Eesti kliimas</h2>
+
+<p>Sammal ja samblik tekivad sillutuskivile peamiselt põhja- ja idapoolsetel pindadel, kus päike ei kuiva katet kiiresti. Eesti suvistes tingimustes (50–70 mm sademeid/kuu) hakkab sammal nähtavaks muutuma 3.–5. aastal alates paigaldusest. Tõrjeks kasutatakse kolme lähenemist – odavaim koduvariant kuni profikemikaalini.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Meetod</th>
+      <th>Toime</th>
+      <th>Kestus</th>
+      <th>Hind €/m²</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Naatriumkarbonaat (sooda) lahus 5%</td>
+      <td>nõrk, kerge sammal</td>
+      <td>3–4 kuud</td>
+      <td>0,05–0,10 €</td>
+    </tr>
+    <tr>
+      <td>Naatriumhüpoklorit (kloor) 3–5%</td>
+      <td>keskmine, sammal + samblik</td>
+      <td>6–9 kuud</td>
+      <td>0,15–0,30 €</td>
+    </tr>
+    <tr>
+      <td>Algitsiid (Algimun, Mellerud)</td>
+      <td>tugev, sügavale tunginud sammal</td>
+      <td>12–18 kuud</td>
+      <td>0,40–0,80 €</td>
+    </tr>
+    <tr>
+      <td>Termiline (kuum vesi 80–95 °C)</td>
+      <td>tugev, kemikaalivaba</td>
+      <td>6–8 kuud</td>
+      <td>profiteenus 1,50–3,00 €</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Praktiline samblatõrje samm-sammult</h3>
+
+<ol>
+  <li>Vali kuiv ilm – 24–48 tundi enne ja pärast pinnale kandmist ilma vihmata.</li>
+  <li>Pihusta lahus ühtlaselt kogu pinnale rõhupihusti või kastekannuga (kulu 0,2–0,3 l/m²).</li>
+  <li>Lase 24–48 tundi mõjuda – sammal muutub pruuniks/halliks.</li>
+  <li>Pese survepesuriga ülaltoodud parameetritega.</li>
+  <li>Korda samblatõrjet järgmisel kevadel ennetava annusena (poole väiksem kontsentratsioon).</li>
+</ol>
+
+<div class="warning">
+  <strong>Hoiatus:</strong> kloorilahus võib valgendada heledat graniitkivi ja kahjustada lähedalkasvavaid taimi. Katke roosipõõsad, hekk ja muru kileogaga ning loputage pärast neid puhta veega. Algitsiide ärge kandke 50 cm raadiuses süüakate taimedeni.
+</div>
+
+<h2>Õliplekkide eemaldamine</h2>
+
+<p>Õli, kütus ja jahutusvedelik on sillutuskivi vaenlane number 1, sest poorne betoonkivi (EVS-EN 1338) imeb need 2–6 mm sügavuselt sisse juba esimese 30 minuti jooksul. Värske plekk (alla 24 h) eemaldub 85–95% ulatuses, vana plekk (üle 1 kuu) tihti ainult 40–60%. Iga sissesõidutee omanik vajab kodus 1 pudelit õlieemaldajat varuks.</p>
+
+<h3>Värske õliplekk (alla 24 tundi)</h3>
+
+<ol>
+  <li><strong>Imamine:</strong> puista koheselt peale kassiliiva, saepuru või tsementi – jätke 4–8 tundi vedeliku imamiseks.</li>
+  <li><strong>Mehhaaniline eemaldus:</strong> labidaga ära imava materjali ja viska prügikasti.</li>
+  <li><strong>Pesemine:</strong> kanna degreaser (Kärcher RM 31, Tenax, Mellerud) ja jäta 10–15 min mõjuma.</li>
+  <li><strong>Loputus:</strong> survepesu 100 bar, suunaga sissesõidust väljapoole.</li>
+</ol>
+
+<h3>Vana või sügav õliplekk</h3>
+
+<ol>
+  <li>Kanna paks (3–5 mm) tsementi-pulber + tärpentini segu plekile, kata kileogaga.</li>
+  <li>Jäta 24–48 tundi – tärpentin lahustab õli, tsement imab välja.</li>
+  <li>Eemalda mehhaaniliselt, pese degreaseriga 2 korda järjest.</li>
+  <li>Kui plekk on endiselt nähtav, korda kogu protseduuri 3–5 päeva pärast.</li>
+</ol>
+
+<p>Sõidualadele, kus õlirisk on suur (näiteks <a href="/sissesoidu-sillutus-2-auto-parkimiseks/">sissesõidu sillutus 2 auto parkimiseks</a> või <a href="/parkla-sillutus-arikinnistu-harjumaa-hind/">parkla sillutus äri kinnistul</a>), soovitame paigalduse järgselt impregneerida kate veetõrjeainega – see vähendab imendumist 70–85%.</p>
+
+<h2>Vuukide säilitamine pesu ajal</h2>
+
+<p>Vuukide hävitamine on kõige sagedasem viga koduperemehe pesul. Vuugiliiv (fraktsioon 0–2 mm, EVS 901-3) hoiab kivid paigal ja jaotab koormust – kui see välja peseda, hakkab kate 1–2 hooajaga vajuma ja kivid liikuma. Õige protokoll on alati: pese → kuivata → täida vuugid → harja → vajuta.</p>
+
+<h3>Vuukide kontroll enne pesu</h3>
+
+<ul>
+  <li><strong>Mõõda vuugisügavus:</strong> peab olema kuni 5 mm kivipinnast all (mitte sügavam).</li>
+  <li><strong>Kontrolli kasvanud sammalt:</strong> juurte sügavus näitab, kas vajad eelnevalt 24 h leotust.</li>
+  <li><strong>Vaata umbrohi:</strong> üle 10 cm taim tuleb mehhaaniliselt eemaldada enne pesu.</li>
+</ul>
+
+<h3>Vuukide täitmine pärast pesu</h3>
+
+<ol>
+  <li>Lase pinnal kuivada 4–8 tundi (suvel) või 24 tundi (sügis-kevad).</li>
+  <li>Puista kuiv vuugiliiv (0–2 mm, valitud kivivärvi järgi) kogu pinnale 2–3 mm kihina.</li>
+  <li>Luuata pehme harjaga diagonaalselt vuukide sisse – iga vuuk vähemalt 2× üle.</li>
+  <li>Liigne liiv harjake ära – ärge jätke kivipinnale, sest niiskudes tekib tsemendijälg.</li>
+  <li>Suurte pindade puhul: kerge vibroplaadi läbim kummimatiga – sulgeb vuugid täielikult.</li>
+  <li>Lase 24 tundi seista enne sõitmist.</li>
+</ol>
+
+<p>Polümeervuugiliiv (näiteks Romex, Quick-Mix) maksab 4–8× rohkem kui tavaliiv (40–60 €/25 kg vs 5–8 €/25 kg), kuid peab vastu 8–12 aastat ilma uuendamiseta ja ei kasva läbi sambla. Suurte aluste puhul (üle 100 m²) on see investeering õigustatud – arvuta hind oma platsile <a href="/kalkulaator/">kalkulaatoris</a>.</p>
+
+<div class="cta-strip">
+  <div>
+    <strong>Sillutuskivi taastamine ja vuukide uuendus</strong>
+    <p>Hooldus, taastamine, polümeervuukide paigaldus üle Eesti. Hinnapakkumine 24 h jooksul.</p>
+  </div>
+  <div>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Sillutuskivi aastaringne hooldusgraafik</h2>
+
+<p>Optimaalne hooldus jaotub neljaks etapiks aastas. Kogusumma kodukasutaja jaoks 50–100 m² platsil: ca 4–8 töötundi/aastas ja 30–60 € materjale. See on 10–15× odavam kui taastamine 8–10 aasta pärast täielikult amortiseerunud katte puhul.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aeg</th>
+      <th>Tegevus</th>
+      <th>Tundi 50 m² kohta</th>
+      <th>Materjal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kevad (aprill–mai)</td>
+      <td>Põhipesu, samblatõrje, vuukide taastäide</td>
+      <td>3–5 h</td>
+      <td>liiv, sooda/kloor, vesi</td>
+    </tr>
+    <tr>
+      <td>Suvi (juuni–august)</td>
+      <td>Umbrohu eemaldus, kohapealne plekipesu</td>
+      <td>0,5–1 h/kuu</td>
+      <td>degreaser vajadusel</td>
+    </tr>
+    <tr>
+      <td>Sügis (september–oktoober)</td>
+      <td>Lehtede pühkimine, vuukide kontroll</td>
+      <td>1–2 h</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Talv (november–märts)</td>
+      <td>Lume eemaldus plastlabidaga, EI soolata</td>
+      <td>pidev</td>
+      <td>graniidikillustik (mitte sool)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="warning">
+  <strong>Tee-keemiline sool sillutuskivile = surm.</strong> Naatriumkloriid (NaCl) tungib betoonkivi pooridesse ja külmaprotsessis lammutab pinda. 2–3 talve regulaarselt soola lükata = 5 mm kivipinda kadunud, pind tuhmunud, värv pleekinud. Kasutage libeduse vastu peenikest graniidikillustikku 2–5 mm või vulkaanilist tuhka.
+</div>
+
+<p>Kui katet pole hooldatud üle 7–10 aasta, ei pruugi tavaline kevadine pesu enam piisata. Sellistel juhtudel teeme B Grupis täisrevisjoni: kivide üksikute lahtirebimise, aluse kontroll, vuugiliiva täielik vahetus. Hind 12–20 €/m² olenevalt katte seisukorrast. Lähemalt loe ka <a href="/blog/tanavakivi-paigaldus-sugisel-optimaalne-aeg/">tänavakivi paigalduse sügistöödest</a>, mil aja hindade tase on kuni 15% madalam.</p>
+
+<h2>Levinud vead, mida sillutuskivi pesul tehakse</h2>
+
+<ul>
+  <li><strong>Punktotsiku kasutamine</strong> – kivipinda krunditakse sügavuselt 1–2 mm, betoonpinnaviimistlus kaob ja kivi muutub vastuvõtlikuks veele ja saastele.</li>
+  <li><strong>Pesemine kuuma veega:</strong> üle 60 °C lõhub betoonkivi pinnakihti ja muudab kivi heledamaks (kihtide vahel olev pigment hakkab leostuma).</li>
+  <li><strong>Vuukide taasliivamise edasilükkamine:</strong> kui kate kuivab pesujärgselt vuukideta, hakkavad kivid kohe liikuma esimese sõitmise või tugeva sajuga.</li>
+  <li><strong>Happeliste puhastusvahendite kasutamine:</strong> soolhape ja muriaathape (HCl) eemaldavad küll plekid, aga söövivad samaaegselt betoonkivi pinda – pärast 2–3 kasutust on kivi muutunud poorseks ja imab veelgi rohkem saastet.</li>
+  <li><strong>Sammaldunud ala "kuivpesu":</strong> ilma eelneva keemilise tõrjeta jäävad juured vuukidesse alles ja sammal kasvab 4–8 nädalaga tagasi.</li>
+</ul>
+
+<h2 id="kkk">Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kui sageli peab sillutuskivi pesema?</summary>
+    <p>Korralik põhipesu 1× aastas kevadel (aprill–mai). Sügisel pühkige lehed ja eemaldage umbrohi. Õhusaastega piirkondades (linn, tee ääres) ja põhjapoolsetel pindadel võib vajada 2× aastas (kevad + augusti lõpp). Hooldamine 1× aastas pikendab katte eluiga 25–30 aastalt 35–40 aastani.</p>
+  </details>
+  <details>
+    <summary>Kas survepesur lõhub sillutuskivi vuugid?</summary>
+    <p>Õige tehnika korral mitte. Maksimaalne lubatud rõhk 120 bar, otsik 25–30 cm kaugusel kivist, nurk 30–45°, suund vuugijoont pidi. Pärast pesu täitke vuugid kohe kuiva vuugiliivaga (0–2 mm). Punktotsikut, rootorotsikut ja üle 150 bar rõhku ei tohi kunagi kasutada.</p>
+  </details>
+  <details>
+    <summary>Kuidas eemaldada vana õliplekk sillutuskivilt?</summary>
+    <p>Vana õliplekk (üle 1 kuu) eemaldub 40–60% ulatuses kombinatsiooniga: tsementi + tärpentini pasta (3–5 mm paks) 24–48 tundi kileoga all, seejärel degreaseripesu 2 korda järjest. 100% eemaldamine pole tihti võimalik – sügavale tunginud õli jätab varju 5–8 aastaks.</p>
+  </details>
+  <details>
+    <summary>Kas tohib sillutuskivile teesoola lükata?</summary>
+    <p>Ei. Naatriumkloriid lammutab betoonkivi pinna 2–3 talvega: pinna eluiga lüheneb 30 aastalt 12–15 aastani. Libeduse vastu kasutage peenikest graniidikillustikku 2–5 mm. Looduskivile (graniit, basalt) on sool vähem kahjulik, kuid ka seal eelistame killustikku.</p>
+  </details>
+  <details>
+    <summary>Mis vuugiliiva kasutada pärast survepesu?</summary>
+    <p>Standard: kuiv vuugiliiv fraktsioon 0–2 mm (EVS 901-3). Suurema kestvuse jaoks polümeervuugiliiv (Romex, Quick-Mix) – 4–8× kallim, kuid peab vastu 8–12 aastat ilma uuendamiseta ja ei kasva läbi sambla. 100 m² platsile kulub ca 50–80 kg tavaliiva või 25–40 kg polümeervuugiliiva.</p>
+  </details>
+</div>
+
+<div class="cta-strip">
+  <div>
+    <strong>B Grupp – sillutuskivi paigaldus ja hooldus üle Eesti</strong>
+    <p>Tallinn · Tartu · Pärnu · Rakvere · Keila · Saue. Hind 24 h jooksul. Garantii 24 kuud.</p>
+  </div>
+  <div>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Seotud lehed</h2>
+
+<div class="related-grid">
+  <a href="/blog/tanavakivi-paigalduse-garantii-ja-leping/">Tänavakivi paigalduse garantii ja leping</a>
+  <a href="/blog/tanavakivi-paigaldus-sugisel-optimaalne-aeg/">Tänavakivi paigaldus sügisel</a>
+  <a href="/blog/tanavakivi-paksus-6cm-vs-8cm-vs-10cm/">Tänavakivi paksus: 6 vs 8 vs 10 cm</a>
+  <a href="/blog/sillutuskivi-paigaldus-terrassile/">Sillutuskivi paigaldus terrassile</a>
+  <a href="/blog/tanavakivi-umbritsetud-haljastus-integratsioon/">Tänavakivi ja haljastus</a>
+  <a href="/blog/tanavakivi-vs-asfalt-eramaja-soidutee/">Tänavakivi vs asfalt sõiduteele</a>
+  <a href="/kiire-tanavakivi-paigaldus/">Kiire tänavakivi paigaldus</a>
+  <a href="/kalkulaator/">Hinnakalkulaator</a>
+  <a href="/sissesoidu-sillutus-tallinn-hind-2026/">Sissesõidu sillutus Tallinn 2026</a>
+  <a href="/oue-sillutus-eramule-paketid/">Õue sillutus eramule – paketid</a>
+  <a href="/blog/">Kõik artiklid</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Sillutuskivi pesemine ja puhastamine – täielik juhend 2026",
+      "description": "Praktiline juhend sillutuskivi survepesuks, samblatõrjeks ja õliplekkide eemaldamiseks. Õiged rõhud, kemikaalid ja vuukide säilitamine.",
+      "datePublished": "2026-06-07",
+      "dateModified": "2026-06-07",
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "B Grupp tegevjuht"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "url": "https://bgrupp.ee/",
+        "telephone": "+372 58374422",
+        "email": "Balcongrupp@gmail.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bgrupp.ee/blog/sillutuskivi-pesemine-ja-puhastamine/"
+      },
+      "inLanguage": "et-EE",
+      "keywords": "sillutuskivi pesemine, sillutuskivi puhastamine, survepesu, samblatõrje, õliplekk, vuugiliiv"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kui sageli peab sillutuskivi pesema?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Korralik põhipesu 1× aastas kevadel (aprill–mai). Õhusaastega piirkondades ja põhjapoolsetel pindadel 2× aastas. Hooldamine pikendab katte eluiga 25–30 aastalt 35–40 aastani."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas survepesur lõhub sillutuskivi vuugid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Õige tehnika korral mitte. Maksimaalne rõhk 120 bar, otsik 25–30 cm kaugusel, nurk 30–45°, suund vuugijoont pidi. Pärast pesu täitke vuugid kohe kuiva vuugiliivaga 0–2 mm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kuidas eemaldada vana õliplekk sillutuskivilt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vana õliplekk eemaldub 40–60% ulatuses kombinatsiooniga: tsementi + tärpentini pasta 24–48 tundi kileoga all, seejärel degreaseripesu 2 korda järjest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas tohib sillutuskivile teesoola lükata?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ei. Naatriumkloriid lammutab betoonkivi pinna 2–3 talvega ja lüheneb katte eluiga 30 aastalt 12–15 aastani. Kasutage peenikest graniidikillustikku 2–5 mm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mis vuugiliiva kasutada pärast survepesu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard: kuiv vuugiliiv fraktsioon 0–2 mm (EVS 901-3). Suurema kestvuse jaoks polümeervuugiliiv (Romex, Quick-Mix) – peab vastu 8–12 aastat ilma uuendamiseta."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://bgrupp.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://bgrupp.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sillutuskivi pesemine ja puhastamine",
+          "item": "https://bgrupp.ee/blog/sillutuskivi-pesemine-ja-puhastamine/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>B Grupp</h4>
+        <p style="color:#86efac">B Grupp — soodsa hinnaga tänavakivi paigaldus eramajadele üle Eesti. Fikseeritud hind, kiire algus.</p>
+        <p style="margin-top:12px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com</p>
+      </div>
+      <div>
+        <h4>Hinnad</h4>
+        <a href="#hinnad">Eramaja õu — 16 €/m²</a>
+        <a href="#hinnad">Tänavakivi tervik — 28 €/m²</a>
+        <a href="#hinnad">Graniit premium — 35 €/m²</a>
+        <a href="#hinnad">Äärekivi — 24 €/jm</a>
+      </div>
+      <div>
+        <h4>Piirkond</h4>
+        <a href="#">Tallinn ja Harjumaa</a>
+        <a href="#">Tartu ja Tartumaa</a>
+        <a href="#">Pärnu ja Pärnumaa</a>
+        <a href="#">Üle Eesti</a>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <a href="#kkk">Korduma kippuvad küsimused</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#">Privaatsuspoliitika</a>
+        <a href="#">Tingimused</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 B Grupp · Reg nr 16294742 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">⚡ Saa hind</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin saada kiiret hinnapakkumist sillutuse paigalduseks." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>

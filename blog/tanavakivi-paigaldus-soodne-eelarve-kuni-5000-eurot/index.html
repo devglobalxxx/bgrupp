@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tänavakivi paigaldus soodsalt – kuidas mahutada projekt...</title>
+  <meta name="description" content="Eelarvepõhine lähenemine: kui suure pinna saab 3000-5000 € eest, materjali valik, kompromissid kvaliteedis vs hinnas, säästuvihjed.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bgrupp.ee/blog/tanavakivi-paigaldus-soodne-eelarve-kuni-5000-eurot/">
+
+  <meta property="og:title" content="Tänavakivi paigaldus soodsalt – kuidas mahutada projekt...">
+  <meta property="og:description" content="Eelarvepõhine lähenemine: kui suure pinna saab 3000-5000 € eest, materjali valik, kompromissid kvaliteedis vs hinnas, säästuvihjed.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bgrupp.ee/blog/tanavakivi-paigaldus-soodne-eelarve-kuni-5000-eurot/">
+  <meta property="og:image" content="https://bgrupp.ee/og-image.jpg">
+  <meta property="og:locale" content="et_EE">
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#f7fdf9;--surface:#fff;--ink:#052e1a;--ink-2:#15543a;--muted:#5b8071;
+      --accent:#16a34a;--accent-dark:#15803d;--accent-soft:#dcfce7;
+      --line:#d1fae5;--success:#15803d;--warn:#b45309;--radius:12px;
+      --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 12px rgba(5,46,26,.08);
+      --shadow-lg:0 10px 30px rgba(5,46,26,.12);
+    }
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--accent-dark);text-decoration:none}
+    a:hover{text-decoration:underline}
+    button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    section{padding:64px 0}
+    @media(min-width:768px){section{padding:88px 0}}
+
+    h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+    h1{font-size:clamp(2.1rem,5vw,3.4rem)}
+    h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:.5em}
+    h3{font-size:1.2rem;margin-bottom:.4em}
+    p{color:var(--ink-2)}
+    .lead{font-size:1.15rem;color:var(--ink-2);max-width:640px}
+
+    /* Header */
+    .top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1140px;margin:0 auto;gap:14px}
+    .brand{font-weight:900;font-size:1.2rem;letter-spacing:-.02em;display:inline-flex;align-items:baseline;gap:2px}
+    .brand b{color:var(--accent)}
+    .brand small{font-size:.7rem;color:var(--muted);font-weight:700;margin-left:6px;text-transform:uppercase;letter-spacing:.05em}
+    .top-cta{display:flex;align-items:center;gap:10px}
+    .top-phone{font-weight:700;color:var(--ink);font-size:.95rem;white-space:nowrap}
+    @media(max-width:560px){.top-phone{display:none}}
+
+    /* Speed strip */
+    .speed-strip{background:var(--ink);color:#bbf7d0;font-size:.85rem;padding:8px 20px;text-align:center;font-weight:600}
+    .speed-strip strong{color:#fff}
+
+    /* Hero */
+    .hero{padding-top:48px;padding-bottom:32px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+    .hero-grid{display:grid;gap:32px;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;gap:48px}.hero{padding-top:72px;padding-bottom:56px}}
+    .hero h1{margin-bottom:.4em}
+    .hero h1 mark{background:var(--accent-soft);color:var(--accent-dark);padding:0 .15em;border-radius:6px}
+    .hero .lead{margin-bottom:24px}
+
+    /* Big price tile */
+    .price-tile{display:inline-flex;align-items:baseline;gap:10px;background:var(--accent-soft);padding:14px 18px;border-radius:12px;margin-bottom:20px;border:1px solid var(--line)}
+    .price-tile .num{font-size:2rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.03em;line-height:1}
+    .price-tile .lbl{font-size:.95rem;color:var(--ink-2);font-weight:600}
+
+    /* Bullet list (USPs) */
+    .checks{list-style:none;margin:18px 0 24px;display:grid;gap:8px}
+    .checks li{font-size:1rem;color:var(--ink);padding-left:30px;position:relative}
+    .checks li::before{content:"✓";position:absolute;left:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;font-size:.8rem;font-weight:900;display:grid;place-items:center;top:1px}
+
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:800;font-size:1rem;transition:transform .1s,box-shadow .15s,background .15s;text-decoration:none;min-height:50px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+    .btn-primary:hover{background:var(--accent-dark);box-shadow:var(--shadow-lg);text-decoration:none}
+    .btn-secondary{background:var(--ink);color:#fff}
+    .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-ghost:hover{background:var(--ink);color:#fff;text-decoration:none}
+
+    /* Quick form */
+    .quick{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-lg);border:2px solid var(--accent)}
+    .quick .label-stripe{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;font-weight:800;padding:4px 10px;border-radius:6px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+    .quick h2{font-size:1.4rem;margin-bottom:.3em}
+    .quick .sub{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+    .field{margin-bottom:12px}
+    .field label{display:block;font-weight:700;font-size:.85rem;color:var(--ink);margin-bottom:5px}
+    .field input,.field select,.field textarea{
+      width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;font:inherit;font-size:1rem;
+      background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);
+    }
+    .field-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+    .quick .btn{width:100%;margin-top:6px}
+    .form-foot{margin-top:10px;font-size:.78rem;color:var(--muted);text-align:center}
+
+    /* Trust strip */
+    .trust{background:#fff;border-block:1px solid var(--line);padding:24px 0}
+    .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;text-align:center}
+    @media(min-width:760px){.trust-grid{grid-template-columns:repeat(4,1fr);gap:24px}}
+    .trust-item .num{font-size:1.7rem;font-weight:900;color:var(--accent-dark);letter-spacing:-.02em}
+    .trust-item .lbl{font-size:.82rem;color:var(--muted);margin-top:2px;font-weight:600}
+
+    /* Pricing cards */
+    .pricing{background:#fff}
+    .pricing-grid{display:grid;gap:18px;margin-top:40px}
+    @media(min-width:760px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
+    .price-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:28px;position:relative;transition:transform .15s,border-color .15s,box-shadow .15s}
+    .price-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    .price-card.featured{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft) 0%,#fff 30%)}
+    .price-card .ribbon{position:absolute;top:-12px;left:24px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.05em}
+    .price-card h3{font-size:1.15rem}
+    .price-card .from{font-size:.9rem;color:var(--muted);font-weight:600;margin-top:6px}
+    .price-card .big{font-size:2.2rem;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1;margin-top:4px}
+    .price-card .big small{font-size:1rem;color:var(--muted);font-weight:600}
+    .price-card ul{list-style:none;margin-top:18px}
+    .price-card ul li{font-size:.93rem;color:var(--ink-2);padding:6px 0 6px 22px;position:relative}
+    .price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+    .price-card .btn{width:100%;margin-top:18px}
+
+    /* Process strip */
+    .process{background:var(--ink);color:#fff;padding:48px 0;text-align:center}
+    .process h2{color:#fff}
+    .process .lead{color:#bbf7d0;margin-left:auto;margin-right:auto}
+    .process-grid{display:grid;gap:18px;margin-top:40px;grid-template-columns:repeat(2,1fr)}
+    @media(min-width:760px){.process-grid{grid-template-columns:repeat(4,1fr)}}
+    .pstep{padding:18px}
+    .pstep .num{font-size:2.5rem;font-weight:900;color:var(--accent);letter-spacing:-.03em;line-height:1}
+    .pstep h3{color:#fff;margin-top:8px;font-size:1.05rem}
+    .pstep p{color:#bbf7d0;font-size:.92rem;margin-top:4px}
+
+    /* Gallery */
+    .gallery{background:var(--bg)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:36px}
+    @media(min-width:760px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+    .gallery-grid img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:10px;display:block;transition:transform .3s}
+    .gallery-grid img:hover{transform:scale(1.02)}
+
+    /* FAQ */
+    .faq{max-width:780px;margin:40px auto 0}
+    .faq details{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:0;margin-bottom:8px;overflow:hidden;transition:border-color .15s}
+    .faq details[open]{border-color:var(--accent)}
+    .faq summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";font-size:1.4rem;color:var(--accent);transition:transform .15s;flex:none;font-weight:800}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq details p{padding:0 20px 18px;color:var(--ink-2);font-size:.95rem}
+
+    /* Final CTA */
+    .cta-final{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;text-align:center}
+    .cta-final h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem)}
+    .cta-final p{color:#dcfce7;font-size:1.1rem;max-width:540px;margin:12px auto 24px}
+    .cta-final .cta-row{justify-content:center}
+    .cta-final .btn-secondary{background:#fff;color:var(--accent-dark)}
+    .cta-final .btn-secondary:hover{background:var(--ink);color:#fff}
+    .cta-final .btn-ghost{color:#fff;border-color:#fff}
+    .cta-final .btn-ghost:hover{background:#fff;color:var(--accent-dark)}
+
+    footer{background:#022c1a;color:#86efac;padding:48px 0 28px;font-size:.92rem}
+    .foot-grid{display:grid;gap:28px;margin-bottom:32px}
+    @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot-grid h4{color:#fff;margin-bottom:12px;font-size:1rem}
+    .foot-grid a{color:#bbf7d0;display:block;padding:3px 0}
+    .foot-grid a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #064e3b;padding-top:20px;text-align:center;font-size:.85rem}
+
+    .sticky-bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:10px;z-index:40}
+    .sticky-bar .btn{flex:1;min-height:46px;padding:11px;font-size:.93rem}
+    @media(max-width:760px){.sticky-bar{display:flex;gap:8px}body{padding-bottom:74px}}
+    /* a11y: visible focus ring for keyboard users — WCAG 2.1 AA */
+    a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid #16a34a;outline-offset:2px;border-radius:6px}
+    /* responsive tables — horizontal scroll on narrow viewports */
+    .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5em 0}
+    .table-scroll table{margin:0;min-width:560px}
+    @media(max-width:560px){article table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;min-width:0}}
+    /* very narrow screens — keep sticky CTAs compact */
+    @media(max-width:380px){.sticky-bar .btn{font-size:.86rem;padding:11px 8px;min-height:46px}.top-cta>.btn{padding:8px 12px;font-size:.85rem}}
+
+
+  
+    /* WhatsApp floating action button */
+    .whatsapp-fab{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.45);z-index:45;transition:transform .15s,box-shadow .15s;color:#fff;text-decoration:none}
+    .whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 6px 22px rgba(37,211,102,.6);text-decoration:none;color:#fff}
+    .whatsapp-fab:focus-visible{outline:3px solid #25d366;outline-offset:4px}
+    .whatsapp-fab svg{width:32px;height:32px;fill:#fff;display:block}
+    .whatsapp-fab .wa-pulse{position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.6;animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+    @keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.6);opacity:0}100%{transform:scale(1.6);opacity:0}}
+    @media(max-width:760px){.whatsapp-fab{bottom:88px;width:54px;height:54px}.whatsapp-fab svg{width:28px;height:28px}}
+    @media(prefers-reduced-motion:reduce){.whatsapp-fab .wa-pulse{animation:none}}
+
+  
+    /* Blog hero image */
+    .post-hero{margin:0 0 1.8em;border-radius:12px;overflow:hidden;background:#e7e5e4}
+    .post-hero img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+    .post-hero figcaption{padding:10px 14px;font-size:.85rem;color:#737373;background:#fafaf9;border-top:1px solid #e7e5e4}
+
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a href="/" class="brand">B<b>Grupp</b><small>Soodne sillutus</small></a>
+    <div class="top-cta">
+      <a href="tel:+37258374422" class="top-phone">📞 +372 58374422</a>
+      <a href="#kontakt-top" class="btn btn-primary" style="padding:9px 14px;min-height:auto;font-size:.9rem">Saa hind</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="breadcrumbs" style="font-size:.85rem;color:#737373;margin-bottom:18px;padding-top:12px"><a href="/">Avaleht</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; Tänavakivi paigaldus soodsalt – kuidas mahutada projekt 5000 € sisse...</nav>
+</div>
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px">
+  <figure class="post-hero">
+    <img src="../../img/gallery-06.jpg" alt="Tänavakivi paigaldus soodsalt – kuidas mahutada projekt 5000 € sisse 2026" width="800" height="600" loading="lazy" decoding="async">
+    <figcaption>Tänavakivi paigaldus soodsalt – kuidas mahutada projekt 5000 € sisse 2026</figcaption>
+  </figure>
+
+  <div class="article-meta">
+  <a href="/blog/">← Kõik artiklid</a> · 13. juuni 2026 · Autor: Keio Soo · Lugemisaeg ~8 min
+</div>
+
+<h1>Tänavakivi paigaldus soodsalt – kuidas mahutada projekt 5000 € sisse 2026</h1>
+
+<p class="lead">5000 € eelarvega saad 2026. aasta hindadega paigaldada <strong>~110–145 m²</strong> betoonkivi sissesõidutee või õue, kui valid Brikersi/Aroci standardkivi (60 mm), tellid materjali ühe partiina ja paigaldad suvisel madalhooajal. Käesolev juhend näitab täpselt, kuhu raha kulub, kus saab säästa ilma kvaliteedis järele andmata ja millised on reaalsed kompromissid 3000 €, 4000 € ja 5000 € eelarvete vahel.</p>
+
+<div class="answer-card">
+  <strong>Lühivastus:</strong> Soodsa tänavakivi paigalduse hind 2026. aastal on <strong>34–45 €/m²</strong> (materjal + alusetööd + paigaldus). 5000 € eest saad ~110–145 m² koos äärekivi (10–15 jm) ja drenaažiga. Säästuvõit tuleb kolmest kohast: <strong>standardkivi (mitte sileda või suure formaadi)</strong>, <strong>ühepartiine tellimine otse tehasest</strong> (Brikers/Aroc/Premia) ja <strong>kompaktne geomeetria</strong> (ristkülik, mitte kõverjooned). Konkreetsed numbrid alljärgnevas tabelis.
+</div>
+
+<h2>Mis mahub 3000 € – 5000 € eelarvesse 2026. aastal?</h2>
+
+<p>Eelarvepõhise lähenemise puhul on kõige tähtsam aru saada, mis komponentidest hind koosneb. Tüüpiline soodne <a href="/">tänavakivi paigaldus</a> jaguneb järgmiselt: <strong>materjal 35–40%</strong>, <strong>alusetööd (killustik + tasandus) 30–35%</strong>, <strong>paigaldustöö 20–25%</strong>, <strong>äärekivi + viimistlus 5–10%</strong>. Kui mõni neist kasvab (näiteks pehme pinnas nõuab paksemat killustikupatja), siis kaotad ruutmeetreid eelarves.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Eelarve</th>
+      <th>Pind (m²)</th>
+      <th>Sobib kasutuseks</th>
+      <th>Kivi tüüp</th>
+      <th>Äärekivi (jm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3000 €</td>
+      <td>~70–85 m²</td>
+      <td>1 auto sissesõit + lühike kõnnitee</td>
+      <td>Brikers 60 mm standardhall</td>
+      <td>8–10 jm betoonist</td>
+    </tr>
+    <tr>
+      <td>4000 €</td>
+      <td>~90–115 m²</td>
+      <td>2 auto sissesõit või väike sisehoov</td>
+      <td>Aroc 60 mm hall/antratsiit</td>
+      <td>10–12 jm betoonist</td>
+    </tr>
+    <tr>
+      <td>5000 €</td>
+      <td>~110–145 m²</td>
+      <td>Sissesõit + osaline õuepind</td>
+      <td>Brikers/Premia 60 mm, valikvärv</td>
+      <td>12–15 jm betoonist</td>
+    </tr>
+    <tr>
+      <td>5000 € (esindusklass)</td>
+      <td>~75–95 m²</td>
+      <td>Sissesõit graniitäärisega</td>
+      <td>Sile betoonkivi või väike graniit</td>
+      <td>10–12 jm graniidist</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Hinnad sisaldavad standardseid alusetöid (10 cm killustikupatja + 4 cm liivapadi), paigaldust ja äärekivi. Erilahendused (eemaldatav vana asfalt, sügav drenaaž, järsk kallak, suur formaat) tähendavad lisakulu 8–15 €/m². Kui soovid kiiret indikatiivset arvutust enda kruntide kohta, kasuta meie <a href="/kalkulaator/">tänavakivi hinna kalkulaatorit</a>.</p>
+
+<h2>Materjali valik: kus säästa, kus mitte</h2>
+
+<p>Materjal moodustab tüüpilises 5000 € projektis 1750–2000 €. See on suurim üksik kuluartikkel ja siit tuleb põhiline säästuvõit. Aga kvaliteedis tagasi tõmbamine valele kohale võib kaks aastat hiljem maksta kogu materjali ümberlaadimist.</p>
+
+<h3>1) Vali standardformaat, mitte eriformaat</h3>
+<p>Brikersi, Aroci ja Premia kataloogides on <strong>standardkivi 200×100×60 mm</strong> 30–40% odavam kui suur formaat (300×300 või kombi-mustri kivid). Standardkivi vastab EVS-EN 1338 nõuetele samamoodi nagu kallim variant — survetugevus on identne, ainult mõõdud erinevad. Säästuvõit 100 m² peal: <strong>600–900 €</strong>.</p>
+
+<h3>2) Vali hall või antratsiit, mitte värviline</h3>
+<p>Helehallid ja antratsiidi-toonid on tehasekataloogi standardvalik ja seetõttu kõige soodsamad. Punased, kollased ja erivärvid maksavad 15–25% rohkem, sest pigmenti läheb segusse rohkem. Kahevärvilised mustrid nõuavad ka kallimat paigaldust. Soovituse leiad meie põhjalikust juhendist <a href="/blog/betoonkivi-varvitoonid-ja-mustri-valik/">betoonkivi värvitoonid ja mustri valik</a>.</p>
+
+<h3>3) Säilita 60 mm paksus sõidualadele</h3>
+<p>Siin <strong>ÄRA</strong> säästa. 60 mm betoonkivi on sõiduautole minimaalne nõue (EVS-EN 1338 ja Eesti praktika). 40 mm või 50 mm kivi on kõnniteele lubatud, aga sissesõidule mitte — auto raskus murrab need 2–3 aasta jooksul. Säästetud 200 € praegu tähendab 3000 € ümberlaadimist hiljem.</p>
+
+<div class="warning">
+  <strong>Hoiatus:</strong> ära telli "nimetut" odavat kivi turult või Facebook-marketi kuulutustest. Brikers, Aroc ja Premia on EVS-EN 1338 sertifitseeritud — see tähendab survetugevus ≥3,6 MPa ja külmakindlus ≥56 tsüklit. Sertifitseerimata kivi mureneb tihti esimese talve järel. Materjalile antakse meie projektides 2-aastane paigaldusgarantii ainult juhul, kui kasutame teadaoleva tootja kivi.
+</div>
+
+<div class="cta-strip">
+  <div>
+    <strong>Vajad 5000 € eelarvele konkreetset pakkumist?</strong><br>
+    Saada platsi mõõdud ja sissesõidu visand — vastame hinnaga 1 minutiga.
+  </div>
+  <div>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Alusetööd: 30% eelarvest, mille pealt EI saa kokku hoida</h2>
+
+<p>Alusetööd on koht, kus enamik "soodsaid" pakkumisi haavatavad on. Tüüpiline mõtlemine: "Killustik on killustik, paneme 5 cm asemel 7 cm ja säästame." Tegelik tulemus: kivi vajub 1–2 aasta jooksul lainetama ja kogu projekt tuleb ümber teha. EVS 901-3 standard nõuab erakasutuse sissesõidule <strong>vähemalt 10 cm tihendatud killustikupadja</strong>, sõiduliiklusega platsile 15–20 cm. Sellele tuleb peale 3–4 cm liivapadi.</p>
+
+<p>Aluse õige ettevalmistus on detailselt kirjeldatud meie põhjalikus tehnilises juhendis <a href="/blog/tanavakivi-aluse-ettevalmistus-killustik-vs-betoon/">tänavakivi aluse ettevalmistus: killustik vs betoon</a>. Lühike kokkuvõte: erakasutuses 99% juhtudest <strong>killustik</strong>, mitte betoon — betoonalus läheb kaks korda kallimaks ja ei lase pinnasel "hingata".</p>
+
+<p>Drenaaž on teine asi, millega ei tasu eksperimenteerida. Vee äravool valele poole = jää talvel, sammal ja vajumine. Sissesõidul peab langus olema vähemalt <strong>2% (2 cm meetri kohta)</strong> hoonest eemale või drenaažikraavi suunas. Vt täpsemalt: <a href="/blog/sillutuskivi-drenaazh-ja-vee-arajuhtimine/">sillutuskivi drenaaž ja vee äravool</a>.</p>
+
+<h2>Geomeetria ja paigaldus: miks ristkülik on odavam kui kõverjoon</h2>
+
+<p>Paigaldustöö hind 2026. aastal jääb soodsate projektide puhul vahemikku <strong>10–14 €/m²</strong>. Selle saab langetada lähemale 10-le, kui plats vastab kolmele tingimusele:</p>
+
+<ul>
+  <li><strong>Lihtne geomeetria.</strong> Ristkülik või L-kuju on kiire. Kaarjas piir tähendab kivi lõikamist nurkadesse — see lisab 1,5–2,5 €/m² ja võtab paigaldajalt 25–40% rohkem aega.</li>
+  <li><strong>Tasane krunt (kallak ≤5%).</strong> Järsk kallak nõuab terrasse, lisaäärekive ja täiendavat tihendamist. Kallaku-spetsiifikat oleme katnud eraldi: <a href="/blog/tanavakivi-paigaldus-kallakuga-krunt/">tänavakivi paigaldus kallakuga krundile</a>.</li>
+  <li><strong>Üks muster, mitte kombineeritud.</strong> "Jänesepoeg"-side (running bond) on kiireim. Kalasaba (herringbone) on 15–20% aeglasem. Keskaegne segamuster on 30%+ aeglasem ja sobib pigem esindusalale, mitte eelarveprojektile.</li>
+</ul>
+
+<p>Kui plaanid 1-auto sissesõitu lihtsa geomeetria ja standardkiviga, tutvu hinnastruktuuriga ka konkreetsete piirkondade lehtedel: <a href="/sissesoidu-sillutus-1-auto-hind-2026/">sissesõidu sillutus 1 auto hind 2026</a>, <a href="/sissesoidu-sillutus-tallinn-hind-2026/">Tallinnas</a> või <a href="/sissesoidu-sillutus-parnumaa-hind/">Pärnumaal</a>.</p>
+
+<h2>5 säästuvihjet, mis ei ohverda kvaliteeti</h2>
+
+<ol>
+  <li><strong>Telli materjal ühe partiina.</strong> Tehased annavad 5–8% allahindlust üle 80 m² ühekordsele tellimusele. Kui jagad projekti kaheks — "praegu pool, hiljem ülejäänu" — kaotad nii koguselise hinnasoodustuse kui ka veotasu (tehasest tuleb auto kaks korda).</li>
+  <li><strong>Vali madalhooaeg (juuli keskpaik või september).</strong> Mai–juuni alguses ja augustis on tellimuste tipphooaeg ja vabu brigaade vähem. Juulis ja septembris on hinnad keskmiselt 5–10% madalamad. Hooaja teemast lähemalt: <a href="/blog/sillutuskivi-paigaldus-sugisel-2026/">sillutuskivi paigaldus sügisel 2026</a> (kui ehitus on alanud kasutusajale on <a href="/sillutuskivi-paigaldus-talvel-eesti/">talvine paigaldus</a> meil välistatud).</li>
+  <li><strong>Valmista platsi enne ise ette.</strong> Vana muru, taimed, kompostimullad — kui need ise eemaldad, säästad 200–500 € pinnatööde pealt. Killustikupatja paigaldust jäta brigaadile, sest sinna käib tihendi (vibroplaadi) kasutamine.</li>
+  <li><strong>Vali betoonist äärekivi graniitäärise asemel.</strong> Betoonäärekivi (EVS-EN 1340) maksab 8–14 €/jm paigaldatuna, graniitäärekivi (EVS-EN 1342) 25–40 €/jm. 12 jm projekti puhul vahe ~250–300 €. Kvaliteet on betoonil eelarveprojektil täiesti adekvaatne.</li>
+  <li><strong>Kombineeri kivi ja muru.</strong> Kui sul on 150 m² ala, aga eelarve katab 100 m², ära tee odavat halba kivi 150-le. Tee korralik 100 m² ja jäta 50 m² muruks või kruusaks. Saad alati 2–3 aasta pärast laiendada.</li>
+</ol>
+
+<h2>Konkreetne 5000 € näiteprojekt</h2>
+
+<p>Vaatame, mis konkreetselt mahub 5000 € eelarvesse Harjumaal asuva eramaja 2-auto sissesõidu jaoks (mõõdud 6 × 12 m = 72 m²):</p>
+
+<table>
+  <thead>
+    <tr><th>Komponent</th><th>Kogus</th><th>Ühikuhind</th><th>Kokku</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Brikersi 60 mm hall betoonkivi (EVS-EN 1338)</td><td>72 m²</td><td>13 €/m²</td><td>936 €</td></tr>
+    <tr><td>Killustikupadi 0–32 mm, 12 cm</td><td>72 m²</td><td>7 €/m²</td><td>504 €</td></tr>
+    <tr><td>Liivapadi 4 cm + paigaldusliiv</td><td>72 m²</td><td>2,50 €/m²</td><td>180 €</td></tr>
+    <tr><td>Paigaldustöö + tihendamine</td><td>72 m²</td><td>12 €/m²</td><td>864 €</td></tr>
+    <tr><td>Betoonäärekivi paigaldatuna</td><td>14 jm</td><td>12 €/jm</td><td>168 €</td></tr>
+    <tr><td>Drenaaž + langus + vuugitäide</td><td>—</td><td>—</td><td>340 €</td></tr>
+    <tr><td>Transport + masinaaeg + jäätmed</td><td>—</td><td>—</td><td>410 €</td></tr>
+    <tr><td>Käibemaks ja varu (≈12%)</td><td>—</td><td>—</td><td>~598 €</td></tr>
+    <tr><th colspan="3">Kokku indikatiivselt</th><th>~4000–4200 €</th></tr>
+  </tbody>
+</table>
+
+<p>~800–1000 € reservi sees on koht ootamatusteks: kallak osutub arvatust suuremaks, vana asfalt vaja eemaldada, või soovid suuremat formaati ühele tsoonile. Sarnaseid mahukalkulatsioone leiad teemakaupa: <a href="/oue-sillutus-50m2-pakettlahendus-hind/">õue sillutus 50 m² pakett</a>, <a href="/oue-sillutus-100m2-pakett-hind/">100 m² pakett</a> ja konkreetsete piirkondade hinnaranged nagu <a href="/tanavakivi-paigaldus-100m2-hind-tallinn/">100 m² Tallinnas</a>.</p>
+
+<h2>Millal soodne lähenemine EI tööta</h2>
+
+<p>Eelarvekeskne lahendus sobib enamikule eramutele, suvilatele ja väikestele äripindadele. Aga on stsenaariume, kus 5000 € ei kata reaalseid vajadusi ja soovitame eelarve ümber hinnata:</p>
+
+<ul>
+  <li><strong>Raskeveoki liiklus (>3,5 t korduvalt).</strong> Vaja 80 mm kivi (mitte 60), 20 cm killustikupatja ja sageli graniitäärekivi. Tegelik hind 65–90 €/m².</li>
+  <li><strong>Esindusalad ärihoonete fassaadi ees.</strong> Suur formaat, sile pind ja graniitäärekivi tõmbavad hinna 75–110 €/m². Vt <a href="/parkla-sillutus-arikinnistu-harjumaa-hind/">parkla sillutus ärikinnistule</a>.</li>
+  <li><strong>Pehme või turbane pinnas.</strong> Killustikupadja peab olema 25–35 cm, lisaks geotekstiil. See lisab 12–18 €/m².</li>
+  <li><strong>Elektriauto laadimiskoht.</strong> Erinõuded kaablitele ja tugevamale alusele — vt <a href="/blog/tanavakivi-paigaldus-elektriauto-laadimisjaam/">tänavakivi paigaldus elektriauto laadimisjaamale</a>.</li>
+</ul>
+
+<div class="cta-strip">
+  <div>
+    <strong>Saa täpne hind oma 3000–5000 € eelarvele.</strong><br>
+    Saatke platsi mõõdud, foto ja soovitud kivi tüüp — vastame samal tööpäeval. 2-aastane paigaldusgarantii kõigile projektidele.
+  </div>
+  <div>
+    <a href="tel:+37258374422" class="btn btn-primary">📞 +372 58374422</a>
+    <a href="/#kontakt-top" class="btn btn-ghost">Saada päring</a>
+  </div>
+</div>
+
+<h2>Korduma kippuvad küsimused</h2>
+
+<div class="faq">
+  <details>
+    <summary>Kui suure pinna saab täpselt 5000 € eest paigaldada 2026. aastal?</summary>
+    <p>Tüüpilise eramaja sissesõidu puhul (tasane krunt, lihtne geomeetria, Brikersi/Aroci 60 mm standardkivi, betoonäärekivi) jääb pind vahemikku 110–145 m². Kui valid sileda või suure formaadi kivi, väheneb pind 75–95 m²-ni. Kui plaanid graniitäärekivi, väheneb pind veel 10–15 m².</p>
+  </details>
+  <details>
+    <summary>Kas 3000 € eelarvega saab üldse korraliku tulemuse?</summary>
+    <p>Jah — 70–85 m² ulatuses. See katab näiteks 1-auto sissesõidu (3 × 8 m = 24 m²) + lühikese kõnnitee kõrvale + sissepääsuala. Kvaliteedis ei kompromiss: kasutame sama EVS-EN 1338 sertifitseeritud kivi ja täidame samad alusenõuded. Säästame ainult formaadis, värvis ja geomeetrias.</p>
+  </details>
+  <details>
+    <summary>Kas on mõtet osta kivi ise odavamalt ja siis paigaldajat eraldi otsida?</summary>
+    <p>Tavaliselt mitte. Kui tellime materjali otse tehasest projekti raames, saame 5–8% koguselise allahindluse, mida üksiktellija ei saa. Lisaks vastutame materjali eest 2-aastase paigaldusgarantii raames. Eraldi ostetud materjalile saame anda ainult paigaldustöö garantii — kui kivi praguneb tootmisvea tõttu, on see sinu risk.</p>
+  </details>
+  <details>
+    <summary>Kas 60 mm kivi kestab tegelikult sõiduautot?</summary>
+    <p>Jah, kui alusetööd on korras. 60 mm EVS-EN 1338 sertifitseeritud betoonkivi survetugevus on minimaalselt 3,6 MPa ja külmakindlus 56 tsüklit — see tähendab praktikas 20–30 aastat eluiga sõiduautoga sissesõidul. Tähtsam kui kivi paksus on 10 cm tihendatud killustikupadi ja 2% langus.</p>
+  </details>
+  <details>
+    <summary>Millised on lisakulud, mida 5000 € eelarvesse arvestada?</summary>
+    <p>Levinumad ootamatused: vana asfalt/betoonplatsi eemaldus (5–12 €/m²), pinnase väljaveo prügimäele (200–400 €/koorem), torustiku/kaabli ümbritsemine (50–150 €/punkt), suurem kallak kui mõõdetud (lisa-tihendus 3–6 €/m²). Soovitame jätta 10–15% reservi ootamatusteks — kõige levinum probleem on, et kruntide all on rohkem ehitusprahti, kui aimatakse.</p>
+  </details>
+</div>
+
+<h2>Seotud artiklid ja teenuselehed</h2>
+
+<div class="related-grid">
+  <a href="/blog/tanavakivi-aluse-ettevalmistus-killustik-vs-betoon/">Tänavakivi aluse ettevalmistus: killustik vs betoon</a>
+  <a href="/blog/sillutuskivi-drenaazh-ja-vee-arajuhtimine/">Sillutuskivi drenaaž ja vee äravool</a>
+  <a href="/blog/betoonkivi-varvitoonid-ja-mustri-valik/">Betoonkivi värvitoonid ja mustri valik</a>
+  <a href="/blog/tanavakivi-paigaldus-kallakuga-krunt/">Tänavakivi paigaldus kallakuga krundile</a>
+  <a href="/tanavakivi-paigaldus-hind/">Tänavakivi paigaldus — hinnad ja tingimused</a>
+  <a href="/tanavakivi-paigaldus-kiire-hind-1-minutiga/">Kiire hinnapakkumine — 1 minutiga</a>
+  <a href="/sissesoidu-sillutus-1-auto-hind-2026/">Sissesõidu sillutus 1 autole — hind 2026</a>
+  <a href="/oue-sillutus-50m2-pakettlahendus-hind/">Õue sillutus 50 m² pakettlahendus</a>
+  <a href="/oue-sillutus-100m2-pakett-hind/">Õue sillutus 100 m² pakett</a>
+  <a href="/kalkulaator/">Tänavakivi hinnakalkulaator</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Tänavakivi paigaldus soodsalt – kuidas mahutada projekt 5000 € sisse 2026",
+      "description": "Soodsa tänavakivi paigalduse juhend 2026. aastaks: 5000 € eelarvega saad 110–145 m² betoonkivi. Konkreetsed numbrid materjalist, alusetöödest ja paigaldusest.",
+      "datePublished": "2026-06-13",
+      "dateModified": "2026-06-13",
+      "author": {
+        "@type": "Person",
+        "name": "Keio Soo",
+        "jobTitle": "Tegevjuht",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Balcon Grupp OÜ"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Balcon Grupp OÜ",
+        "telephone": "+372 58374422",
+        "email": "Balcongrupp@gmail.com"
+      },
+      "mainEntityOfPage": "https://bgrupp.ee/blog/tanavakivi-paigaldus-soodne-eelarve-kuni-5000-eurot/",
+      "keywords": "soodne tänavakivi paigaldus, tänavakivi 5000 euro eest, odav sillutus, eelarve 3000 4000 5000 €, Brikers Aroc betoonkivi"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kui suure pinna saab täpselt 5000 € eest paigaldada 2026. aastal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tüüpilise eramaja sissesõidu puhul (tasane krunt, lihtne geomeetria, Brikersi/Aroci 60 mm standardkivi, betoonäärekivi) jääb pind vahemikku 110–145 m². Sileda või suure formaadi kivi puhul väheneb pind 75–95 m²-ni."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas 3000 € eelarvega saab korraliku tulemuse?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah, 70–85 m² ulatuses. Kasutame sama EVS-EN 1338 sertifitseeritud kivi ja täidame samad alusenõuded. Säästame formaadis, värvis ja geomeetrias, mitte kvaliteedis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas on mõtet osta kivi ise odavamalt ja paigaldajat eraldi otsida?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tavaliselt mitte. Tehasest projekti raames tellimine annab 5–8% allahindlust, mida üksiktellija ei saa. Lisaks katab materjali 2-aastane paigaldusgarantii ainult siis, kui materjal tuleb meie kaudu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kas 60 mm kivi kestab sõiduautot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jah, kui alusetööd on korras. 60 mm EVS-EN 1338 sertifitseeritud betoonkivi survetugevus on ≥3,6 MPa ja külmakindlus ≥56 tsüklit. Praktikas 20–30 aastat eluiga sõiduautoga sissesõidul."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Millised on tüüpilised lisakulud 5000 € eelarvele?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vana asfaldi eemaldus (5–12 €/m²), pinnase väljavedu (200–400 €/koorem), torustiku ümbritsemine (50–150 €/punkt) ja suurem kallak (3–6 €/m²). Jäta 10–15% reservi."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Avaleht",
+          "item": "https://bgrupp.ee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://bgrupp.ee/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tänavakivi paigaldus soodsalt – kuidas mahutada projekt 5000 € sisse 2026",
+          "item": "https://bgrupp.ee/blog/tanavakivi-paigaldus-soodne-eelarve-kuni-5000-eurot/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>B Grupp</h4>
+        <p style="color:#86efac">B Grupp — soodsa hinnaga tänavakivi paigaldus eramajadele üle Eesti. Fikseeritud hind, kiire algus.</p>
+        <p style="margin-top:12px"><strong style="color:#fff">+372 58374422</strong><br>Balcongrupp@gmail.com</p>
+      </div>
+      <div>
+        <h4>Hinnad</h4>
+        <a href="#hinnad">Eramaja õu — 16 €/m²</a>
+        <a href="#hinnad">Tänavakivi tervik — 28 €/m²</a>
+        <a href="#hinnad">Graniit premium — 35 €/m²</a>
+        <a href="#hinnad">Äärekivi — 24 €/jm</a>
+      </div>
+      <div>
+        <h4>Piirkond</h4>
+        <a href="#">Tallinn ja Harjumaa</a>
+        <a href="#">Tartu ja Tartumaa</a>
+        <a href="#">Pärnu ja Pärnumaa</a>
+        <a href="#">Üle Eesti</a>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <a href="#kkk">Korduma kippuvad küsimused</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#">Privaatsuspoliitika</a>
+        <a href="#">Tingimused</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 B Grupp · Reg nr 16294742 · Kõik õigused kaitstud</div>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a href="tel:+37258374422" class="btn btn-secondary">📞 Helista</a>
+  <a href="#kontakt-top" class="btn btn-primary">⚡ Saa hind</a>
+</div>
+
+<!-- whatsapp-fab -->
+<a href="https://wa.me/37258374422?text=Tere! Sooviksin saada kiiret hinnapakkumist sillutuse paigalduseks." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Küsi pakkumist WhatsAppis: +372 5837 4422" title="Küsi hinnapakkumist WhatsAppis"><span class="wa-pulse" aria-hidden="true"></span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+</body>
+</html>
